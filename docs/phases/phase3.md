@@ -1,21 +1,24 @@
-# Phase 3: Editing and Displaying Posts
+# Phase 3: Editing and Displaying Answers, Taggings
 
 ## Rails
 ### Models
+Tagging
 
 ### Controllers
+Taggings (create, destroy)
 
 ### Views
 
 ## Backbone
 ### Models
+Tagging
 
 ### Collections
+Taggings
 
 ### Views
-* PostForm
+* AnswerShow
+* AnswerEdit
+* TaggingNew
 
 ## Gems/Libraries
-* Filepicker
-* Markdown-js
-* Bootstrap Markdown

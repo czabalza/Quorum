@@ -1,29 +1,32 @@
-# Phase 2: Viewing Blogs and Posts
+# Phase 2: Viewing Questions and Answers, Subscriptions
 
 ## Rails
 ### Models
+Subscription
 
 ### Controllers
-Api::BlogsController (create, destroy, index, show)
-Api::PostsController (create, destroy, show, update)
+Api::QuestionsController (create, index, show)
+Api::AnswersController (create, destroy, show, update)
+Api::SubscriptionsController (create, new, destroy)
 
 ### Views
-* blogs/show.json.jbuilder
 
 ## Backbone
 ### Models
-* Blog (parses nested `posts` association)
-* Post
+* Question
+* Answer
+* Subscription
 
 ### Collections
-* Blogs
-* Posts
+* Questions
+* Answers
+* Subscription
 
 ### Views
-* BlogForm
-* BlogShow (composite view, contains PostsIndex subview)
-* PostsIndex (composite view, contains PostsIndexItem subviews)
-* PostsIndexItem
-* PostShow
+* QuestionNew
+* QuestionShow
+* QuestionIndex
+* AnswerNew
+* AnswerShow
 
 ## Gems/Libraries

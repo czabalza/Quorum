@@ -1,24 +1,24 @@
-# Flux-capacitr
+# Quorum
 
 [Heroku link][heroku]
 
-[heroku]: http://flux-capacitr.herokuapp.com
+<!-- [heroku]: link -->
 
 ## Minimum Viable Product
-Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
+Quorum is a clone of Quora built on Rails and Backbone. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-- [x] Create accounts
-- [x] Create sessions (log in)
-- [x] Create blogs
-- [x] Create blog posts
-- [ ] View blogs and posts
-- [ ] Subscribe to blogs
-- [ ] View a feed of subscribed blogs
-- [ ] Tag blog posts
-- [ ] Search for blogs by title
-- [ ] Search for posts by tag
+- [ ] Create accounts
+- [ ] Create sessions (log in)
+- [ ] Post questions
+- [ ] Post answers to questions
+- [ ] View questions and answers
+- [ ] Tag questions
+- [ ] Search for questions by title
+- [ ] Search for questions by tag
+- [ ] Up or down vote answers
+- [ ] Ask other users to answer questions
 
 ## Design Docs
 * [View Wireframes][views]
@@ -29,63 +29,48 @@ Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
 
 ## Implementation Timeline
 
-### Phase 1: User Authentication, Blog Creation (~1 day)
-I will implement user authentication in Rails based on the practices learned at
-App Academy. By the end of this phase, users will be able to create blogs using
-a simple text form in a Rails view. The most important part of this phase will
-be pushing the app to Heroku and ensuring that everything works before moving on
-to phase 2.
+### Phase 1: User Authentication, Question Creation (~1 day)
+I will implement user authentication in Rails - users will be able to sign up, log in, and log out. By the end of this phase, users will be able to create questions. The app will be pushed to Heroku in this phase.
 
 [Details][phase-one]
 
-### Phase 2: Viewing Blogs and Posts (~2 days)
-I will add API routes to serve blog and post data as JSON, then add Backbone
+### Phase 2: Viewing Questions and Answers, Subscriptions (~2 days)
+I will add API routes to serve question and answer data as JSON, then add Backbone
 models and collections that fetch data from those routes. By the end of this
-phase, users will be able to create blogs and view both blogs and posts, all
-inside a single Backbone app.
+phase, users will be able to create questions and answers.  Users will also be able to subscribe to different topics.
 
 [Details][phase-two]
 
-### Phase 3: Editing and Displaying Posts (~2 days)
-I plan to use third-party libraries to add functionality to the `PostForm` and
-`PostShow` views in this phase. First I'll need to add a Markdown editor to the
-`PostForm`, and make sure that the Markdown is properly escaped and formatted in
-the `PostShow` view. I also plan to integrate Filepicker for file upload so
-users can add images to blog posts.
+### Phase 3: Editing and Displaying Answers, Taggings (~2 days)
+Users will be able to edit and view both questions and answers.  They will also be able to tag questions with certain topics.
 
 [Details][phase-three]
 
 ### Phase 4: User Feeds (~1-2 days)
 I'll start by adding a `feed` route that uses the `current_user`'s
-`subscribed_blogs` association to serve a list of blog posts ordered
+`subscriptions` association to serve a list of questions ordered
 chronologically. On the Backbone side, I'll make a `FeedShow` view whose `posts`
-collection fetches from the new route.  Ultimately, this will be the page users
-see after logging in.
+collection fetches from the new route.  Logging in will redirect users to this page.
 
 [Details][phase-four]
 
-### Phase 5: Searching for Blogs and Posts (~2 days)
-I'll need to add `search` routes to both the Blogs and Posts controllers. On the
-Backbone side, there will be a `SearchResults` composite view has `BlogsIndex`
-and `PostsIndex` subviews. These views will use plain old `blogs` and `posts`
-collections, but they will fetch from the new `search` routes.
+### Phase 5: Searching for Questions (~2 days)
+I'll need to add `search` routes to this Questions controller. On the
+Backbone side, there will be a `SearchResults` composite view that has a `FeedIndex`
+subview. These views will use `questions` and `answers` collections, but they will fetch from the new `search` routes. Users will be able to search by question or tag topic.
 
 [Details][phase-five]
 
 ### Bonus Features (TBD)
-- [ ] "Like" button and counter for posts
-- [ ] Custom blog urls
+- [ ] "Upvote" and "Downvote" buttons and counters for answers
+- [ ] User comments on answers
 - [ ] Pagination/infinite scroll
-- [ ] Activity history (e.g. likes, reblogs, taggings)
-- [ ] Post types (image posts, quote posts, etc)
-- [ ] Reblogging
+- [ ] Answer types (image posts, quote posts, etc)
+- [ ] Sharing
 - [ ] Multiple sessions/session management
-- [ ] User avatars
-- [ ] Typeahead search bar
 
 [phase-one]: ./docs/phases/phase1.md
 [phase-two]: ./docs/phases/phase2.md
 [phase-three]: ./docs/phases/phase3.md
 [phase-four]: ./docs/phases/phase4.md
 [phase-five]: ./docs/phases/phase5.md
-
