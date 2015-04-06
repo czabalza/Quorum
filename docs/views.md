@@ -10,8 +10,8 @@
 
 ![pic5]
 
-[pic1]: ./wireframes/pic1.png
-[pic2]: ./wireframes/pic2.png
-[pic3]: ./wireframes/pic3.png
-[pic4]: ./wireframes/pic4.png
-[pic5]: ./wireframes/pic5.png
+[pic1]: ./wireframes/pic1.jpg
+[pic2]: ./wireframes/pic2.jpg
+[pic3]: ./wireframes/pic3.jpg
+[pic4]: ./wireframes/pic4.jpg
+[pic5]: ./wireframes/pic5.jpg
