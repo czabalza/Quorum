@@ -49,7 +49,7 @@ Users will be able to edit and view both questions and answers.  They will also 
 ### Phase 4: User Feeds (~1-2 days)
 I'll start by adding a `feed` route that uses the `current_user`'s
 `subscriptions` association to serve a list of questions ordered
-chronologically. On the Backbone side, I'll make a `FeedShow` view whose `posts`
+chronologically. Using Backbone, I'll make a `FeedShow` view whose `posts`
 collection fetches from the new route.  Logging in will redirect users to this page.
 
 [Details][phase-four]
