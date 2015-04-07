@@ -15,7 +15,7 @@ column name | data type | details
 id          | integer   | not null, primary key
 asker_id    | integer   | not null, foreign key (references users)
 title       | string    | not null
-description | string    |
+description | text      |
 
 ## answers
 column name | data type | details
@@ -23,7 +23,7 @@ column name | data type | details
 id          | integer   | not null, primary key
 author_id   | integer   | not null, foreign key (references users)
 question_id | integer   | not null, foreign key (references questions)
-body        | string    | not null
+body        | text      | not null
 anonymous   | boolean   | not null
 
 ## tags

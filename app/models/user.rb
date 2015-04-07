@@ -3,6 +3,20 @@ class User < ActiveRecord::Base
   validates :password, length: {minimum: 6, allow_nil: true}
   validates :email, :session_token, uniqueness: true
 
+  has_many(
+    :questions,
+    class_name: :Question,
+    foreign_key: :asker_id,
+    primary_key: :id
+  )
+
+  has_many(
+    :answers,
+    class_name: :Answer,
+    foreign_key: :author_id,
+    primary_key: :id
+  )
+
   before_validation :ensure_session_token
   attr_reader :password
 
