@@ -17,6 +17,13 @@ class User < ActiveRecord::Base
     primary_key: :id
   )
 
+  has_many(
+    :subscriptions,
+    class_name: :Subscriptions,
+    foreign_key: :follower_id,
+    primary_key: :id
+  )
+
   before_validation :ensure_session_token
   attr_reader :password
 
