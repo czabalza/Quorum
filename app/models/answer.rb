@@ -1,5 +1,6 @@
 class Answer < ActiveRecord::Base
-  validates :author_id, :question_id, :body, :anonymous, presence: true
+  validates :author_id, :question_id, :body, presence: true
+  validates :anonymous, inclusion: {in: [true, false]}
 
   belongs_to(
     :author,
