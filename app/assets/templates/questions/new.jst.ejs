@@ -1,0 +1,11 @@
+<h1>Add Question</h1>
+
+<form class="new-q-form">
+  <label for="question_title">Question:</label>
+  <input id="question_title" type="text" name="title" value="<%= question.escape('title') %>">
+  <br>
+  <label for="question_description">Description:</label>
+  <textarea id="question_description" name="description"><%= question.escape('description') %></textarea>
+  <br>
+  <button class="create-question-btn">Add Question</button>
+</form>
