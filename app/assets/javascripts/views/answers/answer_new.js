@@ -19,9 +19,7 @@ Quorum.Views.AnswerNew = Backbone.View.extend({
 
     this.model.save([], {
       success: function (answer) {
-        debugger
         this.collection.add(answer, {merge: true});
-
       }.bind(this),
       error: function (answer, response) {
         this.$el.empty();
