@@ -28,6 +28,7 @@ Quorum.Views.AnswerNew = Backbone.CompositeView.extend({
           this.collection.add(answer, {merge: true});
           this.$el.html(this.button);
         } else {
+          answer.fetch();
           var view = new Quorum.Views.AnswerShow({model: answer})
           this.$el.html(view.render().$el);
         }
