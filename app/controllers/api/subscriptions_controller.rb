@@ -1,11 +1,9 @@
 class Api::SubscriptionsController < ApplicationController
   def create
-    @subscription = current_user.subscriptions(subscription_params)
-    if @subscription.save
-      render json: @subscription
-    else
-      render json: @subscription.errors.full_messages, status: :unprocessable_entity
+    subscription_params[:tag_ids].each do |tag_id|
+      current_user.subscriptions.create(tag_id: tag_id)
     end
+    render json: {}
   end
 
   def destroy
@@ -17,6 +15,7 @@ class Api::SubscriptionsController < ApplicationController
   private
 
   def subscription_params
-    params.require(:subscription).permit(:tag_id)
+    p params
+    params.require(:subscription).permit(tag_ids: [])
   end
 end

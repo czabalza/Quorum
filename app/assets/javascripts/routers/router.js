@@ -2,12 +2,14 @@ Quorum.Routers.Router = Backbone.Router.extend({
   initialize: function () {
     this.$rootEl = $('#main');
     this.questions = new Quorum.Collections.Questions();
+    this.tags = new Quorum.Collections.Tags();
   },
 
   routes: {
     "questions": "questionsIndex",
     "questions/new": "questionNew",
-    "questions/:id": "questionShow"
+    "questions/:id": "questionShow",
+    "subscriptions/new": "subscriptionsNew"
   },
 
   questionsIndex: function () {
@@ -26,6 +28,12 @@ Quorum.Routers.Router = Backbone.Router.extend({
     var question = this.questions.getOrFetch(id);
     // debugger
     var view = new Quorum.Views.QuestionShow({model: question});
+    this._swapView(view);
+  },
+
+  subscriptionsNew: function () {
+    this.tags.fetch();
+    var view = new Quorum.Views.SubscriptionsNew({collection: this.tags});
     this._swapView(view);
   },
 

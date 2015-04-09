@@ -19,9 +19,10 @@ class User < ActiveRecord::Base
 
   has_many(
     :subscriptions,
-    class_name: :Subscriptions,
+    class_name: :Subscription,
     foreign_key: :follower_id,
-    primary_key: :id
+    primary_key: :id,
+    dependent: :destroy
   )
 
   before_validation :ensure_session_token

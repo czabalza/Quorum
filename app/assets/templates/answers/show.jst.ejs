@@ -2,7 +2,7 @@
 <%= answer.escape("anonymous") %>
   <h1>Anonymous</h1>
 <% } else { %>
-  <h1><%= answer.authorName %></h1>
+  <h1><%= answer.escape('authorName') %></h1>
 <% } %>
 <div>
   <%= answer.escape("body") %>

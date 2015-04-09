@@ -3,7 +3,7 @@ Quorum.Models.Answer = Backbone.Model.extend({
 
   parse: function (response) {
     if (response.author) {
-      this.authorName = response.author.name;
+      response.authorName = response.author.name;
       delete response.author
     }
     return response;
