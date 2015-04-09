@@ -1,4 +1,4 @@
-Quorum.Views.AnswerShow = Backbone.View.extend({
+Quorum.Views.AnswerShow = Backbone.CompositeView.extend({
   template: JST["answers/show"],
 
   initialize: function () {

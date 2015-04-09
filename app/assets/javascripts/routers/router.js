@@ -12,7 +12,6 @@ Quorum.Routers.Router = Backbone.Router.extend({
 
   questionsIndex: function () {
     this.questions.fetch();
-
     var view = new Quorum.Views.QuestionsIndex({collection: this.questions});
     this._swapView(view);
   },

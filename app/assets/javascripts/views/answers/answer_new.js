@@ -1,5 +1,9 @@
-Quorum.Views.AnswerNew = Backbone.View.extend({
+Quorum.Views.AnswerNew = Backbone.CompositeView.extend({
   template: JST["answers/new"],
+
+  initialize: function (options) {
+    this.button = options.button;
+  },
 
   events: {
     "click .create-answer-btn": "createAnswer"
@@ -19,7 +23,14 @@ Quorum.Views.AnswerNew = Backbone.View.extend({
 
     this.model.save([], {
       success: function (answer) {
-        this.collection.add(answer, {merge: true});
+        this.$el.empty();
+        if (this.collection) {
+          this.collection.add(answer, {merge: true});
+          this.$el.html(this.button);
+        } else {
+          var view = new Quorum.Views.AnswerShow({model: answer})
+          this.$el.html(view.render().$el);
+        }
       }.bind(this),
       error: function (answer, response) {
         this.$el.empty();

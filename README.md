@@ -2,7 +2,7 @@
 
 [Heroku link][heroku]
 
-<!-- [heroku]: link -->
+[heroku]: https://quorumapp.herokuapp.com
 
 ## Minimum Viable Product
 Quorum is a clone of Quora built on Rails and Backbone. Users can:

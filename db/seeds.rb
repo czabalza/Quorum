@@ -39,74 +39,74 @@ tag20 = Tag.create(label: "")
 
 q1 = Question.create(title: "How long do you count before throwing a grenade?",
  description: "")
- a1 = Answer.create(body: "You DON'T count before throwing a grenade.
+ a1 = Answer.create(body: "You DON\'T count before throwing a grenade.
  You count AFTER throwing it.
 
- I'll explain.
+ I\'ll explain.
 
  Having pulled the pin out, the grenade still does not go off.
- If you are holding it correctly, the trigger - that's the long \"handle\" to the side of the grenade, hasn't been released yet.
+ If you are holding it correctly, the trigger - that\'s the long \"handle\" to the side of the grenade, hasn\'t been released yet.
  Once you throw the grenade the trigger gets loose, and a 3 second delay is available till the detonation occurs.
 
- That's why there is no point counting before.
- Counting afterwards is meant to give the thrower's teammates an indication on time to explosion.
+ That\'s why there is no point counting before.
+ Counting afterwards is meant to give the thrower\'s teammates an indication on time to explosion.
 
- Helps prevent your ear drums from tearing open if not protected, and ensure no one runs into the area that's about to be covered with debris before it does.
+ Helps prevent your ear drums from tearing open if not protected, and ensure no one runs into the area that\'s about to be covered with debris before it does.
 
- Now, sure, I too have seen the Hollywood heroes who let the trigger go, count till the last second and then throw. (Notice the actors usually hold the trigger because they have no idea what they're doing...)
+ Now, sure, I too have seen the Hollywood heroes who let the trigger go, count till the last second and then throw. (Notice the actors usually hold the trigger because they have no idea what they\'re doing...)
 
- Anyway - if I had such a \"hero\" in my team, I'd throw him along with the grenade.
+ Anyway - if I had such a \"hero\" in my team, I\'d throw him along with the grenade.
 
    Explosives are not toys.
    You don't play with them.")
-a2 = Answer.create(body: "Most grenades have a 4-8 second fuse (US standard is 4-5.5 second), but there's some variation in the delay of the powder train.  With some Russian grenades, users were given a box of various delay fuses, including 0, 5, and 13 second variations -- the 0 second fuses were for tripwire detonation traps.  Hilarity ensued when people mixed up the fuses.
+a2 = Answer.create(body: "Most grenades have a 4-8 second fuse (US standard is 4-5.5 second), but there\'s some variation in the delay of the powder train.  With some Russian grenades, users were given a box of various delay fuses, including 0, 5, and 13 second variations -- the 0 second fuses were for tripwire detonation traps.  Hilarity ensued when people mixed up the fuses.
 
 The generally accepted technique is to pull pin and throw immediately.  In some cases, this is not desirable because the enemy can observe the grenade being readied, and may be able to throw it back.   Due to the variability of the grenade fuses (sometimes less than 3 seconds!), \"cooking off\" grenades is not something you should really do.  The USMC publication MCWP 3-35 describes it as the \"least preferred technique\", although it is something documented as an option.  The purpose is to deny the enemy the ability to throw back or kick away the grenade before it detonates.  The same thing can be achieved by throwing the grenade at high speed or in an erratic pattern (like bouncing it off something).  The bouncing technique can be trained with live grenades; the cooking off (for 1-2 seconds) can only be used in actual combat, not in training.
 
   Fragmentation grenades in general are \"defensive grenades\"; they are thrown from cover or other protected positions, or into holes or structures.  The US models have a lethal radius of 5m, casualty radius of 15m, but can produce injury at a great radius, so they aren't thrown in front of advancing troops.")
 q2 = Question.create(title: "Why are so many people content with just earning a salary and working 9-6 their entire adult life?", description: "")
-a3 = Answer.create(body: "I'm fabulously wealthy by any reasonable definition of the word.
+a3 = Answer.create(body: "I\'m fabulously wealthy by any reasonable definition of the word.
 
-If I want a glass of clean, healthy water I only need to walk as far as my kitchen faucet. All the water I can drink faster than I can drink it. It's so cheap that I never have to worry that I'm drinking too much.
+If I want a glass of clean, healthy water I only need to walk as far as my kitchen faucet. All the water I can drink faster than I can drink it. It's so cheap that I never have to worry that I\'m drinking too much.
 
-If I want to eat fresh produce I just need to open my fridge. If there's none there, there's always, always, always more within a few miles. I don't even have to walk very far - I have my very own car that I can get in and drive to the store.
+If I want to eat fresh produce I just need to open my fridge. If there\'s none there, there\'s always, always, always more within a few miles. I don\'t even have to walk very far - I have my very own car that I can get in and drive to the store.
 
-If I look carefully I can probably find enough dropped change in the parking lot to pay for one serving of produce. Money and food are both that abundant here. But I don't. Because I've never had to worry about tracking my pennies and dimes closely enough to buy an orange.
+If I look carefully I can probably find enough dropped change in the parking lot to pay for one serving of produce. Money and food are both that abundant here. But I don't. Because I\'ve never had to worry about tracking my pennies and dimes closely enough to buy an orange.
 
-If I'm bored I've got this electronic box where all I have to do is push a few buttons and boom! all the cat videos I want. It's kind of embarrassing, but I actually keep one of these boxes in my purse. Mostly it's for information and entertainment but it also allows me to talk to people, no matter how far away they are.
+If I\'m bored I\'ve got this electronic box where all I have to do is push a few buttons and boom! all the cat videos I want. It\'s kind of embarrassing, but I actually keep one of these boxes in my purse. Mostly it\'s for information and entertainment but it also allows me to talk to people, no matter how far away they are.
 
   There are free libraries all around town. My neighborhood has a free swimming pool and a free park! For less than one full day of minimum wage work I can go to a museum or a zoo or an aquarium or a musical or take a painting class.
 
-  If I'm hungry and don't want to cook for myself there are places all over town ready to cook for me. My toughest choice is which continent I want my dishes to be inspired by. These meals cost me roughly two to three hours of minimum wage work (and there's often enough food that I can take home enough for a second meal!) I sit down and it's all brought to me. People actually come up to me regularly and ask if I'd like more water. It's like I'm a queen or something.
+  If I\'m hungry and don\'t want to cook for myself there are places all over town ready to cook for me. My toughest choice is which continent I want my dishes to be inspired by. These meals cost me roughly two to three hours of minimum wage work (and there\'s often enough food that I can take home enough for a second meal!) I sit down and it\'s all brought to me. People actually come up to me regularly and ask if I\'d like more water. It\'s like I\'m a queen or something.
 
   In many parts of the world $2/day is a respectable income. $2 in the US is a stingy tip on one of those meals.
 
-  If I'm in a hurry and not concerned with nutrition, then I can have someone give me food while I sit in my car! For less than one hour of minimum wage work!
+  If I\'m in a hurry and not concerned with nutrition, then I can have someone give me food while I sit in my car! For less than one hour of minimum wage work!
 
-  This is the lifestyle my 9-6 career provides. I really, really, really don't see how having more wealth could possibly make me happier.
+  This is the lifestyle my 9-6 career provides. I really, really, really don\'t see how having more wealth could possibly make me happier.
   ")
 
 a4 = Answer.create(body: "I worked the same job for 38 years.  Got to do something different all the time.   Had lots of vacation, sick leave , holidays and home every night.  Not a huge salary but enough to have a nice home, car and truck, no debt and a great retirement.  Been retired 11 years and get to do anything I want or go anywhere.
-I've had the same wife for 50 years.  Our health is very good.
+I\'ve had the same wife for 50 years.  Our health is very good.
 Now how could I possibly have improved on that?")
 
-a5 = Answer.create(body: "Here's the actual answer to the question:
+a5 = Answer.create(body: "Here\'s the actual answer to the question:
 
-There's an inverse correlation between contentedness and drive.
+There\'s an inverse correlation between contentedness and drive.
 
-Here's some background:
+Here\'s some background:
 
-When you make enough money to live a comfortable life, it's not worth the risk or time exchange or both for some to \"change the world\" in the sense that you mean.
+When you make enough money to live a comfortable life, it\'s not worth the risk or time exchange or both for some to \"change the world\" in the sense that you mean.
 
-Most people are content with the status quo. That's human nature. That's how societies work and become successful. There's a shared set of goals and values and if you've achieved those in your society, a sense of belonging and pride tend to ensue.  Contentedness follows.
+Most people are content with the status quo. That\'s human nature. That\'s how societies work and become successful. There\'s a shared set of goals and values and if you\'ve achieved those in your society, a sense of belonging and pride tend to ensue.  Contentedness follows.
 
-What about those that want to take it to another (not better or worse, just different) level? What are they faced with? Possibly risking all the time and relationships they've invested. I won't even get into the amount of thinking, planning, creating, organizing, and hustling it takes for the average person to change levels. Some people don't even know where to start and that takes the game from risky to impossible (if only in their own minds). Why wouldn't they be content to just continue in the society where they're successful enough?
+What about those that want to take it to another (not better or worse, just different) level? What are they faced with? Possibly risking all the time and relationships they\'ve invested. I won\'t even get into the amount of thinking, planning, creating, organizing, and hustling it takes for the average person to change levels. Some people don\'t even know where to start and that takes the game from risky to impossible (if only in their own minds). Why wouldn\'t they be content to just continue in the society where they\'re successful enough?
 
-That's why most people will not ever take this risk. The risk itself is scary. They're content. They can support their family quite well without much ado. AND THAT'S OKAY. We need those people. We need the stability because it allows those of us who want to take risks the luxury of being able to do so.
+That\'s why most people will not ever take this risk. The risk itself is scary. They\'re content. They can support their family quite well without much ado. AND THAT\'S OKAY. We need those people. We need the stability because it allows those of us who want to take risks the luxury of being able to do so.
 
 There will still be a grocery store, a bank, a hospital, public utilities, schools, and factories.  Most innovators, game changers, and people who are impacting the world rely on these services to become successful.
 
-So in a sense, those who are content working the 9-6 jobs do change the world. You need the basic services they provide to move forward with your own ideas even if you're going to start a juice stand and need produce from the market, who gets it from the farmer, who uses water from a well someone had to dig, not to mention the people who had to harvest the fruit and transport it.
+So in a sense, those who are content working the 9-6 jobs do change the world. You need the basic services they provide to move forward with your own ideas even if you\'re going to start a juice stand and need produce from the market, who gets it from the farmer, who uses water from a well someone had to dig, not to mention the people who had to harvest the fruit and transport it.
 
   Just imagine the amount of 9-6 people Apple needs to make the phone you're going to do most of your business on.
 
@@ -114,10 +114,10 @@ So in a sense, those who are content working the 9-6 jobs do change the world. Y
 
   Insofar as it is collaborative, a society can enable its members to benefit in ways that would not otherwise be possible on an individual basis; both individual and social (common) benefits can thus be distinguished, or in many cases found to overlap.
 
-  If you're not content with the status quo, then it's more likely that you'll be driven to take the financial and social risks to move to another level. That's something to celebrate, commend, and encourage.
+  If you\'re not content with the status quo, then it\'s more likely that you\'ll be driven to take the financial and social risks to move to another level. That\'s something to celebrate, commend, and encourage.
 
-  But who's going to work for you?")
-q1 = Question.create(title: "What are the most mind-blowing tricks used during any war?", description: "")
+  But who\'s going to work for you?")
+q3 = Question.create(title: "What are the most mind-blowing tricks used during any war?", description: "")
 a6 = Answer.create(body: "When the British captured senior German officers during WW2, they didn't put them in a prison camp. Instead they took them to a beautiful country mansion, and plied them with magnificent meals and drink, and allowed them to listen to German radio and read newspapers to keep up to date on the war. Each had his own room and a batman, and were treated like senior officers in the British Army.
 Of course, the officers had much to talk about to each other, but unknown to them, the Brits had wired the entire mansion and had a team of intelligence officers working in the basement.
 The intelligence they got was far more effective than pulling finger nails. They learnt a huge amount about the relationships between senior commanders and with Hitler. They also learnt a lot about German military strategy and tactics ... From the top.
@@ -158,7 +158,7 @@ And then he told me about the most common fort-saving-technique of the times. As
 a11 = Answer.create(body: "During the Palestinian Campaign of WWI (1917), the British were in their trenches and the Ottomans were in theirs, but there was little movement. The British learned that the opposing Turks had run out of cigarettes, so the intelligence service of the British Army came up with the idea of throwing cigarettes to the Turks, but they would wrap the packs in paper with slogans encouraging the Ottomans to stop fighting.
 
 This didn't work; the Turks would throw the slogans away and enjoy the cigarettes. Shortly before a raid was scheduled, the British changed tactics a bit. The cigarettes they threw over the top still had slogans on them, but they also had the added benefit of being heavily laced with heroin. By the time the raid started, the British met essentially no opposition.")
-q1 = Question.create(title: "What are the signs of an ultra smart person playing dumb?", description: "")
+q4 = Question.create(title: "What are the signs of an ultra smart person playing dumb?", description: "")
 a12 = Answer.create(body: "The brief flash of amusement in response to a quip or allusion that most people wouldn't understand.  Even someone with a decent poker face has a hard time suppressing the smile/laugh/eye crinkle response to something funny and unexpected.
 
 Humor by definition has an element of surprise and our reaction to it is quick.  It takes much longer to analyze the level of the joke and decide, \"Should I laugh?  Was that a joke anyone would get or one only a really smart person would get?\"
@@ -174,7 +174,7 @@ a13 = Answer.create(body: "Silence.
 Stealth intellect has a slack expression, does not react, does not laugh, does not challenge, does not question.
 
 It sits quietly, like a coiled snake, soaking up everyone and everything, until it makes a sudden move at the time of its choosing.  You don't want to be in the path of that strike.")
-q1 = Question.create(title: "I got a job offer telling me to \"pick my salary\". How do I do that?", description: "This is for a Series B stealth startup, if it matters.  I see a wide range of salaries, so I have no idea what I'm supposed to tell them.")
+q5 = Question.create(title: "I got a job offer telling me to \"pick my salary\". How do I do that?", description: "This is for a Series B stealth startup, if it matters.  I see a wide range of salaries, so I have no idea what I'm supposed to tell them.")
 a14 = Answer.create(body: "Look in the mirror and start listing off salaries, starting with the one you would first expect and then start increasing it.
 
 $100,000.  $120,000.  $150,000.  $175,000.  etc.
@@ -208,7 +208,7 @@ The goal is to get a conversation going that includes specific numbers, without 
     And if you do end up having to name a figure first, THEN you name something very high (just a little below the \"non-number\" mentioned above if you used that approach, or else pick the highest number you can reasonably imagine getting paid for the position, and add about 20%). Suggest that figure with a smile (to let them know you realize it might be a tad outrageous) and say something like, \"Since you\'re insisting that I take a shot in the dark here...how about $XXX?.\" They might laugh, or frown, and try to get you to suggest another number without countering, but at that point you should dig in your heels and insist on a counter offer. (\"Really? You think $XXX is too much? Hmm... What did you have in mind?\") Make it clear that you feel you complied with their request, and they\'ll probably go ahead and name a figure. Then the real discussion can begin.
 
       Good luck!")
-q1 = Question.create(title: "What is the most un-American thing about America?", description: "")
+q6 = Question.create(title: "What is the most un-American thing about America?", description: "")
 a16 = Answer.create(body: "Modern US immigration law.
 
 For a country that was based on those seeking a better life, it's extraordinarily hard for most of the world to move to.
@@ -229,7 +229,7 @@ Which doesn't really make sense to me considering.
   5) The US population is ageing and China looks likely to overtake it's economy this century.
 
   So what is there to fear with new arrivals? especially younger, more educated, richer, healthier people?")
-q1 = Question.create(title: "Why are people so obsessed with working at Google/Facebook?", description: "")
+q7 = Question.create(title: "Why are people so obsessed with working at Google/Facebook?", description: "")
 a17 = Answer.create(body: "I can't really speak for the other people out there, but I can tell you why, more than anything else, I would like to work there.
 
 The money, knowing that my resume would be more or less set for life, the high-profile company - all of that usual stuff sounds great. It certainly influences my desire, I won't deny that. But none of that matters quite as much to me.
@@ -241,7 +241,7 @@ Whether or not Google deserves the status it holds, it's quite clearly a top-tie
 Unfortunately, I don\'t ever see this happening (and even if it did, I\'d probably find some way to rob myself of the accomplishment). Quite frankly, I\'m probably not Google-caliber, and I don\'t know that I ever will be. But I\'ve tried, failed, and I\'m going to keep trying. I\'m going to keep trying because for me, what\'s at stake is something much, much deeper than money or prestige. What\'s at stake is my self-worth.
 
 So, there you have it. A bit rambling and perhaps a bit tangential, but that\'s what Google means to me.")
-q1 = Question.create(title: "What are the best kept secrets of great programmers?", description: "")
+q8 = Question.create(title: "What are the best kept secrets of great programmers?", description: "")
 a18 = Answer.create(body: "1. Never reveal all that you know.
 
 
@@ -252,7 +252,7 @@ Know the tools.  This is not an end in itself, but a way to maintain \"flow\" wh
     Prioritize.  This is the area where I constantly see people fail.  Every problem worth tackling has many facets.  Often, solving one part of the problem will make solving the others easier.  Therefore, getting the order right really matters.  I\'m afraid there\'s no simple answer for how to recognize that order, but as you gain more experience within a problem domain - practice again - you\'ll develop a set of heuristics that will guide you.
     Reuse everything.  Reuse ideas.  Reuse code.  Every time you turn a new problem into a problem you already know how to solve - and computing is full of such opportunities - you can save time.  Don\'t worry if the transformed solution isn\'t absolutely perfect for the current problem.  You can refine later if you really need to, and most often you\'ll find that you\'re better off moving on to the next problem.
     A lot of these really come down to efficiency.  As you move through more problems per day, you\'ll gain more experience per day, which will let you move through more problems per day, and so on.  It\'s a feedback loop; once you get on its good side, your effectiveness (and value) will increase drastically.")
-q1 = Question.create(title: "Why are most cars built to reach speeds that are \"not allowed\" in most cases?", description: "")
+q9 = Question.create(title: "Why are most cars built to reach speeds that are \"not allowed\" in most cases?", description: "")
 a19 = Answer.create(body: "There is a good, practical reason that I don\'t see mentioned here yet.
 
 Say you\'re driving down the road at precisely the speed limit like the law-abiding citizen you are. The 18-wheeler in the next lane starts to merge into your lane--right into the spot you're currently occupying.
@@ -261,7 +261,7 @@ Do you violate the speed limit, put the pedal to the metal, and get out of there
 a20 = Answer.create(body: "The highest speed I've ever driven on a public roadway was just short of 100 in a Dodge Colt, outrunning a tornado.  I was passed by a state trooper doing the same thing, except his more powerful vehicle let him go considerably faster; I figure he was doing about 120.
 
 When life is on the line, there is no speed limit.")
-q1 = Question.create(title: "What are some things foreignors believe about the United States but Americans know are laughably way off?", description: "")
+q10 = Question.create(title: "What are some things foreignors believe about the United States but Americans know are laughably way off?", description: "")
 a21 = Answer.create(body: "I had a strange encounter with some guys while I was in Laos (the country between Thailand and Vietnam) and with Chinese nationals in Yunnan who thought similarly.
 - Pretty much everyone has white skin, or are as pale as possible.
 This simply stems from the Bai, Li, and Hmong affinity for pale skin as a sign of obvious wealth and luxury. America is the wealthiest country on earth, thus everyone must take pains to look wealthy by keeping their skin white. It was very hard to explain tanning to them.
@@ -284,7 +284,7 @@ This surprised me, since we obviously do, but the explanation turns out to come 
   - Justin Bieber is American.
   This is just an insult.")
 a22 = Answer.create(body: "That Americans don't like foreigners.  I can think of nothing further than the truth.  In fact, annoyingly, Americans love when people come here, it almost inflates our \"everybody wants to come here\" ego.  There are racist parts of the country that don't want \"non-whites\", but really, despite those people (who -- frankly -- exist everywhere), Americans love people from around the world (despite the fact that we have no clue where you're from and couldn't ever find it on a map).")
-q1 = Question.create(title: "What habits do happy couples have?", description: "")
+q11 = Question.create(title: "What habits do happy couples have?", description: "")
 a23 = Answer.create(body: "I'm a member of a happy couple. My wife and I...
 
 Keep separate bank accounts. When we share an expense, like the rent, we both contribute. Some people are astounded (even offended) that we do this, but in 18 years of being together, we've yet to have a single fight over money.
@@ -294,7 +294,7 @@ Keep separate bank accounts. When we share an expense, like the rent, we both co
     Work on projects together. We run a theatre company, in which she acts and I direct. So our major hobby time is spent together, building stuff together. We do the same with home improvements, cooking, etc.
       Plan surprised treats for each other. Part of me is always thinking about presents I can get her, experiences I can surprise her with, practical jokes I can play on her, etc. She thinks the same way about me.
       Allow each other to talk about anything. Neither of us is easily offended. She can say anything to me that she wouldn't normally say in public, and I can do the same with her. I completely trust that she's a good person and she feels the same way about me, so we can even vent really ugly stuff around each other, and neither of us judges the other based on it.")
-q1 = Question.create(title: "What are some of the best moments of humanity?", description: "")
+q12 = Question.create(title: "What are some of the best moments of humanity?", description: "")
 a24 = Answer.create(body: "There was this British game show called the Golden Balls. The final round of this game was called Split or Steal. The rules of the game were:
 
 After five balls have been won, the contestants make one last decision to determine the final jackpot division. Each contestant chooses one of two final golden balls, one with \"Split\" printed on the cash background inside it, and one with \"Steal\" printed on the killer background inside it.
@@ -306,7 +306,7 @@ Enter Nick Corrigan. This man had a brilliant idea that would ensure that he wou
 
 This is where the story ends in the video. Radiolab did an episode on the same where they discussed with the participants about what had happened[1]. Turns out Ibrahim never wanted to split the money. He wanted to pick steal and take the entire amount for himself. The story about his father was a fake one. He had never met his father. He was brought up by his mother. The line that he spoke was stolen from a film. He did not want to be a sucker, so he would have picked steal irrespective of what the other person said. Nick manipulated this guy to be good. Now the wonderful thing about Nick is that he runs a not for profit organization and all his winnings went into that. So he was actually not playing for himself as much as playing for a charity and in the process he restored our faith in humanity.
 ")
-q1 = Question.create(title: "Is my LinkedIn profile with my picture in a suit and tie hindering my chances of finding jobs at startups?", description: "I would love to work with mid-size agile tech companies or startups. And I believe I fit much better in such a company. Also, I do have right experience.
+q13 = Question.create(title: "Is my LinkedIn profile with my picture in a suit and tie hindering my chances of finding jobs at startups?", description: "I would love to work with mid-size agile tech companies or startups. And I believe I fit much better in such a company. Also, I do have right experience.
 
 But my Linkedin profile has my picture with suit and tie. Wondering if that will send the wrong messages or create a perception that I am more fit for big corporations. And startups and mid-size places will avoid my profile.")
 a25 = Answer.create(body: "This won't be a popular answer, but if you are talking about technology startups in Silicon Valley, then the answer is yes, you probably are hurting your chances.
@@ -325,11 +325,11 @@ Probably the most damning thing about the suit in this context, however, is the 
 If it isn't obvious from my tone above, I am not justifying this rationale.
 
 However, for your LinkedIn profile, if you are looking for a job at a hyper-growth startup in Silicon Valley, I recommend business casual dress for men & women.")
-q1 = Question.create(title: "Why do some companies want fresh graduates so badly?", description: "In the software development field, I have been noticing some even add restrictions to experience years.")
+q14 = Question.create(title: "Why do some companies want fresh graduates so badly?", description: "In the software development field, I have been noticing some even add restrictions to experience years.")
 a26 = Answer.create(body: "Because you can pay them less and they will often put up with more bullshit regarding hours, on-call, weekends, crazy code complete dates, and so forth because (a) they don't know any better and (b) they don't have families or health issues, etc.
 
 Basically there are a lot of fresh graduates who are so excited by the idea of working for a name software company that they will put up with anything.")
-q1 = Question.create(title: "What are some of the most memorable Game of Thrones quotes?", description: "")
+q15 = Question.create(title: "What are some of the most memorable Game of Thrones quotes?", description: "")
 a27 = Answer.create(body: "Bran- \"Can a man still be brave when he's afraid?\"
 Eddard - \"That\'s the only time a man can be brave.\"")
 a28 = Answer.create(body: "Varys - “Power resides only where men believe it resides. [...] A shadow on the  wall, yet shadows can kill. And ofttimes a very small man can cast a  very large shadow.”")
@@ -339,15 +339,15 @@ a30 = Answer.create(body: "Truly words to live by...
 “Never forget who you are, for surely the world won’t. Make it your
 strength. Then it can never be your weakness. Armor yourself in it, and
 it will never be used to hurt you.” -  Tyrion Lannister")
-a31 = Answer.create(body: ""People work together when it suits them.
+a31 = Answer.create(body: "\"People work together when it suits them.
 They’re loyal when it suits them.
 Love each other when it suits them.
-And they kill each other when it suits them."
+And they kill each other when it suits them.\"
 -Game of Thrones")
-a32 = Answer.create(body: ""So many vows. They make you swear and swear. Defend the King, obey the King, obey your father, protect the innocent, defend the weak. But what if your father despises the King? What if the King massacres the innocent? It's too much. No matter what you do, you're forsaking one vow or another."
+a32 = Answer.create(body: "\"So many vows. They make you swear and swear. Defend the King, obey the King, obey your father, protect the innocent, defend the weak. But what if your father despises the King? What if the King massacres the innocent? It\'s too much. No matter what you do, you\'re forsaking one vow or another.\"
 ―Jaime Lannister")
-a33 = Answer.create(body: ""Hodor..." -Hodor")
-q1 = Question.create(title: "How can I make my three year old child behave if I bring him in the office?", description: "")
+a33 = Answer.create(body: "\"Hodor...\" -Hodor")
+q16 = Question.create(title: "How can I make my three year old child behave if I bring him in the office?", description: "")
 a34 = Answer.create(body: "To inspire a three year old to behave at the office, give him a job to do. Ask him if he will help you with your work.
 
 Before he comes, prepare in advance. Here are some projects for him:
@@ -357,15 +357,15 @@ Sit him at a desk and ask him to edit a page of 12-14 point text by circling eac
   Whenever he gets bored, give him another job. Let him experience on his own the discovery that work is useful and interesting.
   Explain how it helps you when the clips are sorted, the coins are useful in parking meters, and knowing the lower case letters will help him learn to read, and that helps both of you.
     Find a problem he can solve. Talk it through if needed, but let him solve it. You can do this by talking aloud about a decision you are making. Turn to him and ask: should I respond to this email now? What should I say? Talk it through with him.
-      Proudly introduce him to anyone who walks by to say hi -- "This is my son Jay, who came to help me with some work today. Jay, this is Clarence, our Founder and CEO. That means he started this company and is the one who is responsible to keep the company in good shape."
+      Proudly introduce him to anyone who walks by to say hi -- \"This is my son Jay, who came to help me with some work today. Jay, this is Clarence, our Founder and CEO. That means he started this company and is the one who is responsible to keep the company in good shape.\"
 
       This way he will feel proud and valued, a contributor and a useful worker. And he will gain an understanding of work and all kinds of good things are imprinted in his mind.
 
       Get photos taken so he will see himself helping you at work even when he was little. Frame a photo. Put it in your office so it is there whenever he visits. His first real job is to learn what you are like at work.  Capture his moment of discovery if you can work it into his workday, and yours.")
-q1 = Question.create(title: "", description: "")
-q1 = Question.create(title: "", description: "")
-q1 = Question.create(title: "", description: "")
-q1 = Question.create(title: "", description: "")
-q1 = Question.create(title: "", description: "")
-q1 = Question.create(title: "", description: "")
-q1 = Question.create(title: "", description: "")
+q17 = Question.create(title: "", description: "")
+q18 = Question.create(title: "", description: "")
+q19 = Question.create(title: "", description: "")
+q20 = Question.create(title: "", description: "")
+q21 = Question.create(title: "", description: "")
+q22 = Question.create(title: "", description: "")
+q23 = Question.create(title: "", description: "")

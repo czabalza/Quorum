@@ -1,4 +1,4 @@
-Quorum.Views.QuestionNew = Backbone.View.extend({
+Quorum.Views.QuestionNew = Backbone.CompositeView.extend({
   template: JST["questions/new"],
 
   events: {
