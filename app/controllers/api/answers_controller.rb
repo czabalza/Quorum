@@ -12,7 +12,8 @@ module Api
 
     def show
       @answer = current_question.answers.find(params[:id])
-      render @answer
+      @author = User.find(@answer.author_id)
+      render :show
     end
 
     def destroy

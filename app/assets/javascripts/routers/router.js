@@ -24,7 +24,10 @@ Quorum.Routers.Router = Backbone.Router.extend({
   },
 
   questionShow: function (id) {
-
+    var question = this.questions.getOrFetch(id);
+    // debugger
+    var view = new Quorum.Views.QuestionShow({model: question});
+    this._swapView(view);
   },
 
   _swapView: function (view) {

@@ -45,7 +45,7 @@ q1 = Question.create(title: "How long do you count before throwing a grenade?",
  I'll explain.
 
  Having pulled the pin out, the grenade still does not go off.
- If you are holding it correctly, the trigger - that's the long "handle" to the side of the grenade, hasn't been released yet.
+ If you are holding it correctly, the trigger - that's the long \"handle\" to the side of the grenade, hasn't been released yet.
  Once you throw the grenade the trigger gets loose, and a 3 second delay is available till the detonation occurs.
 
  That's why there is no point counting before.
@@ -55,15 +55,15 @@ q1 = Question.create(title: "How long do you count before throwing a grenade?",
 
  Now, sure, I too have seen the Hollywood heroes who let the trigger go, count till the last second and then throw. (Notice the actors usually hold the trigger because they have no idea what they're doing...)
 
- Anyway - if I had such a "hero" in my team, I'd throw him along with the grenade.
+ Anyway - if I had such a \"hero\" in my team, I'd throw him along with the grenade.
 
    Explosives are not toys.
    You don't play with them.")
 a2 = Answer.create(body: "Most grenades have a 4-8 second fuse (US standard is 4-5.5 second), but there's some variation in the delay of the powder train.  With some Russian grenades, users were given a box of various delay fuses, including 0, 5, and 13 second variations -- the 0 second fuses were for tripwire detonation traps.  Hilarity ensued when people mixed up the fuses.
 
-The generally accepted technique is to pull pin and throw immediately.  In some cases, this is not desirable because the enemy can observe the grenade being readied, and may be able to throw it back.   Due to the variability of the grenade fuses (sometimes less than 3 seconds!), "cooking off" grenades is not something you should really do.  The USMC publication MCWP 3-35 describes it as the "least preferred technique", although it is something documented as an option.  The purpose is to deny the enemy the ability to throw back or kick away the grenade before it detonates.  The same thing can be achieved by throwing the grenade at high speed or in an erratic pattern (like bouncing it off something).  The bouncing technique can be trained with live grenades; the cooking off (for 1-2 seconds) can only be used in actual combat, not in training.
+The generally accepted technique is to pull pin and throw immediately.  In some cases, this is not desirable because the enemy can observe the grenade being readied, and may be able to throw it back.   Due to the variability of the grenade fuses (sometimes less than 3 seconds!), \"cooking off\" grenades is not something you should really do.  The USMC publication MCWP 3-35 describes it as the \"least preferred technique\", although it is something documented as an option.  The purpose is to deny the enemy the ability to throw back or kick away the grenade before it detonates.  The same thing can be achieved by throwing the grenade at high speed or in an erratic pattern (like bouncing it off something).  The bouncing technique can be trained with live grenades; the cooking off (for 1-2 seconds) can only be used in actual combat, not in training.
 
-  Fragmentation grenades in general are "defensive grenades"; they are thrown from cover or other protected positions, or into holes or structures.  The US models have a lethal radius of 5m, casualty radius of 15m, but can produce injury at a great radius, so they aren't thrown in front of advancing troops.")
+  Fragmentation grenades in general are \"defensive grenades\"; they are thrown from cover or other protected positions, or into holes or structures.  The US models have a lethal radius of 5m, casualty radius of 15m, but can produce injury at a great radius, so they aren't thrown in front of advancing troops.")
 q2 = Question.create(title: "Why are so many people content with just earning a salary and working 9-6 their entire adult life?", description: "")
 a3 = Answer.create(body: "I'm fabulously wealthy by any reasonable definition of the word.
 
@@ -96,7 +96,7 @@ There's an inverse correlation between contentedness and drive.
 
 Here's some background:
 
-When you make enough money to live a comfortable life, it's not worth the risk or time exchange or both for some to "change the world" in the sense that you mean.
+When you make enough money to live a comfortable life, it's not worth the risk or time exchange or both for some to \"change the world\" in the sense that you mean.
 
 Most people are content with the status quo. That's human nature. That's how societies work and become successful. There's a shared set of goals and values and if you've achieved those in your society, a sense of belonging and pride tend to ensue.  Contentedness follows.
 
@@ -161,20 +161,20 @@ This didn't work; the Turks would throw the slogans away and enjoy the cigarette
 q1 = Question.create(title: "What are the signs of an ultra smart person playing dumb?", description: "")
 a12 = Answer.create(body: "The brief flash of amusement in response to a quip or allusion that most people wouldn't understand.  Even someone with a decent poker face has a hard time suppressing the smile/laugh/eye crinkle response to something funny and unexpected.
 
-Humor by definition has an element of surprise and our reaction to it is quick.  It takes much longer to analyze the level of the joke and decide, "Should I laugh?  Was that a joke anyone would get or one only a really smart person would get?"
+Humor by definition has an element of surprise and our reaction to it is quick.  It takes much longer to analyze the level of the joke and decide, \"Should I laugh?  Was that a joke anyone would get or one only a really smart person would get?\"
 
 Vocabulary is another clue.  If you vary your vocabulary level and you get delayed incomprehension, it's probably fake.  Try inserting a bogus word into a conversation sometime where the context gives no clue as to the meaning.  People's faces immediately get a blank look as they try to process it and wait for some clue to the meaning in what comes after it.
 
-If, instead of a fake, it's an arcane term only someone with a large vocabulary would know, it will take quite a bit of extra time for a person who does know the word to process the content and do the meta-analysis to realize, "Oh, wait, I'm not supposed to know what that word means.  I'd better pretend I don't know it."
+If, instead of a fake, it's an arcane term only someone with a large vocabulary would know, it will take quite a bit of extra time for a person who does know the word to process the content and do the meta-analysis to realize, \"Oh, wait, I\'m not supposed to know what that word means.  I'd better pretend I don't know it.\"
 
-Wm Homer pointed out another one:  the person who doesn't argue with a self-proclaimed authority, but instead apologetically asks a 'naive' question that is perfectly designed to expose the fallacy in the logic or the faulty premise behind the argument.
-And, as Josh Manson pointed out, simply not falling into common traps can be a big clue.  Over time, the people who don't say anything to indicate that they're especially smart, but never say anything dumb or get stuck on the losing side of an argument, are probably smarter than they want you to think they are.")
+Wm Homer pointed out another one:  the person who doesn\'t argue with a self-proclaimed authority, but instead apologetically asks a 'naive' question that is perfectly designed to expose the fallacy in the logic or the faulty premise behind the argument.
+And, as Josh Manson pointed out, simply not falling into common traps can be a big clue.  Over time, the people who don\'t say anything to indicate that they\'re especially smart, but never say anything dumb or get stuck on the losing side of an argument, are probably smarter than they want you to think they are.")
 
 a13 = Answer.create(body: "Silence.
 Stealth intellect has a slack expression, does not react, does not laugh, does not challenge, does not question.
 
 It sits quietly, like a coiled snake, soaking up everyone and everything, until it makes a sudden move at the time of its choosing.  You don't want to be in the path of that strike.")
-q1 = Question.create(title: "I got a job offer telling me to "pick my salary". How do I do that?", description: "This is for a Series B stealth startup, if it matters.  I see a wide range of salaries, so I have no idea what I'm supposed to tell them.")
+q1 = Question.create(title: "I got a job offer telling me to \"pick my salary\". How do I do that?", description: "This is for a Series B stealth startup, if it matters.  I see a wide range of salaries, so I have no idea what I'm supposed to tell them.")
 a14 = Answer.create(body: "Look in the mirror and start listing off salaries, starting with the one you would first expect and then start increasing it.
 
 $100,000.  $120,000.  $150,000.  $175,000.  etc.
@@ -189,23 +189,23 @@ The goal is to get a conversation going that includes specific numbers, without 
 
   There are many techniques to get them to name the figure first. The one you use will depend on the specific circumstances.
 
-  For example, are you new to the area? If so, use that fact by saying, "I'm unsure what a position like this would normally pay in this town, so any figure I mentioned would be a shot in the dark. What range did you have in mind?"
+  For example, are you new to the area? If so, use that fact by saying, \"I\'m unsure what a position like this would normally pay in this town, so any figure I mentioned would be a shot in the dark. What range did you have in mind?\"
 
-  Or if you know their competitors also have open positions, you could say, "The salary range I'm seeing among your competitors is pretty broad, and I really want to fit in with your situation here. What were you thinking?"
+  Or if you know their competitors also have open positions, you could say, \"The salary range I\'m seeing among your competitors is pretty broad, and I really want to fit in with your situation here. What were you thinking?\"
 
-  There's the frank approach, "I don't know what this job is worth to you, but I do know I really want to work here, so what would it take for me to fit in without breaking the bank?"
+  There\'s the frank approach, \"I don\'t know what this job is worth to you, but I do know I really want to work here, so what would it take for me to fit in without breaking the bank?\"
 
-    You can also name a non-number, for example, "I'm not sure what this position is worth to you, but I'm certainly not going to ask for $XXX." Make that number extremely high, but not so high that they immediately realize you know it's altogether unrealistic. The number will get into their head, and it will frame the rest of the conversation, and they'll feel relief later if you name another figure that is lower.
+    You can also name a non-number, for example, \"I\'m not sure what this position is worth to you, but I'm certainly not going to ask for $XXX.\" Make that number extremely high, but not so high that they immediately realize you know it's altogether unrealistic. The number will get into their head, and it will frame the rest of the conversation, and they'll feel relief later if you name another figure that is lower.
 
     So, lots of ways to avoid putting a serious number on the table first...use your imagination and tailor it to the actual circumstances.
 
-    If they're bad negotiators, this is all it will take to get them to name a figure. Of course, they'll name one at the low end of their range, so you should counteroffer significantly higher (usually 10% to 20%) while showing plenty of enthusiasm about their company and the position.
+    If they're bad negotiators, this is all it will take to get them to name a figure. Of course, they\'ll name one at the low end of their range, so you should counteroffer significantly higher (usually 10% to 20%) while showing plenty of enthusiasm about their company and the position.
 
-    If they're good negotiators, they'll push back in some way to get you to name the figure. Try at least one more time to put it back on them. ("Seriously, I have NO idea what this position pays in this town, so I'd really appreciate it if you'd just fill me in.")
+    If they\'re good negotiators, they\'ll push back in some way to get you to name the figure. Try at least one more time to put it back on them. (\"Seriously, I have NO idea what this position pays in this town, so I\'d really appreciate it if you'd just fill me in.\")
 
-    Often at this point an understanding begins to develop, with both of you tacitly realizing what the other one is doing. If so, that will mean they'll view you as a good negotiator, a very highly valued business skill in any industry, which means one more check mark on the "hire" column beside your name. So even if you do end up naming a number first, you will have garnered some respect.
+    Often at this point an understanding begins to develop, with both of you tacitly realizing what the other one is doing. If so, that will mean they'll view you as a good negotiator, a very highly valued business skill in any industry, which means one more check mark on the \"hire\" column beside your name. So even if you do end up naming a number first, you will have garnered some respect.
 
-    And if you do end up having to name a figure first, THEN you name something very high (just a little below the "non-number" mentioned above if you used that approach, or else pick the highest number you can reasonably imagine getting paid for the position, and add about 20%). Suggest that figure with a smile (to let them know you realize it might be a tad outrageous) and say something like, "Since you're insisting that I take a shot in the dark here...how about $XXX?." They might laugh, or frown, and try to get you to suggest another number without countering, but at that point you should dig in your heels and insist on a counter offer. ("Really? You think $XXX is too much? Hmm... What did you have in mind?") Make it clear that you feel you complied with their request, and they'll probably go ahead and name a figure. Then the real discussion can begin.
+    And if you do end up having to name a figure first, THEN you name something very high (just a little below the \"non-number\" mentioned above if you used that approach, or else pick the highest number you can reasonably imagine getting paid for the position, and add about 20%). Suggest that figure with a smile (to let them know you realize it might be a tad outrageous) and say something like, \"Since you\'re insisting that I take a shot in the dark here...how about $XXX?.\" They might laugh, or frown, and try to get you to suggest another number without countering, but at that point you should dig in your heels and insist on a counter offer. (\"Really? You think $XXX is too much? Hmm... What did you have in mind?\") Make it clear that you feel you complied with their request, and they\'ll probably go ahead and name a figure. Then the real discussion can begin.
 
       Good luck!")
 q1 = Question.create(title: "What is the most un-American thing about America?", description: "")
@@ -234,28 +234,28 @@ a17 = Answer.create(body: "I can't really speak for the other people out there, 
 
 The money, knowing that my resume would be more or less set for life, the high-profile company - all of that usual stuff sounds great. It certainly influences my desire, I won't deny that. But none of that matters quite as much to me.
 
-The biggest thing for me is validation. If I had to describe my personality in three words, I'd use "stubborn", "extreme", and "insecure". I've got to be one of the most insecure people that I know. On top of that, I'm no genius. Far from it, probably. I'm not one of those people who's been programming since before he could walk. My parents never worked at IBM (they're not even engineers at all). I've never even seen an Altair. I didn't write my first line of code until I entered university, and I still don't know if I'm any good as a software engineer.
+The biggest thing for me is validation. If I had to describe my personality in three words, I'd use \"stubborn\", \"extreme\", and \"insecure\". I've got to be one of the most insecure people that I know. On top of that, I'm no genius. Far from it, probably. I'm not one of those people who's been programming since before he could walk. My parents never worked at IBM (they're not even engineers at all). I've never even seen an Altair. I didn't write my first line of code until I entered university, and I still don't know if I'm any good as a software engineer.
 
-Whether or not Google deserves the status it holds, it's quite clearly a top-tier company for top-tier engineers. Being offered a SWE position by Google would finally provide me with a real, top-level triumph, something to point to and say "Look at yourself, David! You're worth something!".
+Whether or not Google deserves the status it holds, it's quite clearly a top-tier company for top-tier engineers. Being offered a SWE position by Google would finally provide me with a real, top-level triumph, something to point to and say \"Look at yourself, David! You\'re worth something!\".
 
-Unfortunately, I don't ever see this happening (and even if it did, I'd probably find some way to rob myself of the accomplishment). Quite frankly, I'm probably not Google-caliber, and I don't know that I ever will be. But I've tried, failed, and I'm going to keep trying. I'm going to keep trying because for me, what's at stake is something much, much deeper than money or prestige. What's at stake is my self-worth.
+Unfortunately, I don\'t ever see this happening (and even if it did, I\'d probably find some way to rob myself of the accomplishment). Quite frankly, I\'m probably not Google-caliber, and I don\'t know that I ever will be. But I\'ve tried, failed, and I\'m going to keep trying. I\'m going to keep trying because for me, what\'s at stake is something much, much deeper than money or prestige. What\'s at stake is my self-worth.
 
-So, there you have it. A bit rambling and perhaps a bit tangential, but that's what Google means to me.")
+So, there you have it. A bit rambling and perhaps a bit tangential, but that\'s what Google means to me.")
 q1 = Question.create(title: "What are the best kept secrets of great programmers?", description: "")
 a18 = Answer.create(body: "1. Never reveal all that you know.
 
 
 OK, seriously this time.  I think there are really a few things that distinguish great programmers.
-Know the concepts.  Solving a problem via memory or pattern recognition is much faster than solving it by reason alone.  If you've solved a similar problem before, you'll be able to recall that solution intuitively.  Failing that, if you at least keep up with current research and projects related to your own you'll have a much better idea where to turn for inspiration.  Solving a problem "automatically" might seem like magic to others, but it's really an application of "practice practice practice" as Miguel Paraz suggests.
-Know the tools.  This is not an end in itself, but a way to maintain "flow" while programming.  Every time you have to think about how to make your editor or version-control system or debugger do what you want, it bumps you out of your higher-level thought process.  These "micro-interruptions" are small, but they add up quickly.  People who learn their tools, practice using their tools, and automate things that the tools can't do by themselves can easily be several times as productive as those who do none of those things.
-  Manage time.  Again it comes back to flow.  If you want to write code, write code.  If you want to review a bunch of patches, review a bunch of patches.  If you want to brainstorm on new algorithms . . . you get the idea.  Don't try to do all three together, and certainly don't interrupt yourself with email or IRC or Twitter or Quora.  ;)  Get your mind set to do one thing, then do that thing for a good block of time before you switch to doing something else.
-    Prioritize.  This is the area where I constantly see people fail.  Every problem worth tackling has many facets.  Often, solving one part of the problem will make solving the others easier.  Therefore, getting the order right really matters.  I'm afraid there's no simple answer for how to recognize that order, but as you gain more experience within a problem domain - practice again - you'll develop a set of heuristics that will guide you.
-    Reuse everything.  Reuse ideas.  Reuse code.  Every time you turn a new problem into a problem you already know how to solve - and computing is full of such opportunities - you can save time.  Don't worry if the transformed solution isn't absolutely perfect for the current problem.  You can refine later if you really need to, and most often you'll find that you're better off moving on to the next problem.
-    A lot of these really come down to efficiency.  As you move through more problems per day, you'll gain more experience per day, which will let you move through more problems per day, and so on.  It's a feedback loop; once you get on its good side, your effectiveness (and value) will increase drastically.")
-q1 = Question.create(title: "Why are most cars built to reach speeds that are "not allowed" in most cases?", description: "")
-a19 = Answer.create(body: "There is a good, practical reason that I don't see mentioned here yet.
+Know the concepts.  Solving a problem via memory or pattern recognition is much faster than solving it by reason alone.  If you\'ve solved a similar problem before, you\'ll be able to recall that solution intuitively.  Failing that, if you at least keep up with current research and projects related to your own you\'ll have a much better idea where to turn for inspiration.  Solving a problem \"automatically\" might seem like magic to others, but it\'s really an application of \"practice practice practice\" as Miguel Paraz suggests.
+Know the tools.  This is not an end in itself, but a way to maintain \"flow\" while programming.  Every time you have to think about how to make your editor or version-control system or debugger do what you want, it bumps you out of your higher-level thought process.  These \"micro-interruptions\" are small, but they add up quickly.  People who learn their tools, practice using their tools, and automate things that the tools can\'t do by themselves can easily be several times as productive as those who do none of those things.
+  Manage time.  Again it comes back to flow.  If you want to write code, write code.  If you want to review a bunch of patches, review a bunch of patches.  If you want to brainstorm on new algorithms . . . you get the idea.  Don\'t try to do all three together, and certainly don\'t interrupt yourself with email or IRC or Twitter or Quora.  ;)  Get your mind set to do one thing, then do that thing for a good block of time before you switch to doing something else.
+    Prioritize.  This is the area where I constantly see people fail.  Every problem worth tackling has many facets.  Often, solving one part of the problem will make solving the others easier.  Therefore, getting the order right really matters.  I\'m afraid there\'s no simple answer for how to recognize that order, but as you gain more experience within a problem domain - practice again - you\'ll develop a set of heuristics that will guide you.
+    Reuse everything.  Reuse ideas.  Reuse code.  Every time you turn a new problem into a problem you already know how to solve - and computing is full of such opportunities - you can save time.  Don\'t worry if the transformed solution isn\'t absolutely perfect for the current problem.  You can refine later if you really need to, and most often you\'ll find that you\'re better off moving on to the next problem.
+    A lot of these really come down to efficiency.  As you move through more problems per day, you\'ll gain more experience per day, which will let you move through more problems per day, and so on.  It\'s a feedback loop; once you get on its good side, your effectiveness (and value) will increase drastically.")
+q1 = Question.create(title: "Why are most cars built to reach speeds that are \"not allowed\" in most cases?", description: "")
+a19 = Answer.create(body: "There is a good, practical reason that I don\'t see mentioned here yet.
 
-Say you're driving down the road at precisely the speed limit like the law-abiding citizen you are. The 18-wheeler in the next lane starts to merge into your lane--right into the spot you're currently occupying.
+Say you\'re driving down the road at precisely the speed limit like the law-abiding citizen you are. The 18-wheeler in the next lane starts to merge into your lane--right into the spot you're currently occupying.
 
 Do you violate the speed limit, put the pedal to the metal, and get out of there; or do you die in a terrible highway accident?")
 a20 = Answer.create(body: "The highest speed I've ever driven on a public roadway was just short of 100 in a Dodge Colt, outrunning a tornado.  I was passed by a state trooper doing the same thing, except his more powerful vehicle let him go considerably faster; I figure he was doing about 120.
@@ -271,24 +271,24 @@ Stories will trickle back from relatives who moved a long time ago, mostly the p
 I suppose this is true for a number of teenagers and children these days, not to mention young adults, some baby boomers... well, truthfully a lot of people can't lift a hammer. The explanations of how to use a digging hoe were extensive, and if we were slow, we'd need to be shown a demonstration. Blisters earned you some laughs from callus-handed kids.
 - We largely don't kill animals.
 This surprised me, since we obviously do, but the explanation turns out to come from NGOs and other servicemen, who would often be vegetarian or express a refusal to kill or harm living livestock for food. Girls in my group told a man not to kill a snake, and he gave them a quizzical look before pounding it to smithereens with a shovel. In rural areas, the Americans they saw were very much not in the mood to see blood.
-  - The "hamburger" is the primary source of sustenance for Americans.
-  Not having access to ham, or not aware that it's actually the relatively rare meat "beef," most restaurants would serve Laotian hamburgers made completely vegetarian (see above) with two pieces of toast, cabbage, onion, and a slice of tomato. I also saw this in Dali Prefecture, China. They usually managed to get fries right though.
-  - Anything that starts with "American" is state-run.
+  - The \"hamburger\" is the primary source of sustenance for Americans.
+  Not having access to ham, or not aware that it's actually the relatively rare meat \"beef,\" most restaurants would serve Laotian hamburgers made completely vegetarian (see above) with two pieces of toast, cabbage, onion, and a slice of tomato. I also saw this in Dali Prefecture, China. They usually managed to get fries right though.
+  - Anything that starts with \"American\" is state-run.
   This was always a problem for some reason. For instance, I go to American University and shop at American Eagle. After nodding and some weird responses, turns out the impression was that I was a state worker and that my clothes were made by government companies.
   - America is black and white.
   In Laos, they were surprised by my friend who is Korean-American. They repeatedly attempted to speak Chinese to him, and when we explained we only spoke English, they couldn't believe that he was from Illinois. In China, they weren't as unaware, but they did have an insulting word for him.
   - We're all very religious.
-  Both of our guides in Laos and China told me that they were always surprised by how much we gave tribute to shrines. I always bow to the Buddha before entering a temple out of respect, and after a while my guide asked "So, you are very Buddhist?" He then told me that a lot of tourists did the same and he found it strange, since many of his friends were atheist or Christian.
+  Both of our guides in Laos and China told me that they were always surprised by how much we gave tribute to shrines. I always bow to the Buddha before entering a temple out of respect, and after a while my guide asked \"So, you are very Buddhist?\" He then told me that a lot of tourists did the same and he found it strange, since many of his friends were atheist or Christian.
   - The alcohol age is much lower.
   Like, 10 years lower.
   - Justin Bieber is American.
   This is just an insult.")
-a22 = Answer.create(body: "That Americans don't like foreigners.  I can think of nothing further than the truth.  In fact, annoyingly, Americans love when people come here, it almost inflates our "everybody wants to come here" ego.  There are racist parts of the country that don't want "non-whites", but really, despite those people (who -- frankly -- exist everywhere), Americans love people from around the world (despite the fact that we have no clue where you're from and couldn't ever find it on a map).")
+a22 = Answer.create(body: "That Americans don't like foreigners.  I can think of nothing further than the truth.  In fact, annoyingly, Americans love when people come here, it almost inflates our \"everybody wants to come here\" ego.  There are racist parts of the country that don't want \"non-whites\", but really, despite those people (who -- frankly -- exist everywhere), Americans love people from around the world (despite the fact that we have no clue where you're from and couldn't ever find it on a map).")
 q1 = Question.create(title: "What habits do happy couples have?", description: "")
 a23 = Answer.create(body: "I'm a member of a happy couple. My wife and I...
 
 Keep separate bank accounts. When we share an expense, like the rent, we both contribute. Some people are astounded (even offended) that we do this, but in 18 years of being together, we've yet to have a single fight over money.
-  Play together. We play traditional games, like chess, but more often we talk in silly voices, use socks as puppets, etc. We have a pantheon of characters that "live with us."
+  Play together. We play traditional games, like chess, but more often we talk in silly voices, use socks as puppets, etc. We have a pantheon of characters that \"live with us.\"
   Keep in touch throughout the day. While at work, every couple of hours, we check in via email, phone or IM.
   Spend a lot of our alone time together. We both love sitting on the sofa, doing our own thing. My wife may watch TV while I post answers on Quora, or she may do a crossword puzzle while I read. It's nice to be in the same room together without any expectation that one of us has to amuse the other.
     Work on projects together. We run a theatre company, in which she acts and I direct. So our major hobby time is spent together, building stuff together. We do the same with home improvements, cooking, etc.
@@ -297,7 +297,7 @@ Keep separate bank accounts. When we share an expense, like the rent, we both co
 q1 = Question.create(title: "What are some of the best moments of humanity?", description: "")
 a24 = Answer.create(body: "There was this British game show called the Golden Balls. The final round of this game was called Split or Steal. The rules of the game were:
 
-After five balls have been won, the contestants make one last decision to determine the final jackpot division. Each contestant chooses one of two final golden balls, one with "Split" printed on the cash background inside it, and one with "Steal" printed on the killer background inside it.
+After five balls have been won, the contestants make one last decision to determine the final jackpot division. Each contestant chooses one of two final golden balls, one with \"Split\" printed on the cash background inside it, and one with \"Steal\" printed on the killer background inside it.
 If both contestants choose a Split ball, the jackpot is split equally between them and they both go home with half the money they've won.
 If one contestant chooses a Split ball and the other chooses a Steal ball, the Stealer goes home with all the money and the Splitter goes home empty-handed.
 If both contestants choose Steal balls, they both go home empty-handed.
@@ -310,7 +310,7 @@ q1 = Question.create(title: "Is my LinkedIn profile with my picture in a suit an
 
 But my Linkedin profile has my picture with suit and tie. Wondering if that will send the wrong messages or create a perception that I am more fit for big corporations. And startups and mid-size places will avoid my profile.")
 a25 = Answer.create(body: "This won't be a popular answer, but if you are talking about technology startups in Silicon Valley, then the answer is yes, you probably are hurting your chances.
-Silicon Valley has a peculiar and yet virulent bias against the suit.  It's even a euphemism for an overly-conservative, corporate-buzzword-speaking, pointy-haired-Dilbert-boss.  No one wants to work with an "empty suit".  Software engineers help strongly define the culture in Silicon Valley, and they overwhelmingly don't wear suits, or in general they don't want to work with people who do.
+Silicon Valley has a peculiar and yet virulent bias against the suit.  It's even a euphemism for an overly-conservative, corporate-buzzword-speaking, pointy-haired-Dilbert-boss.  No one wants to work with an \"empty suit\".  Software engineers help strongly define the culture in Silicon Valley, and they overwhelmingly don't wear suits, or in general they don't want to work with people who do.
 
 There are exceptions (Siebel was a notable example of a culture that emphasized the suit).  But you will even find a large companies, unless you are interviewing for a position in sales & finance, that you will hurt your chances in a suit.
 
@@ -330,8 +330,8 @@ a26 = Answer.create(body: "Because you can pay them less and they will often put
 
 Basically there are a lot of fresh graduates who are so excited by the idea of working for a name software company that they will put up with anything.")
 q1 = Question.create(title: "What are some of the most memorable Game of Thrones quotes?", description: "")
-a27 = Answer.create(body: "Bran- "Can a man still be brave when he's afraid?"
-Eddard - "That's the only time a man can be brave."")
+a27 = Answer.create(body: "Bran- \"Can a man still be brave when he's afraid?\"
+Eddard - \"That\'s the only time a man can be brave.\"")
 a28 = Answer.create(body: "Varys - “Power resides only where men believe it resides. [...] A shadow on the  wall, yet shadows can kill. And ofttimes a very small man can cast a  very large shadow.”")
 a29 = Answer.create(body: "Some people will always need help. That doesn't mean they are not worth helping. - Meera Reed.")
 a30 = Answer.create(body: "Truly words to live by...
