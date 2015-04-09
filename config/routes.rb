@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   namespace :api, defaults: {format: :json} do
     resources :questions, only: [:show, :create, :index]
     resources :answers, only: [:create, :show, :destroy, :update]
+    resources :subscriptions, only: [:create, :destroy]
   end
 end
