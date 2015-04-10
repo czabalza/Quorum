@@ -1,8 +1,6 @@
-<% question.tags().each(function (tag) { %>
-  <div>
-    <%= tag.escape("topic") %>
-  </div>
-<% }) %>
+<div id="question-index-tags">
+
+</div>
 <a href=<%= "#questions/" + question.id %>><%= question.escape('title') %></a>
 <br>
 <div id='new-answer-on-q-index'>

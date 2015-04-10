@@ -3,8 +3,8 @@ Quorum.Views.QuestionsIndex = Backbone.CompositeView.extend({
   className: 'questions-index',
 
   initialize: function () {
-    this.listenTo(this.collection, "sync add", this.render);
-    // this.listenTo(this.collection, "add", this.addQuestionItem);
+    this.listenTo(this.collection, "sync", this.render);
+    this.listenTo(this.collection, "add", this.addQuestionItem);
     // this.listenTo(this.collection, )
   },
 
@@ -18,6 +18,7 @@ Quorum.Views.QuestionsIndex = Backbone.CompositeView.extend({
   },
 
   addQuestionItem: function (questionItem) {
+    // questionItem.fetch();
     var view = new Quorum.Views.QuestionIndexItem({model: questionItem});
     this.addSubview("#question-index-items", view);
   }

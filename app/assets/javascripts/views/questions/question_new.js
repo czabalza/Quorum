@@ -20,7 +20,6 @@ Quorum.Views.QuestionNew = Backbone.CompositeView.extend({
     event.preventDefault();
     var $form = $(event.currentTarget.parentElement);
     var data = $form.serializeJSON();
-    debugger
     this.model.set(data);
     this.model.save([], {
       success: function (question) {

@@ -6,6 +6,7 @@ Quorum.Views.AnswerShow = Backbone.CompositeView.extend({
   },
 
   render: function () {
+    debugger
     var content = this.template({answer: this.model});
     this.$el.html(content);
     return this;

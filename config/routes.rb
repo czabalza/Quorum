@@ -9,5 +9,6 @@ Rails.application.routes.draw do
     resources :answers, only: [:create, :show, :destroy, :update]
     resources :subscriptions, only: [:create, :destroy]
     resources :tags, only: :index
+    resources :taggings, only: :index
   end
 end

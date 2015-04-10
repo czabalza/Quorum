@@ -7,6 +7,7 @@ Quorum.Models.Question = Backbone.Model.extend({
       delete response.answers;
     }
     if (response.tags) {
+      // debugger
       this.tags().set(response.tags);
       delete response.tags;
     }
@@ -24,6 +25,7 @@ Quorum.Models.Question = Backbone.Model.extend({
     if (!this._tags) {
       this._tags = new Quorum.Collections.Tags();
     }
+    // debugger
 
     return this._tags;
   }

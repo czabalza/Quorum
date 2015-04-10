@@ -15,7 +15,7 @@ Quorum.Views.QuestionShow = Backbone.CompositeView.extend({
   render: function () {
     var content = this.template({question: this.model});
     this.$el.html(content);
-    this.attachSubviews();
+    this.answers.each(this.addAnswer.bind(this));
     return this;
   },
 
