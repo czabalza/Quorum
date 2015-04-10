@@ -1,5 +1,5 @@
 u1 = User.create(name: "Barack Obama", email: "bobama@usa.gov", password: "password")
-u2 = User.create(name: "Hodor", email: "hodor@hodor.hodor", password: "hodor")
+u2 = User.create(name: "Hodor", email: "hodor@hodor.hodor", password: "hodorhodor")
 u3 = User.create(name: "Jo Rowling", email: "jkrowling@gmail.com", password: "password")
 u4 = User.create(name: "George Bush", email: "dubya@usa.gov", password: "password")
 u5 = User.create(name: "Stone Cold Steve Austin", email: "i<3beer@gmail.com", password: "password")
@@ -53,8 +53,8 @@ tag34 = Tag.create(topic: "The Universe")
 tag35 = Tag.create(topic: "Sports")
 tag36 = Tag.create(topic: "Love")
 tag37 = Tag.create(topic: "Parenting")
-# tag38 = Tag.create(topic: "")
-# tag39 = Tag.create(topic: "")
+tag38 = Tag.create(topic: "Careers")
+tag39 = Tag.create(topic: "America")
 # tag40 = Tag.create(topic: "")
 # tag41 = Tag.create(topic: "")
 # tag42 = Tag.create(topic: "")
@@ -387,10 +387,395 @@ tag37 = Tag.create(topic: "Parenting")
 #       This way he will feel proud and valued, a contributor and a useful worker. And he will gain an understanding of work and all kinds of good things are imprinted in his mind.
 #
 #       Get photos taken so he will see himself helping you at work even when he was little. Frame a photo. Put it in your office so it is there whenever he visits. His first real job is to learn what you are like at work.  Capture his moment of discovery if you can work it into his workday, and yours.")
-# q17 = Question.create(title: "", description: "")
-# q18 = Question.create(title: "", description: "")
-# q19 = Question.create(title: "", description: "")
-# q20 = Question.create(title: "", description: "")
-# q21 = Question.create(title: "", description: "")
-# q22 = Question.create(title: "", description: "")
-# q23 = Question.create(title: "", description: "")
+# q17 = Question.create(title: "What would happen if I jumped in a pool full of liquor?", description: "")
+# a35 = Answer.create(body: "You would find it much harder than usual to swim and may drown in an unusually horrible way, for two reasons:
+#
+# 1) Distilled liquors have quite a bit lower density (and thus less buoyancy) than a swimming pool because alcohol is lighter than water. You cannot float in 80 proof alcohol -- even with lungs fully inflated, your body is denser than the liquor and you will sink if you stop swimming.
+#
+# 2) The fumes will probably cause you to choke and cough. It will be extremely difficult to get a good breath of air, and what you do inhale may cause you to get drunk to the point of passing out. Then you will pass out, inhale liquid, and die. What I don't know is whether the asphyxiation or alcohol poisoning will kill you first.")
+# q18 = Question.create(title: "Is it possible to buy a country?", description: "")
+# a36 = Answer.create(body: "\"Sealand\" is a micro-nation that was rumored to be for sale a few years ago, with an asking price of ~$900 million.
+# The country is an anti-aircraft platform 7 miles off the coast of England.  The platform was abandoned for years and claimed by Paddy Roy Bates, future Prince of Sealand, in 1967.
+#
+# Sealand became a country in the traditional manner - through conflict with other nations.  When the British Navy was sent to clear Prince Bates and his family off the platform, Sealand fired warning shots at the ship and said they were violating their sovereign waters.
+#
+# England responded by informing the UN that they were extending the boundary of their territorial waters from five miles to ten in order to encompass Sealand and end the dispute.  Prince Bates responded by informing the UN that he was also extending the boundaries of his territorial waters, which now included Suffolk.
+#
+# Britain gave up on this nuisance for a while, but in the meantime, Sealand was taken over by a group of German drug dealers, one of which was a citizen of Sealand.  Paddy Roy Bates and some old royal marine buddies \"borrowed\" some royal navy equipment and retook Sealand by force.  They exiled the would-be-usurpers, but held the German/Sealand citizen for treason and announced that he would be executed.
+#
+# Germany protested to Britain, who expressed their own frustration, and Germany was forced to send a diplomatic delegation to Sealand, which sucessfully negotiated a return of their citizen.  This action gave Sealand defacto nation status.
+#
+# A few years ago, there was a fire on the platform and a sale was considered.")
+# a37 = Answer.create(body: "Not directly. Governments are created to manage the affairs of PEOPLE and most countries don't allow even the richest of people to own other people.
+#
+# But a rich person CAN likely appoint themselves king, or simply get laws passed that favor him tremendously.")
+# q19 = Question.create(title: "Why are email scams written in broken English?", description: "")
+# a38= Answer.create(body: "Like everyone else, I, too, always assumed that it was because either they were idiots or non-native English speakers. But I have very recently learned that is not the case. Indeed, the real answer is one of the more astonishing (at least to me) things I've heard in quite some time!
+#
+# It turns out that the dead giveaways of \"spamese\" are completely deliberate and carefully calibrated. Huh? Why? Because very few people of the type who frequent Quorum would be fooled for ten seconds by these things. And guess what? Quorum readers are the ANTI-audience for them!
+#
+# Instead, the obvious giveaways are used as a *pre-qualifier*, to ensure with the least possible effort that the ONLY people who respond to the scammers' initial mass mailings (and therefore have to be brought along individually during the later stages) are the absolutely most gullible, ignorant, susceptible, suckers they can find.
+#
+# Absolutely brilliant!")
+# a39 = Answer.create(body: "Writing in broken english makes you appear unsophisticated to the reader.
+#
+# The people who respond to these spam emails are generally both naive and greedy. The apparent unsophistication is a feature, as it helps the mark feel superior and helps fuel his or her greed.")
+# q20 = Question.create(title: "What are the weirdest things flight attendants have seen in their line of duty?", description: "")
+# a40 = Answer.create(body: "Well. I had a friend who worked as a flight attendant and she got into a mild argument with a guy who insisted on having EVERYTHING that was free or complimentary on the flight. He was highly annoying and constantly asked crew for stuff. If he saw someone next to him get something, he wanted it too.
+#
+# At one point during the flight a lady asked for a sanitary pad to help her with an 'emergency' situation. He insisted he should have one too - cos you know, it's free, right?
+#
+# My friend tried to reason with him. I'm not sure if his English was 100%, because he insisted again and seemed to assume the pad a sleep mask.
+# Upon receiving his sanitary pad he proceeded to peel the paper backing off and expose the sticky side; he stuck the thing over his eyes and soon afterwards fell asleep...
+#
+# THE END.")
+# a41 = Answer.create(body: "Sex related
+# A guy asking me if he could masturbate even though the seat belt sign was on;
+# A guy browsing his porn magazine with a kid on the seat next to him (magazine confiscated, kid displaced, guy "lectured");
+# A lady in her sixties make out with her thirty years or so neighbour (the victim was willing);
+# Countless couples thinking they were invisible...
+#
+# Health
+# Alzheimers freaking out;
+# Very serious conditions you wouldn't want to see (flesh eating diseases for instance);
+# Heart attacks;
+# and my personal worst: a quadraplegic back from Africa, with the subsequent diarrhea, and his chaperon not lifting a finger, so we did what had to be done, and made sure the chaperon never boards one of our flights again.
+#
+# Bizarre
+# A lady with a lead blouse, afraid of radioactivity;
+# A Nigerian with a freshly cut antelope's head (it started dripping from the overhead bunk);
+# Another Nigerian with a car engine in the cabin;
+# A Vietnamese with a poorly sealed gallon sized bottle of nuoc mam sauce (also dripping from above);
+# Countless men, travelling with their loved one, having benefitted for x or y reason of one upgrade, therefore travelling business or first while madam stays in coach (the Frenchman in me is appalled);
+# Countless everyday freaks.
+#
+# Plain bad taste
+# Drunken Russian sailors;
+# People ignoring what paper and flush are (ewwww)
+# People walking barefoot on board, even in the toilets (ewwww2)
+# Parents believing we are their toddler's nanny, 100%;
+#
+# Celebrity freaks
+# Mariah Carey (\"You won\'t upgrade my entire staff in first class, I\'ll harass your crew\").
+# Naomi Campbell (\"Don\'t you know who I am?!\")
+# Some of my country\'s politicians (most of them were weird on board)
+#
+# Et cetera...")
+# a42 = Answer.create(body: "Ok, this is not strictly speaking a weirdest thing a flight attendant has seen but its still a good story. The story relates to a friend of a friend who is a senior flight attendant on a US airline.
+#
+# One of the junior cabin crew was having difficulty with a passenger. The passenger was insisting that her dinner contained a bad potato. The crew member had explained several times that there were no more dinners left to be served and to just leave the potato to one side, and not eat it.
+#
+# As the passenger got more vociferous the crew called over our senior flight attendant to appease the passenger. \"What seems to be the problem madam\" he said. The lady replied in disgust while pointing at the potato.... \"THIS is a BAD Potato!\". Whereupon the flight attendant looked at the lady, then at the potato. He picked up the potato, waved an admonishing finger at it and in his best scolding teacher voice said.... \"Bad potato, BAD Potato, BAAD POTATO!\". He then placed the potato gingerly back on the ladys plate and said, \"There you are Madam, I don\'t think you will have trouble from that potato again\", then walked away.
+#
+# Genius!")
+# a43 = Answer.create(body: "The crew is preparing for takeoff. The flight attendants are going through the aisles closing all the overhead compartments and making sure everyone is seated.
+# On their way back one of the attendants notices that one of the compartments is still open. She shuts it down again.
+#
+# Just before takeoff she notices the same compartment was opened again. She goes there to close it one last time.
+#
+# When she does, the lady sitting there gets up and yells at her:
+# \"Excuse me, but how do you expect my baby to breathe with the compartment closed???!?!\"")
+# a44 = Answer.create(body: "Many years ago I was evaluating the service on a flight between Bahrain and LHR. The flight was full and the crew included one junior whose first working flight had been the LHR-BAH sector. She had done a good job on the first sector and had been complimented by her fellow crew-members.  But what was most noticeable was the fact she appeared to be rather shy.
+# Boarding for the return flight went fine. There was a relatively small mix of male passengers who were wearing their national attire; a thobe, (an ankle-length robe-type garment, with long sleeves.), and ghutra, (a traditional headdress).
+#
+# It was a relatively easy flight. It wasn't full and it afforded me time to offer service tips and observe.
+#
+# But we weren't an hour into the flight that the young junior rushed into the back galley in tears. She was sobbing. After calming her she finally blurted out that the man in 36K (indicating a window seat in the back of the aircraft), had lifted his thobe,  exposing himself to her.
+#
+# After years of flying your first thought is 'oh no, not another one of these pathetic fruitcakes,' but your professional side prevails, whilst you deal with calming the new crew member and then needing to address the offensive and illegal act committed by the passenger.
+#
+# I, along with two female crew members calmed the girl. I recall one of the more senior crew members 'welcomed' the junior into her initiation and assured her that she'd be seeing much worse in the years to come.
+#
+# And now I had the task of dealing with the passenger. There was no one sitting next to him, nor was there anyone in the last row of seats behind him. \"Sir,\" I began, \"I understand you have exposed yourself to one of our crew members.\" I paused a second, waiting for the inevitable denial to come from the passenger. But his response was a surprise. \"She likes these things, doesn\'t she?\" he asked, with an utterly creepy look on his face.
+#
+# I was now stern. My response was prompt and succinct. \"No, she doesn\'t and neither would anyone else. And, Sir, if we have any reports of this happening again, we will have the legal authorities come on board to deal with your behaviour.\"
+#
+# I felt I had said enough. He had his warning and I hoped that would be the end of it. I was consciously ready to now go back to the galley and tell the young crew member that she should work the other side of the aircraft and simply forget about the matter.
+#
+# But my stern admonishment prompted a response from the recalcitrant passenger I hadn\'t anticipated. He fixed his gaze on me and said \"Maybe you want to see too?\" And he then lifted his thobe to reveal the fact that he had nothing underneath.
+#
+# Strategy. I remember that I actually sighed as I walked away from the passenger. I said nothing. I knew I needed to form a prompt and effective strategy to deal with this. We had another six hours of flight ahead of us.
+# Of course, I would be informing the Captain of what occurred. Ultimately, it would be his decision to have the passenger handed over to police upon our arrival. But I knew we needed a bit more for the moment.
+#
+# The BA flights have a good balance of male and female crew members. But it was clear this passenger's aberrant behaviour could be perpetrated upon passengers. And I took note there were some children on board.
+#
+# I asked one of the male crew members to move up the aisle, only on the starboard (left) side of the aircraft, from row 34, forward and inform the passengers that due to a technical issue we it had been necessary to lock the aft lavatories and would they be so kind as to use the lavatories in the centre of the aircraft.
+#
+# I then asked one of the CSM's (one of the team leaders), to assist me in my plan. I'd flown with her in the past and not only did she have a lovely sense of humour, she was excellent in diffusing awkward situations. I quickly filled her in on my strategy.
+#
+# We moved down the aisle to where the lone passenger was. I made certain he was looking at us when I gesticulated to the man by pointing to him and then holding up my hand and lifting my 'pinkie' finger, wiggling it to signify the diminutive and homuncular nature of ...er, um...something.  My colleague then looked at the man, then looked back at me and giggled, also holding up her hand and wiggling her pinkie finger, so as to acknowledge that I was suggesting something involving the passenger was nanoscopic.
+#
+# Neither of us looked directly at the passenger again, we just sniggered to ourselves and moved on. I then brought another crew member up the aisle just as if I were heading towards the front of the aircraft. But the other crew member turned to look at the passenger and gave a little chuckle.
+#
+# I deliberately came back to the aft cabin by way of the port side aisle. But I could notice out of the corner of my eye that the passenger appeared to be 'stewing' (for lack of any other way to describe it).
+#
+# And I later learned that during the meal service, the male crew who covered the starboard side of the aircraft, one of the two men deliberately leaned over to the passenger and asked him if he'd like a 'tiny little breadstick?'
+# It seems the point had been driven home. We had no more problems with the man during the flight. And true to our word, two police officers were at the gate on arrival. They came on board before we disembarked the passengers and went to the back of the aircraft to welcome him to the United Kingdom.
+#
+# The police disembarked this passenger via the galley door.
+#
+# Working across the world, we can come across a vast range of cultural differences. It doesn't mean one is better than another. However, a common thread of respect is paramount for all. In the absence of this we can only collapse into anarchy. ")
+# a45 = Answer.create(body: "Years ago, I was a passenger flying out of Hartford, CT. The plane had just left the runway when there was an explosion that shook the plane, followed a moment later by a second explosion. The plane then proceeded to fly normally up to cruising altitude, when the pilot came on the intercom, blisteringly angry.
+#
+# When we were taking off, two military jets were scrambled, and they took off on the same runway we were on. Using afterburners, one went over the left wing, followed by the other going over the right wing. The pilot gave us a couple of minutes to get out pen and paper, and then proceeded to give us detailed instructions on where we should send our complaints.")
+# q21 = Question.create(title: "What are the different ways to kill time in prison?", description: "")
+# a46 = Answer.create(body: "I spend some time calling my family and friends from a cellphone I had in my room... and no, I didn't smuggle it - I was allowed to have a cellphone 24/7 in my room. Sounds weird? Read on.
+#
+# Some years ago I was sentenced to 16 months in prison.
+# I served the time at three different places, first in a closed prison (2 months), later in an open prison (6 months) and the last part in a halfway-home (3 months) - so I effectively served 11 months ~ two-thirds of the total sentence. It is common practice to be released on parole after two-thirds of a sentence is served.
+#
+# I'll refer to \"closed prison\" and \"open prison\" as just CP and OP respectively.
+#
+# Prisons here - in Denmark - are nothing like what you normally think of as a prison, so I will probably have to explain quite a lot along the way so you'll understand why I was able to spend time as I did.
+#
+# You can wear your own clothes both in CP and OP. You're allowed to bring a \"reasonable amount of clothes.\"
+# I usually wore button-up collared shirts and quite a few of my inmates thought it was weird, but well, that is how I dress normally and I feel comfortable like that.
+# A room contains: couch/bed, closet for your clothes, TV with DVD player and cable, refrigerator, sink, chair, table and notice board for your pictures.
+#
+# You're given a key to your room that will open the lock just above the handle - the lock seen further up can only be accessed from the outside and only the guards have the key for that.
+#
+# During nighttime you are locked up in your own room, that is typically from 21:30 till 7:00 in the morning.
+#
+# During daytime you can go to your own room and lock the door for some privacy, go to another inmate's room if he allows you to, spend time in the common room with other inmates or go to the kitchen and cook some food.
+# The above applies to both CP and OP.
+#
+# Work... In both CP and OP you're required to work for some hours each day, weekends excluded.
+# In CP you start every day by cleaning the common room, kitchen, toilets etc. from 8:00 till 8:30. After that we spend the time putting plastic pieces in cardboard boxes, but most days there weren't that much work so we were usually done after 3-4 hours or so, which means the rest of the day is free to spend as you like (or well, within the limits of course...)
+# The work at CP was done by all inmates in the common room. That's 10 people in a section.
+#
+# In OP the cleaning is taken care of by one selected inmate, who is responsible for cleaning and tasks such as refilling toilet paper. That usually took 3 hours after which the person could spend time in his own room. Everyone else went off at 8:30 to the greenhouse located within the prison. There we did anything you can imagine you do in a greenhouse - such as feeding pots into a machine that fills them with soil, put the pots onto rolling tables, taking these into the greenhouse, putting the trays onto grow beds, adding seeds, watering, cutting plants, packaging for sale, getting rid of old empty pots, cleaning grow beds, adding stuff to the soil mixer etc.
+# We were allowed to carry a utility knife at work for opening soil packaging, cardboard boxes etc.
+# We had to leave the knife at work before returning to the living quarters, though it sometimes happened that people forgot to do that in which case you just handed the knife to the guards explaining that you forgot to leave it at work.
+#
+# Going for a walk in the prison yard... In CP you cannot leave the building that you're in, except two times a day for 30 minutes where you could walk around on a limited space accompanied by one or two guards - that is one or two guards and anywhere between 5 and 10 prisoners or so. If you wanted out for those 2x30 minutes you had to put your name on a whiteboard no later than one hour before scheduled time for the walk.
+#
+# In OP it was quite different. There are no walls or fence surrounding the place, so you can actually walk away from the place and grab the bus to the nearest city. There had been cases of people leaving, especially during working hours as the public road was about 5 meters from where we dumped off used soil for processing. That road can be seen in the picture below (curvy road top-right corner). However if you left OP you would likely end up in CP afterwards. That's the principle. You can walk away, nothing really prevents you from doing so, but you know you'll just end up with worse conditions... so... well...
+# Economy... In both CP and OP you get a fixed amount of money every week for buying food and on top of that you're paid for working.
+# The fixed amount that you get for food is roughly 70 USD per week.
+# Work paid roughly 1 dollar 50 cent per hour, so that added up to roughly 50 USD per week.
+# If you made sure you were ready for work in time and did a decent job you would be given an additional 45 cent per hour (17 USD per week)
+# If you did the same work for 3 months you were normally given an additional 45 cent per hour (or 17 USD per week), so the maximum hourly wage is roughly 2 dollars 40 cents.
+# People who had previous experience with the same sort of job, eg. working in a greenhouse in real life, would be given the additional 45 cents from day one.
+# So total pay per week could be anywhere between 70 USD (for someone not working at all) to 154 USD per week.
+#
+# You had to pay for certain things that were automatically deducted from your weekly pay. Those things were cable/pay-channels (6 USD), soap for the washing machine (1 USD), rent of TV set with DVD player (4 USD) and rent of cellphone (90 cents) - yes, cellphone...
+#
+# The cellphone was only available in OP, you had it in your own room and it was attached to the wall by wire so you couldn't (or at least weren't supposed to) take it outside of the room.
+# You put in your own SIM-card and could use the phone whenever you were allowed to be in your room, which would normally be at any time except during work. So I could call whoever I wanted in the evening and say hi, or send my girlfriend (not the girlfriend that made me end up in prison) a text message. Nobody listened in on the calls, it was a perfectly normal Nokia cellphone, but an old version without camera, sound recording capabilities or support for MMS - as those things would be illegal to possess in a prison.
+#
+# In CP there was no cellphone in the room. Instead there was a payphone in the common room from which you could call up to 10 different numbers that had to be approved first - so I obviously had my parents, grandmother, close friends and last but not least my girlfriend as numbers I could call.
+# They could listen in on the calls though I don't know to which extent they actually did that.
+#
+# Library... In CP there was a library with quite a decent selection of books, magazines and CD's that we could borrow. I was delighted to find Kings of Leon - Only by the Night as part of the selection. We could go there once a week.
+# In OP it was different. Once a week we could sign up for a trip to the local public library since there was no library at the prison itself. We were driven there in an 8 person mini-bus by one guard.
+#
+# Shopping and cooking... In most prisons you're not served food, instead you have to cook your own food.
+#
+# In CP there was a small grocery store within the prison where we would go twice a week. You could buy different kinds of meat, vegetables, ice cream, soft drinks, pasta, shaving foam, cigarettes and tobacco, shampoo, toothpaste, sugar, etc.
+# We had access to a kitchen with the necessary equipment - though the larger knives were attached by wire to the wall.
+# Since quite a few of my fellow inmates had little clue about cooking I ended up making dinner for 4-5 people almost every evening during the two months I spend in the closed prison. That was great for me since I really enjoy being in a kitchen, so I was happy to spend a few hours there every day.
+# I wrote shopping lists for everyone in the group so each person bought different ingredients and paid their share.
+#
+# In OP there was no grocery store, so twice a week we would go to the local grocery store to buy stuff. We were allowed to buy almost anything, with exception of alcohol. This was a nice change since the grocery store had a much better selection of goods and better prices than the one in CP.
+# We would walk around the store like everyone else, grabbing our stuff off the shelf. We were usually 7 inmates and one guard going in a mini-bus to the grocery store.
+#
+# Barbecue in the summer is a nice thing and we could actually do that in OP.
+# We could buy charcoal at the grocery store and some good steaks. Until sunset the doors to the outside were not closed in OP, so we could go outside and do some activities in the garden. Some played soccer while I often enjoyed lying on the lawn in the sun listening to music on my headphones - I was allowed to bring an old-school Discman in the OP.
+#
+# Playing board games was a good way to pass time, especially in CP.
+# We would often sit 3-4 people in the common room playing cards or some board game for hours... and drinking coffee!
+# When we fancied a cigarette we would have to go to our own room, or a room of someone who allowed smoking.
+#
+# PlayStation 2 was another way of spending time in OP.
+# In OP you could bring a PlayStation 2 (not PS3 since it has Wi-Fi) and play games. One dude had a wheel and paddles and enjoyed playing Gran Turismo quite a lot of the time. I didn't bring one myself so I sometimes spend time at another inmates room playing on his PS2.
+#
+# Both in CP and OP you could bring up to 30 DVDs or CDs, so everyone was borrowing DVDs and CDs from each other.
+#
+# I brought along a selection of my favorite movies and must-have CDs for those lonely hours.
+#
+# Watching TV was probably the most common thing to do to pass time. At both CP and OP there was a decent selection of channels including Discovery, National Geographic,  EuroSport etc.
+#
+# Going to church was another option both at CP and OP.
+# In OP I never went to church since I didn't really see the point of doing so, I'd rather do something else since I don't consider myself belonging to any religion. However in CP where we spend a lot of time inside the same building I went to church a few times for the free coffee and pastry, and just to see something else than the same building from the inside.
+# Sadly one guy from the section decided to buy hashish at the church from another inmate and was caught doing so. Since that happened rules were changed and everyone attending church would afterwards have to strip naked, something I didn't fancy doing for some coffee and pastry.
+#
+# Surfing the internet for a while was great! At OP we could use a computer for 1 hour a few days a week. We weren't allowed to view pornographic material, do anything else illegal or suspicious such as searching for explosives etc., but apart from that we could surf the net as we wanted - including sending e-mails.
+# However all traffic and all keystrokes were logged and a guard had to be present in the room.
+#
+# Learning HTML/CSS for 5 days was the result of an idea I got one afternoon.
+# I used to teach HTML/CSS some years ago, so I went to the social worker at the OP and presented the idea of me teaching the other inmates HTML/CSS. Clearly the whole idea of an inmate teaching anyone anything was quite new, but she liked the idea and it finally was made possible. So for 5 days six of my fellow inmates spend their time learning HTML/CSS rather than going to the greenhouse - so we all received our standard pay just as if we had spend the time filling soil into pots. Win!
+#
+# Playing League of Legends with my friends all night long was another activity I enjoyed a lot in OP. However I wasn't allowed to do that but...
+# One of the first things I did in prison was to acquire a copy of the book containing the law on prisons, prisoner rights etc..
+# I read it thoroughly and therefore I was more knowledgeable on the rules than the vast majority of people employed at the prison. I wanted to know my rights and I knew them well. Other inmates often consulted me with regards to rules etc., or whenever they felt they had been treated unfair.
+# So from reading this I had figured that if I started on some kind of education I could be allowed to bring my own laptop in my room so I could use it to study. I signed up for some stuff and just as I had assumed I was allowed to bring my laptop.
+# Studying had another benefit. I was allowed to stay at my room for roughly 12 hours a week in order to study, while everyone else went to the greenhouse to work. Since those hours were always in the morning I decided that the time was better spend by taking a nap - so I did... and I never actually did any studying, but I did well at pretending to do so. I was still receiving my normal hourly pay for those hours spend on slee... eh.. studying.
+# The security in an OP is very low, so I brought a 3G USB modem and put it in a pack of tobacco during the day.
+# We were locked up in our own room from 21:30 and 30 minutes or so after that, when the guards had left the section for the night, I hooked up the modem to the laptop and played online with my friends on the outside - usually until early morning.
+#
+# Visitors are allowed in both in CP and OP.
+# In CP you could have visitors on certain weekdays. People who would like to visit you would have to fill out a form and send it to the prison in advance in order to be approved for visit. When approved people could call the prison and ask for a time. I would then be given a piece of paper with the time and date, and names of those coming to visit.
+# I was lucky that lots of people came to visit me, including my girlfriend, parents, grandparents and a few close friends so on average I had visitors 2 to 3 times a week.
+# Visits were either 1½ hours or 3 hours depending in the distance the visitor had traveled in order to get there so that people coming from far away would get more time.
+# I had to leave the living quarters and walk to the visitors department.
+# Visits take place in a private room with a lock on the door that can be locked from the inside. So I always looked forward to my girlfriend coming by.......
+# After each visit I would have to strip naked before returning to the living quarters. Any gifts received from visitors would have to be handed over to guards and pass through a check, they could then be collected the day after.
+# Spending time with people you love is great, especially when that time is limited. Definitely the best way to spend time in prison.
+#
+# In OP visitors could come during weekends between 10:00 and 17:00 and stay for the entire day if they liked.
+# Visitors were allowed in the living quarters (such as the common room and kitchen), in your own room and in the garden, so it all took place in the same surroundings that you were in every day and you could invite visitors to your own room - sweet!
+#
+# Leaving on weekends isn't exactly time spent in prison, but it still counts as time served.
+# In OP you are allowed to leave the prison every 3rd weekend (Friday afternoon till Sunday evening) and spend the weekend at your parents or girlfriends place. This will of course depend on the sentence and circumstances, and whether or not you take drugs in prison, since that could get you caught in an urine sample test in which case you're not allowed to leave for usually two months.
+# So every third Friday I would leave the prison and use public transportation to get home. You had to pay a fixed amount of roughly 8 USD for the ticket, anything more than that was paid by the prison.
+#
+# Your imagination is another way of spending time in prison. I used to spend hours everyday just daydreaming, it's really motivating in a much needed way.
+#
+# I'm not complaining cause in many ways it wasn't too bad being in prison. I remember some nights in prison I was watching a series on National Geographic showing how it is to be an inmate at San Quentin - woah...
+# My thoughts are with the people serving their time under such inhumane conditions.
+# It is my hope that more people around the globe will realize that it is possible to imprison people in more humane ways than it is currently the case in many places, such as the US.
+#   ")
+# a47 = Answer.create(body: "Considering I'm incarcerated for murder, maybe 'kill' is not the best choice of words. However, here is my list of 10 ways to pass time in prison.
+#
+#
+# #10 Sleep - During extended lock downs and prolonged periods of cell-time, nothing beats a good nap.
+#
+#
+# #9 Write Letters - There is no internet or cellphones in prison. Snail Mail is the standard for outside communication.
+#
+#
+# #8 Play Chess - During the first few years of my incarceration I played hours and hours of chess to pass time. I've been playing a game with my dad through the mail that 's been going since 2006!
+#
+#
+# #7 Read Books - I now have the time to catch up on all of the books I was supposed to read in high school. I'm currently reading Homer's Odyssey
+#
+#
+# #6 Running - The track at San Quentin is hazardous and often times monotonous, but for me, there's no better way to relieve stress.
+#
+#
+# #5 College Courses - Before prison, I had registered at two different junior colleges. However, it wasn't until I came to prison that I completed my first units that led to me earning my AA degree.
+#
+#
+# #4 Watch TV - There's no cable in prison, but some of my favorite TV shows are Globe Trekker, Austin City Limits, and So You Think You Can Dance (don't tell the fellas!)
+#
+#
+# #3 Life Skills Classes - Over the past 13 years , I've done quite a bit of introspection through classes like VOEG (Victim Offender Education Group), NVC (Non-violent Communication), and GRIP (Guiding Rage into Power).
+#
+#
+# #2 Play Sports - I honestly believe,if I had played more tennis when I was on the streets, I would have had a better chance of avoiding prison.
+#
+#
+# #1 Answer Quorum Questions - Taking part in the Quorum community and engaging in the discussion keeps me connected with the world outside these prison walls.")
+# q22 = Question.create(title: "What laws do police officers least enjoy enforcing?", description: "")
+# a48 = Answer.create(body: "There are two classes of the least enjoyed - the investigations that are undesirable because the crime is heinous, and the investigations that are undesirable because they're a pain in the neck.
+#
+# Items from the first class are pretty easy to guess:
+# Child molestation/rape (yes, above homicide - always involves a true victim)
+# Homicide / suicide
+# Fatality DWI (all fatals are tragic, but not so senselessly tragic)
+# Elder abuse
+# Domestic violence
+#
+# As most of those are common sense, I would surmise that the question is chasing after the second class. Of those, each officer has his favorites and his peeves. A compendium of my least enjoyed enforcement: <rant>
+# Leaving the Scene of an Accident. Just ganked that yield and crunched someone's car? If you stay, all kinds of benign to mild things can happen. First, the other person may not want to do anything - you might have had the good fortune of hitting someone with an active arrest warrant, who will forgo restitution for the car to keep themselves out of jail - it's happened more than once. Or they may just want to swap info. Worst case, I come, jot down some notes, and you get two municipal citations (here, Failure to Yield Right of Way and Striking a Lawfully Operating Motor Vehicle). It's like $150 after court costs. Sure, it sucks, but your driving sucks - it's car-ma.
+#
+#   Now let's review what happens when you leave. The other driver zeroes in on your license plate, rattles it off and repeats it verbally in a loop until they can write it down or text it to themselves. I arrive and get a Post-It note or a cell phone shoved in my face while the victim screams at me, bouncing up and down and furiously pointing in your last known direction of travel. I become instantly and fantastically pissed, because you just tripled my paperwork and added one or two hours to my workload. To put a cherry on that sludge sundae, I work the accident weathering merciless questions about what happens next, what happens next, what happens next, and denying solicitations of promises about finding you.
+#
+#   Oh, but I will find you, because my rage has taken your status from \"Vehicle #2\" to \"prey.\" I plug in the license plate, get your address, and go to your house. When I get there, I don't write you a ticket - that courtesy is through. Bai bai diplomacy, no more diplomacy - your diplomacy priv-il-eg-es are through. You are going to jail. You will not pass Go. You will not collect $200. I hated LSOAs.
+#
+#   Past Residential Burglary / Stealing From a Vehicle. So you left your door unlocked, huh? Somebody exploited that fact and jacked your stuff? That bites. Oh, you want me to write about it? Hmm...'Vic neglected to utilize sole security feature in residence/vehicle\'s point of ingress. Unknown subject accessed residence/vehicle and stole ___________. No further information.\' That should cover it. Oh, you swear to God you locked it? Well, unless the perpetrator is the resurrected Jesus Christ or Patrick Swayze circa 1990 (and that\'s completely unrealistic - you know, since that M.O. doesn\'t fit either of them), you\'re going to have to explain the lack of damage to the door with whatever manner of strained logic you wish. Come to think of it, though, it could have been Jesus - I happen to know he takes issue with your swearing to God (Matthew 5:34).
+#
+#   Oh, so your apartment got broken into and you refuse to allow me to investigate (true story, folks)? Bye, but as I\'m leaving, two tips: One, pay your dealer on time, and two, find an offsite location for your stash. I know, I wax prickish - there are true victims of these crimes. However, and I apologize, there is more often than not scant little I can do about it. Unless your car and house interiors are covered in glass, I\'m not going to get good prints. I know, I know - CSI gewgaws this, Cold Case techniques that. Listen, I\'ve got a glorified tackle box that contains a glorified foundation brush and carbon dust. Unless somebody died during the course of the burglary, that\'s literally it. It\'s all I\'ve got, it\'s all I have time for (95% of the time), and I\'m not calling a Major Crimes Investigator out because my lieutenant would chew my face off. I mean, I\'ll try, but please don\'t hold your breath here.
+#
+#   And when you replace the TV, for God\'s sake, write down the serial number. Seriously, it takes two seconds - and in a lot of cities, if they try to pawn your item, it\'ll get red flagged as stolen. Short of that, it\'s just another TV.
+#
+#   Petty Shoplifting, ESPECIALLY Juveniles. If a convicted felon is bebopping out of your store with $1,400 worth of clothes (happened), I am frickin\' ON THAT like dots on dice. However, if a fourteen year old girl palms a $1 bracelet with a kitty on it (also happened), I...sigh. Yes, I know it's CORPORATE POLICY to press charges. Here\'s what I also know. I can\'t cite a minor criminally, so I get to call the county juvenile office. They\'ll obviously tell me to release to a parent. I\'ll call parent, who was invariably 1) at work or 2) out of town. Either way, I get to sit there and stare at a fourteen year old girl who is either 1) violently sobbing or 2) completely nonplussed to the point of eye-rolling and disdainful sighs. After the nigh-unto-forever wait, I write a meaningless report that goes to the JO. They flag her school file for administrative probation. Justice!
+#
+#   Fireworks Calls on Independence Day. Wai - hold the phone. Someone. In your neighborhood. Is shooting fireworks at 7:30 pm on...the Fourth of July!?!? Please hold the line while we page the SWAT team. If it\'s any deterrent, these callers were colloquially referred to as \'communists\' on the department. Here\'s how that call response goes: I barrel down the street and open my window without slowing down. Unless I hear artillery shells going off, see a structure fire or see a column of hellfire scorching the atmosphere, I\'m back in service.
+#
+#   I mean, come on - your neighbors save you the expense and second degree burns and put on a free fireworks show, so you call the cops on them, sitting in your smug little house with your smug little self and expecting me to be the douchebag who sets all of the children to crying?")
+# a49 = Answer.create(body: "There could be a lot of different answers to this question, but the one that most immediately comes to mind are laws that cops are required or strongly encouraged to enforce rigorously, but that are treated casually by prosecutors. For example, when I worked in Nevada in the 1980s, possession of any identifiable amount of marijuana was a felony under Nevada law. If we found a roach (butt of a MJ cigarette) in a pocket or an ashtray, we had to make an arrest and process it as if we had found a kilo of pharmaceutical-grade cocaine. When the case got to the DA's office, it would nearly always be either dismissed outright or dealt down to some unrelated \"legal fiction\" offense (one where the facts of the case do not justify the charge, but the defendant agrees to plead guilty to the charge as part of a plea bargain) that was satisfied by a fine.
+#
+# In other jurisdictions, offenses like DUIs and domestic violence are often treated similarly. The police have virtually no discretion, but the prosecutors can dispose of those cases for political reasons or simply because they don't want to invest the time. Cases that justify a charge of grand theft under the law (usually defined by a loss threshold of $1000 or so--this varies with the jurisdiction) are prosecuted as petty theft until the loss reaches several times the statutory threshold.
+#
+# Legislatures are fond of enacting \"boutique\" statutes that benefit a small proportion of the population, but no one seriously expects will be enforced or prosecuted. Don't have a law unless you intend to enforce it at both the police and prosecutorial level. Perhaps it would be best to have a \'sunset\" date for criminal laws not addressed in common law, so that the boutique laws would automatically expire unless re-enacted.")
+# q23 = Question.create(title: "What are the best things you learned in your first job?", description: "")
+# a50 = Answer.create(body: "Some thoughts:
+#
+# You can't avoid office politics - Doesn't matter if you are a janitor or a CEO of your own business: There are always office politics.
+# You'll never have a job which you \"can\'t quit\" - If you are being mistreated,exploited or under-appreciated...LEAVE. You\'ll eventually find another job (although it may not be a better one).
+# You learn by listening, not talking - You\'ll learn by listening rather than talking in almost every job.
+# ALWAYS look for another job - You wouldn't load your weapon as soon as you see an animal while you are hunting; you\'d do it before you go into the woods. Why wait until you need to look for a job, to look for a job?
+#   Don't tell your co-workers about your personal business - Unless you want (or need) your personal affairs to become fodder for office gossip, leave them off of your job.
+#   If you are genuinely sick - DON\’T COME TO WORK - Regardless of whatever you hear, stay home and get well. Your co-workers don\'t want to (or need to) get your illness.
+#   Always say \"Thank You\" and \"Please\" when it is appropriate to do so - Nobody likes rude or uncouth co-workers, and manners go a long way.
+#     Think before you speak - If it doesn't sound \"good\" in your head, it will sound even worse from your mouth.
+#     Avoid people with bad attitudes unless you need their help. - They\'ll just bring you down or make you cynical.
+#     Remember that a job is an inanimate object - Never love it, because it will never love you. If you have to \"love\" something...love the work that you do; not where you do it.")
+# a51 = Answer.create(body: "My first job was at a management consulting firm. Though I did not particularly enjoy these two years,I learned a lot of things that have been helpful as my career has progressed.
+#
+# Early on, attitude matters as much or more than actual output. No one likes working with an a**hole, even if they are good. Sure if you are extraordinary you can get away with it, but most of us aren't THAT good at any one thing. (say like Michael Jordan, Tiger Woods, or Alex Rodriguez)
+# Until you are the CEO, regardless of your job title or job description, your actual job is to make your boss/supervisor's life easier. The sooner you realize it's about them, and not you, the smoother things will be
+# Take performance reviews with a grain of salt, they will never be perfectly accurate - as with all things, there is human bias and irrationality built into the system. You are not as good or as bad as whatever your review explicitly says. Use whatever you get as feedback, that you can process and choose whether or not you want to make those changes.
+# Attention to detail matters a lot, so learn to be detail oriented, even if that's not your normal mode of operation. Because in groups of humans, it's all about building trust. Having checked everything twice, and being really on top of your game is the easiest way to built that trust over time with people you don't know that well.
+# Be a net adder of energy to a room, not a net removed of energy. It almost always pays to be positive, even when disagreeing.
+# No amount of money is worth being bored. If you aren't engaged with what you do, switch it up unless you have some family obligations you can't get out of.
+# When you start off your work will mostly consist of 100% stuff you don't necessarily want to do. As you get more senior and earn more trust, you earn the right to take on work/jobs that have a higher % stuff you like doing/enjoy and a lower % stuff you don't like doing but have to do
+#   Culture fit/match is a big deal, you can be a total stud in one setting and a total dud in another, even while acting exactly the same. Be honest to yourself in looking for a culture in which you would enjoy working - For those of you that are very anti doing thing's anyone else's way, start something yourself!
+#   If you don't tell your coworkers or boss what you want, they have no way of knowing. By just accepting all status quo, you are implicitly saying you are ok with the way things are. But be respectful and thoughtful when you do it, not entitled or greedy.
+#   You won't figure out what you want to do for the rest of your life from your first job. (some people do, but it's rare). Instead focus on A/B testing in your own life - try to absorb all the things you experience and figure out what you enjoy, what you don't enjoy, what type of people you like working with, etc. Use the first job to get exposed to as many variations as possible, so you can make better choices going forward.")
+# q24 = Question.create(title: "What are some of the best questions/answers asked/given by kids?", description: "")
+# a52 = Answer.create(body: "I had a friend's daughter over to our house to play one day, she was about 4 or 5. She had lived in apartments her whole life and we had a fire going in our fireplace. She looked at me and said \"Why are you cooking wood?\"")
+# a53 = Answer.create(body: "When my younger sister was about 4, she turned to me and said really seriously \"does everybody poo, or is it just me?\"")
+# a54 = Answer.create(body: "My 4 year old last week walking home from a birthday party, observing the lawns we passed:
+# \"why are all these sprinklers on when no one is playing in them?\"")
+# a55 = Answer.create(body: "My boy (6y.o.) asked me:
+# Max - Dad, when you get old. Do you have to marry a girl?
+# Me - Well... No
+# Max - Cool, because I want to get a motorcycle")
+# a56 = Answer.create(body: "My daughter was about 5.  We were studying birds and I explained that birds lay eggs.  Emma said, \"Not all birds lay eggs.\"  I thought about that for a minute then I asked her, \"Which birds don\'t lay eggs?\"  and she said, \"The boy birds don\'t.\"")
+# a57 = Answer.create(body: "A father asked his 4 year old son who was staring at his new born sister in the hospital with all the pipes ,tubes masks etc attached and surrounded by machines ,\"Do you know what\'s happening there?\"
+# \"Yeah I know.\"
+# \"Tell then.\"
+# \"She is still getting charged.\"")
+# q25 = Question.create(title: "Why doesn\'t the USA invade Canada?", description: "")
+# a58 = Answer.create(body: "Contrary to what some wiseacres would have you believe, the USA doesn't just go invading places just to invade them. The USA and Canada have been on good terms since everyone got over the War of 1812, and the status quo of a huge amount of trade and a (relatively) open border seems to suit everyone pretty well.
+#
+# Out of curiosity, though, does Canada have oil?")
+# a59 = Answer.create(body: "The US has enough issues with Texas and California. Imagine what would happen if we also had Quebec.")
+# q26 = Question.create(title: "What would happen if the British tried to reconquer the United States?", description: "")
+# a60 = Answer.create(body: "Speaking as a Brit, we'd like to do this. Specifically, we'd like to TRY.
+#
+# The reason being, when countries lose wars to America, the Yanks plough in huge amounts of money to rebuild their economies.
+#
+# Basically, our optimal strategy is to wait until the Presidency of George Bush III, fight the war mid-Atlantic, surrender, and then watch the cash roll in.")
+# a61 = Answer.create(body: "Well, we're actually working on it.
+#
+# I live in America, and I'm British, as is my wife.
+#
+# A chap I work with is also British. Another one is Australian. A couple of my friends are British too.
+#
+# I've got my Canadian next door neighbor on-side. I also believe that chap I met in a cafe the other day who was called Bernard might have been from Britain too.
+#
+# Basically, the Commonwealth is currently in the process of taking the Colonies back. The invasion is happening one person at a time.
+#
+# GOD SAVE THE QUEEN!")
+# a62 = Answer.create(body: "Believe it or not, the U.S. military has actually planned for this eventuality.  True, plans might be a little out of date, having been made in the 1920's and 1930's, but still.
+#
+# War Plan Red primarily is concerned with invading Canada, out of the belief that Britain would use it as a staging point to invade the U.S. It does not envision striking outside the Western Hemisphere, primarily because the British Empire would initially have the advantage in numbers; it calls for a mainly-defensive war, attempting to get the British to negotiate for peace by occupying Canada.
+#
+# The British themselves did not have a real plan to attack the U.S. They would likely have written Canada off as indefensible, while concentrating their efforts against the American fleet and American shipping, as well as some coastal bombardment, hoping to produce a stalemate that the Americans would quickly grow tired of and negotiate terms.
+#
+# The Canadians had a potential counterplan for this as well, Defence Scheme No. 1, which provided for attacks against the U.S. in three locations.")
+# q27 = Question.create(title: "", description: "")
+# a63 = Answer.create(body: "")
+# a64 = Answer.create(body: "")
+# q28 = Question.create(title: "", description: "")
+# q29 = Question.create(title: "", description: "")
+# q30 = Question.create(title: "", description: "")
+# q31 = Question.create(title: "", description: "")
+# q32 = Question.create(title: "", description: "")
+# q33 = Question.create(title: "", description: "")
+# q34 = Question.create(title: "", description: "")
+# q35 = Question.create(title: "", description: "")
+# q36 = Question.create(title: "", description: "")
