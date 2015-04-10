@@ -16,14 +16,14 @@ module Api
     end
 
     def show
-      @question = Question.includes(:answers).find(params[:id])
+      @question = Question.includes(:answers, :tags).find(params[:id])
       render :show
     end
 
     private
 
     def question_params
-      params.require(:question).permit(:title, :description)
+      params.require(:question).permit(:title, :description, tag_ids: [])
     end
   end
 end

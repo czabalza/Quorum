@@ -19,8 +19,9 @@ Quorum.Routers.Router = Backbone.Router.extend({
   },
 
   questionNew: function () {
+    this.tags.fetch();
     var question = new Quorum.Models.Question();
-    var view = new Quorum.Views.QuestionNew({model: question, collection: this.questions});
+    var view = new Quorum.Views.QuestionNew({model: question, collection: this.questions, tags: this.tags});
     this._swapView(view);
   },
 

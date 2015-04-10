@@ -15,7 +15,6 @@ class Api::SubscriptionsController < ApplicationController
   private
 
   def subscription_params
-    p params
     params.require(:subscription).permit(tag_ids: [])
   end
 end

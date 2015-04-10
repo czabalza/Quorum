@@ -8,5 +8,6 @@ class Question < ActiveRecord::Base
     primary_key: :id
   )
   has_many :answers
-  has_many :taggings, dependent: :destroy
+  has_many :taggings, dependent: :destroy, inverse_of: :question
+  has_many :tags, through: :taggings, source: :tag
 end

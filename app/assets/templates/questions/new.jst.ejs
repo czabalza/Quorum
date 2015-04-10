@@ -2,10 +2,18 @@
 
 <form class="new-q-form">
   <label for="question_title">Question:</label>
-  <input id="question_title" type="text" name="title" value="<%= question.escape('title') %>">
+  <input id="question_title" type="text" name="question[title]" value="<%= question.escape('title') %>">
   <br>
   <label for="question_description">Description:</label>
-  <textarea id="question_description" name="description"><%= question.escape('description') %></textarea>
+  <textarea id="question_description" name="question[description]"><%= question.escape('description') %></textarea>
   <br>
+  <p>Tag question</p>
+  <% tags.each(function (tag) { %>
+    <label>
+      <input type="checkbox" name="question[tag_ids][]" value="<%= tag.id %>">
+      <%= tag.escape('topic') %>
+    </label>
+    <br>
+  <% }) %>
   <button class="create-question-btn">Add Question</button>
 </form>

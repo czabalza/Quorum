@@ -1,6 +1,11 @@
 Quorum.Views.QuestionIndexItem = Backbone.CompositeView.extend({
   template: JST['questions/index_item'],
 
+  initialize: function () {
+    this.model.fetch();
+    this.listenTo(this.model, "sync", this.render);
+  },
+
   events: {
     "click .new-answer-btn": "addNewAnswerForm"
   },

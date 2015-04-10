@@ -4,7 +4,11 @@ Quorum.Models.Question = Backbone.Model.extend({
   parse: function (response) {
     if (response.answers) {
       this.answers().set(response.answers);
-      delete response.answers
+      delete response.answers;
+    }
+    if (response.tags) {
+      this.tags().set(response.tags);
+      delete response.tags;
     }
     return response;
   },
@@ -14,5 +18,13 @@ Quorum.Models.Question = Backbone.Model.extend({
       this._answers = new Quorum.Collections.Answers([], {question: this});
     }
     return this._answers;
+  },
+
+  tags: function () {
+    if (!this._tags) {
+      this._tags = new Quorum.Collections.Tags();
+    }
+
+    return this._tags;
   }
 })

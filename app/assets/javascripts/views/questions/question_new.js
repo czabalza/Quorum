@@ -1,12 +1,17 @@
 Quorum.Views.QuestionNew = Backbone.CompositeView.extend({
   template: JST["questions/new"],
 
+  initialize: function (options) {
+    this.tags = options.tags;
+    this.listenTo(this.tags, "sync", this.render);
+  },
+
   events: {
     "click .create-question-btn": "createQuestion"
   },
 
   render: function () {
-    var content = this.template({question: this.model});
+    var content = this.template({question: this.model, tags: this.tags});
     this.$el.html(content);
     return this;
   },
@@ -15,6 +20,7 @@ Quorum.Views.QuestionNew = Backbone.CompositeView.extend({
     event.preventDefault();
     var $form = $(event.currentTarget.parentElement);
     var data = $form.serializeJSON();
+    debugger
     this.model.set(data);
     this.model.save([], {
       success: function (question) {
