@@ -1,5 +1,5 @@
 class Tag < ActiveRecord::Base
-  validates :topic, presence: true
+  validates :topic, presence: true, uniqueness: true
 
   has_many :subscriptions, dependent: :destroy
   has_many :taggings, dependent: :destroy
