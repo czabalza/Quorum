@@ -14,12 +14,11 @@ Quorum.Views.QuestionIndexItem = Backbone.CompositeView.extend({
   },
 
   render: function () {
-    var content = this.template({question: this.model});
+    var answer = this.model.answers().first();
+    var content = this.template({question: this.model, answer: answer});
     this.$el.html(content);
     this.taggings.each(this.addTag.bind(this));
 
-    // debugger
-    // console.log(this.tags.models);
     return this;
   },
 

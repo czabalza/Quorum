@@ -25,6 +25,8 @@ class User < ActiveRecord::Base
     dependent: :destroy
   )
 
+  has_many :topics, through: :subscriptions, source: :tag
+
   before_validation :ensure_session_token
   attr_reader :password
 

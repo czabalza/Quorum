@@ -20,6 +20,36 @@ module Api
       render :show
     end
 
+    def feed
+      @questions = Question.includes(:answers).find_by_sql([<<-SQL, id: current_user.id])
+        SELECT
+          questions.*
+        FROM
+          questions
+        JOIN
+          taggings ON taggings.question_id = questions.id
+        JOIN
+          tags ON tags.id = taggings.tag_id
+        JOIN
+          subscriptions ON subscriptions.tag_id = tags.id
+        JOIN
+          users ON users.id = subscriptions.follower_id
+        WHERE
+          users.id = :id
+        UNION
+        SELECT
+          questions.*
+        From
+          questions
+        LEFT OUTER JOIN
+          taggings ON taggings.question_id = questions.id
+        WHERE
+          taggings.id IS NULL
+        SQL
+
+      render :feed
+    end
+
     private
 
     def question_params

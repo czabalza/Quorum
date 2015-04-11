@@ -3,6 +3,7 @@ Quorum.Models.Question = Backbone.Model.extend({
 
   parse: function (response) {
     if (response.answers) {
+      // debugger
       this.answers().set(response.answers);
       delete response.answers;
     }
@@ -13,6 +14,10 @@ Quorum.Models.Question = Backbone.Model.extend({
     }
     return response;
   },
+
+  // initialize: function () {
+  //   debugger
+  // },
 
   answers: function () {
     if (!this._answers) {

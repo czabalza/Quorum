@@ -3,13 +3,17 @@ Quorum.Routers.Router = Backbone.Router.extend({
     this.$rootEl = $('#main');
     this.questions = new Quorum.Collections.Questions();
     this.tags = new Quorum.Collections.Tags();
+    this.feedQuestions = new Quorum.Collections.Questions([], {
+      url: "api/questions/feed"
+    });
   },
 
   routes: {
     "questions": "questionsIndex",
     "questions/new": "questionNew",
     "questions/:id": "questionShow",
-    "subscriptions/new": "subscriptionsNew"
+    "subscriptions/new": "subscriptionsNew",
+    "feed": "feedShow"
   },
 
   questionsIndex: function () {
@@ -35,6 +39,12 @@ Quorum.Routers.Router = Backbone.Router.extend({
   subscriptionsNew: function () {
     this.tags.fetch();
     var view = new Quorum.Views.SubscriptionsNew({collection: this.tags});
+    this._swapView(view);
+  },
+
+  feedShow: function () {
+    this.feedQuestions.fetch();
+    var view = new Quorum.Views.QuestionsIndex({collection: this.feedQuestions});
     this._swapView(view);
   },
 

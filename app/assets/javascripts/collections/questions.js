@@ -2,6 +2,16 @@ Quorum.Collections.Questions = Backbone.Collection.extend({
   url: "api/questions",
   model: Quorum.Models.Question,
 
+  initialize: function (models, options) {
+    if (options) {
+      this.url = options.url;
+    }
+  },
+
+  // parse: function (response) {
+  //   debugger
+  // },
+
   getOrFetch: function (id) {
     var question = this.get(id)
     if (question) {

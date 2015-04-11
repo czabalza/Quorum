@@ -6,3 +6,8 @@
 <div id='new-answer-on-q-index'>
   <button class="new-answer-btn">Write Answer</button>
 </div>
+<div>
+<% if (answer) { %>
+  <%= answer.escape("body") %>
+<% } %>
+</div>

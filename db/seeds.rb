@@ -61,35 +61,40 @@ tag39 = Tag.create(topic: "America")
 # tag43 = Tag.create(topic: "")
 # tag44 = Tag.create(topic: "")
 # tag45 = Tag.create(topic: "")
+s1 = u1.subscriptions.create(tag_id: 1)
+s2 = u1.subscriptions.create(tag_id: 2)
+s3 = u1.subscriptions.create(tag_id: 3)
+s4 = u1.subscriptions.create(tag_id: 4)
 
-# q1 = Question.create(title: "How long do you count before throwing a grenade?",
-#  description: "")
-#  a1 = Answer.create(body: "You DON\'T count before throwing a grenade.
-#  You count AFTER throwing it.
-#
-#  I\'ll explain.
-#
-#  Having pulled the pin out, the grenade still does not go off.
-#  If you are holding it correctly, the trigger - that\'s the long \"handle\" to the side of the grenade, hasn\'t been released yet.
-#  Once you throw the grenade the trigger gets loose, and a 3 second delay is available till the detonation occurs.
-#
-#  That\'s why there is no point counting before.
-#  Counting afterwards is meant to give the thrower\'s teammates an indication on time to explosion.
-#
-#  Helps prevent your ear drums from tearing open if not protected, and ensure no one runs into the area that\'s about to be covered with debris before it does.
-#
-#  Now, sure, I too have seen the Hollywood heroes who let the trigger go, count till the last second and then throw. (Notice the actors usually hold the trigger because they have no idea what they\'re doing...)
-#
-#  Anyway - if I had such a \"hero\" in my team, I\'d throw him along with the grenade.
-#
-#    Explosives are not toys.
-#    You don't play with them.")
-# a2 = Answer.create(body: "Most grenades have a 4-8 second fuse (US standard is 4-5.5 second), but there\'s some variation in the delay of the powder train.  With some Russian grenades, users were given a box of various delay fuses, including 0, 5, and 13 second variations -- the 0 second fuses were for tripwire detonation traps.  Hilarity ensued when people mixed up the fuses.
-#
-# The generally accepted technique is to pull pin and throw immediately.  In some cases, this is not desirable because the enemy can observe the grenade being readied, and may be able to throw it back.   Due to the variability of the grenade fuses (sometimes less than 3 seconds!), \"cooking off\" grenades is not something you should really do.  The USMC publication MCWP 3-35 describes it as the \"least preferred technique\", although it is something documented as an option.  The purpose is to deny the enemy the ability to throw back or kick away the grenade before it detonates.  The same thing can be achieved by throwing the grenade at high speed or in an erratic pattern (like bouncing it off something).  The bouncing technique can be trained with live grenades; the cooking off (for 1-2 seconds) can only be used in actual combat, not in training.
-#
-#   Fragmentation grenades in general are \"defensive grenades\"; they are thrown from cover or other protected positions, or into holes or structures.  The US models have a lethal radius of 5m, casualty radius of 15m, but can produce injury at a great radius, so they aren't thrown in front of advancing troops.")
-# q2 = Question.create(title: "Why are so many people content with just earning a salary and working 9-6 their entire adult life?", description: "")
+q1 = u3.questions.create(title: "How long do you count before throwing a grenade?",
+ description: "", tag_ids: [1, 2])
+ a1 = u7.answers.create(question_id: 1, anonymous: false, body: "You DON\'T count before throwing a grenade.
+ You count AFTER throwing it.
+
+ I\'ll explain.
+
+ Having pulled the pin out, the grenade still does not go off.
+ If you are holding it correctly, the trigger - that\'s the long \"handle\" to the side of the grenade, hasn\'t been released yet.
+ Once you throw the grenade the trigger gets loose, and a 3 second delay is available till the detonation occurs.
+
+ That\'s why there is no point counting before.
+ Counting afterwards is meant to give the thrower\'s teammates an indication on time to explosion.
+
+ Helps prevent your ear drums from tearing open if not protected, and ensure no one runs into the area that\'s about to be covered with debris before it does.
+
+ Now, sure, I too have seen the Hollywood heroes who let the trigger go, count till the last second and then throw. (Notice the actors usually hold the trigger because they have no idea what they\'re doing...)
+
+ Anyway - if I had such a \"hero\" in my team, I\'d throw him along with the grenade.
+
+   Explosives are not toys.
+   You don't play with them.")
+a2 = u8.answers.create(question_id: 1, anonymous: false, body: "Most grenades have a 4-8 second fuse (US standard is 4-5.5 second), but there\'s some variation in the delay of the powder train.  With some Russian grenades, users were given a box of various delay fuses, including 0, 5, and 13 second variations -- the 0 second fuses were for tripwire detonation traps.  Hilarity ensued when people mixed up the fuses.
+
+The generally accepted technique is to pull pin and throw immediately.  In some cases, this is not desirable because the enemy can observe the grenade being readied, and may be able to throw it back.   Due to the variability of the grenade fuses (sometimes less than 3 seconds!), \"cooking off\" grenades is not something you should really do.  The USMC publication MCWP 3-35 describes it as the \"least preferred technique\", although it is something documented as an option.  The purpose is to deny the enemy the ability to throw back or kick away the grenade before it detonates.  The same thing can be achieved by throwing the grenade at high speed or in an erratic pattern (like bouncing it off something).  The bouncing technique can be trained with live grenades; the cooking off (for 1-2 seconds) can only be used in actual combat, not in training.
+
+  Fragmentation grenades in general are \"defensive grenades\"; they are thrown from cover or other protected positions, or into holes or structures.  The US models have a lethal radius of 5m, casualty radius of 15m, but can produce injury at a great radius, so they aren't thrown in front of advancing troops.")
+
+q2 = u2.questions.create(title: "Why are so many people content with just earning a salary and working 9-6 their entire adult life?", description: "", tag_ids: [3, 4])
 # a3 = Answer.create(body: "I\'m fabulously wealthy by any reasonable definition of the word.
 #
 # If I want a glass of clean, healthy water I only need to walk as far as my kitchen faucet. All the water I can drink faster than I can drink it. It's so cheap that I never have to worry that I\'m drinking too much.
@@ -142,7 +147,7 @@ tag39 = Tag.create(topic: "America")
 #   If you\'re not content with the status quo, then it\'s more likely that you\'ll be driven to take the financial and social risks to move to another level. That\'s something to celebrate, commend, and encourage.
 #
 #   But who\'s going to work for you?")
-# q3 = Question.create(title: "What are the most mind-blowing tricks used during any war?", description: "")
+q3 = u4.questions.create(title: "What are the most mind-blowing tricks used during any war?", description: "")
 # a6 = Answer.create(body: "When the British captured senior German officers during WW2, they didn't put them in a prison camp. Instead they took them to a beautiful country mansion, and plied them with magnificent meals and drink, and allowed them to listen to German radio and read newspapers to keep up to date on the war. Each had his own room and a batman, and were treated like senior officers in the British Army.
 # Of course, the officers had much to talk about to each other, but unknown to them, the Brits had wired the entire mansion and had a team of intelligence officers working in the basement.
 # The intelligence they got was far more effective than pulling finger nails. They learnt a huge amount about the relationships between senior commanders and with Hitler. They also learnt a lot about German military strategy and tactics ... From the top.
@@ -183,7 +188,8 @@ tag39 = Tag.create(topic: "America")
 # a11 = Answer.create(body: "During the Palestinian Campaign of WWI (1917), the British were in their trenches and the Ottomans were in theirs, but there was little movement. The British learned that the opposing Turks had run out of cigarettes, so the intelligence service of the British Army came up with the idea of throwing cigarettes to the Turks, but they would wrap the packs in paper with slogans encouraging the Ottomans to stop fighting.
 #
 # This didn't work; the Turks would throw the slogans away and enjoy the cigarettes. Shortly before a raid was scheduled, the British changed tactics a bit. The cigarettes they threw over the top still had slogans on them, but they also had the added benefit of being heavily laced with heroin. By the time the raid started, the British met essentially no opposition.")
-# q4 = Question.create(title: "What are the signs of an ultra smart person playing dumb?", description: "")
+q4 = u5.questions.create(title: "What are the signs of an ultra smart person playing dumb?", description: "", tag_ids: [5])
+
 # a12 = Answer.create(body: "The brief flash of amusement in response to a quip or allusion that most people wouldn't understand.  Even someone with a decent poker face has a hard time suppressing the smile/laugh/eye crinkle response to something funny and unexpected.
 #
 # Humor by definition has an element of surprise and our reaction to it is quick.  It takes much longer to analyze the level of the joke and decide, \"Should I laugh?  Was that a joke anyone would get or one only a really smart person would get?\"
