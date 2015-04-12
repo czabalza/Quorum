@@ -1,18 +1,35 @@
-<form action="<%= action %>" method="post">
+<form class="form-signin" action="<%= action %>" method="post">
   <input type="hidden"
          name="authenticity_token"
          value="<%= form_authenticity_token%>">
 
   <% if btn_text == "Sign up!" %>
-    <label for="user_name">Name:</label>
-    <input type="text" id="user_name" name="user[name]" value="<%= user.name %>">
+    <label for="inputName" class="sr-only">Name:</label>
+    <input class="form control"
+           type="text"
+           id="user_name"
+           name="user[name]"
+           value="<%= user.name %>"
+           placeholder="Name" required autofocus>
     <br>
   <% end %>
-  <label for="user_email">Email:</label>
-  <input type="text" id="user_email" name="user[email]" value="<%= user.email %>">
+  <label for="inputEmail" class="sr-only">Email:</label>
+  <input class="form control"
+         type="text"
+         id="inputEmail"
+         name="user[email]"
+         value="<%= user.email %>"
+         placeholder="Email" required autofocus>
   <br>
-  <label for="user_password">Password:</label>
-  <input type="password" id="user_password" name="user[password]" value="">
+  <label for="inputPassword" class="sr-only">Password:  </label>
+  <input class="form control"
+         type="password"
+         id="inputPassword"
+         name="user[password]"
+         value=""
+         placeholder="Password" required>
   <br>
-  <input type="submit" value="<%= btn_text %>">
+  <input class="btn btn-lg btn-primary btn-block"
+         type="submit"
+         value="<%= btn_text %>">
 </form>

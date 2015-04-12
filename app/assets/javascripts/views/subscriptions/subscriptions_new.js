@@ -1,6 +1,8 @@
 Quorum.Views.SubscriptionsNew = Backbone.CompositeView.extend({
   template: JST["subscriptions/new"],
 
+  className: "new-subs-page",
+
   initialize: function () {
     this.listenTo(this.collection, "sync", this.render);
   },
@@ -24,7 +26,7 @@ Quorum.Views.SubscriptionsNew = Backbone.CompositeView.extend({
 
     subs.save([], {
       success: function () {
-        Backbone.history.navigate("#questions", {trigger: true});
+        Backbone.history.navigate("#feed", {trigger: true});
       }.bind(this)
     })
   }

@@ -1,6 +1,8 @@
 Quorum.Views.QuestionNew = Backbone.CompositeView.extend({
   template: JST["questions/new"],
 
+  className: "new-question-page container",
+
   initialize: function (options) {
     this.tags = options.tags;
     this.listenTo(this.tags, "sync", this.render);

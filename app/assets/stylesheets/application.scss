@@ -1,0 +1,215 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap";
+ @import "font-awesome";
+
+.navbar-right {
+  font-size: 14px;
+  color: #666;
+  line-height: 45px;
+}
+
+.sign-up-in-page {
+  max-width: 400px;
+  padding: 15px;
+  margin: auto;
+  border: 2px solid lightgray;
+  border-radius: 7px;
+}
+
+.form-signin input{
+  width: 100%;
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
+
+.form-signin-heading {
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body {
+  padding-top: 70px;
+  font-family: Helvetica;
+}
+
+.navbar {
+  margin-left: 5%;
+  margin-right: 5%;
+  // background: #ffefef;
+}
+.nav-container {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-header {
+  background-color: #a20;
+  text-color: white;
+  padding-left: 13px;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  font-size: 26px;
+  font-family: serif;
+}
+
+a.btn.btn-primary.navbar-btn {
+  padding: 5px;
+  color: white;
+  border: 1px solid #4f5863;
+}
+
+.navbar-default .search {
+  width: 180%;
+}
+
+#main {
+  width: 55%;
+  margin: auto;
+}
+
+.questions-header {
+  font-size: 18px;
+}
+
+.question-index-item:nth-child(odd), .answer-show:nth-child(odd){
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.question-show-link {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+.question-show-link:hover {
+  color: black;
+}
+
+.tag-show {
+  float: left;
+  margin: 5px 2px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #808393;
+  background-color: #f4f4fa;
+  margin-right: 4px;
+  border-radius: 12px;
+  padding: 4px 8px;
+  border: 0;
+}
+
+#question-index-tags, .question-show-tags {
+  display: flex;
+}
+
+.new-answer-btn {
+  color: #6d6d6d;
+  border: 1px solid #cbcbd8;
+  background: #f6f6f9;
+  font-weight: 500;
+  padding: 3px 7px 4px 7px;
+}
+
+.new-answer-btn:hover {
+  border: 1px solid #656565;
+  background: #f6f6f9;
+  color: #6d6d6d;
+}
+
+.create-answer-btn {
+  color: #6d6d6d;
+  border: 1px solid #cbcbd8;
+  background: #f6f6f9;
+  font-weight: 500;
+  padding: 3px 7px 4px 7px;
+}
+
+.create-answer-btn:hover {
+  border: 1px solid #656565;
+  background: #f6f6f9;
+  color: #6d6d6d;
+}
+
+.answer-body {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+#hidden-anon-radio {
+  display: none;
+}
+
+.new-question-page {
+  max-width: 100%;
+  padding: 15px;
+  margin: auto;
+  border: 2px solid lightgray;
+  border-radius: 7px;
+}
+
+.new-q-form input#question_title {
+  width: 100%;
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
+
+.new-q-form textarea {
+  width: 100%;
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+}
+
+.add-q-header {
+  font-size: 18px;
+}
+
+.create-question-btn {
+  float: right;
+}
+
+.new-subs-page {
+  max-width: 100%;
+  padding: 15px;
+  margin: auto;
+  border: 2px solid lightgray;
+  border-radius: 7px;
+}
+
+.question-show-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.answer-show-name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.answer-show-body {
+  font-size: 15px;
+}

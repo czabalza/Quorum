@@ -1,6 +1,8 @@
 Quorum.Views.QuestionIndexItem = Backbone.CompositeView.extend({
   template: JST['questions/index_item'],
 
+  className: "question-index-item",
+
   initialize: function () {
     this.taggings = new Quorum.Collections.Taggings();
     this.taggings.fetch({data: {question_id: this.model.id}});

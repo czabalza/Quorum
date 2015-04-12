@@ -1,8 +1,9 @@
 <% if (answer.escape("anonymous") === "true") { %>
-  <h1>Anonymous</h1>
+  <h1 class="answer-show-name">Anonymous</h1>
 <% } else { %>
-  <h1><%= answer.escape('authorName') %></h1>
+  <h1 class="answer-show-name"><%= answer.escape('authorName') %></h1>
 <% } %>
-<div>
+<div class="answer-show-body">
   <%= answer.escape("body") %>
 </div>
+<br>

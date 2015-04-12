@@ -9,6 +9,7 @@ Quorum.Routers.Router = Backbone.Router.extend({
   },
 
   routes: {
+    "": "feedShow",
     "questions": "questionsIndex",
     "questions/new": "questionNew",
     "questions/:id": "questionShow",

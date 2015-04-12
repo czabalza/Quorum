@@ -1,14 +1,17 @@
-<% question.tags().each(function (tag) { %>
-  <div>
-    <%= tag.escape("topic") %>
-  </div>
-<% }) %>
-<h1><%= question.escape('title') %></h1>
+<div class="question-show-tags">
+  <% question.tags().each(function (tag) { %>
+    <div class="tag-show">
+      <%= tag.escape("topic") %>
+    </div>
+  <% }) %>
+</div>
+<h1 class="question-show-title"><%= question.escape('title') %></h1>
 <% if (question.escape('description')) { %>
   <h3><%= question.escape('description') %></h3>
 <% } %>
 <div id="new-answer">
-<button class="new-answer-btn">Answer</button>
+<button class="new-answer-btn btn btn-primary">Answer</button>
 </div>
+<br>
 <div id="answers">
 </div>

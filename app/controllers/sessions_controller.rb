@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       login!(@user)
       @current_user = @user
 
-      render json: @current_user
+      redirect_to "#feed"
     else
       flash.now[:errors] = ["Incorrect email or password"]
       @user = User.new(email: params[:user][:email])

@@ -1,13 +1,16 @@
 <div id="question-index-tags">
 
 </div>
-<a href=<%= "#questions/" + question.id %>><%= question.escape('title') %></a>
+<a href=<%= "#questions/" + question.id %> class="question-show-link"><%= question.escape('title') %></a>
 <br>
+
+<div class="answer-body">
+  <% if (answer) { %>
+    <h2><%= answer.escape('name') %></h2>
+    <%= answer.escape("body") %>
+  <% } %>
+</div>
 <div id='new-answer-on-q-index'>
-  <button class="new-answer-btn">Write Answer</button>
+  <button class="new-answer-btn btn btn-primary">Write Answer</button>
 </div>
-<div>
-<% if (answer) { %>
-  <%= answer.escape("body") %>
-<% } %>
-</div>
+<br>
