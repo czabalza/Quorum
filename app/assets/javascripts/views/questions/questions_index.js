@@ -9,7 +9,6 @@ Quorum.Views.QuestionsIndex = Backbone.CompositeView.extend({
   },
 
   render: function () {
-    debugger
     var content = this.template();
     this.$el.html(content);
     this.collection.each(this.addQuestionItem.bind(this));

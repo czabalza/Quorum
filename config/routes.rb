@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     resources :questions, only: [:show, :create, :index] do
       collection do
         get 'feed'
+        get 'search'
       end
     end
     resources :answers, only: [:create, :show, :destroy, :update]

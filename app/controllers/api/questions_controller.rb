@@ -50,6 +50,11 @@ module Api
       render :feed
     end
 
+    def search
+      @questions = Question.search(params[:query])
+      render json: @questions
+    end
+
     private
 
     def question_params

@@ -1,11 +1,11 @@
 class Api::TaggingsController < ApplicationController
   def index
-    p params
+    # p params
     @taggings = Tagging.all.where("question_id = :question_id", question_id: params[:question_id])
     @tags = @taggings.map do |tagging|
       tagging.tag
     end
-    p @tags
+    # p @tags
     render :index
   end
 

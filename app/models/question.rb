@@ -10,4 +10,17 @@ class Question < ActiveRecord::Base
   has_many :answers
   has_many :taggings, dependent: :destroy, inverse_of: :question
   has_many :tags, through: :taggings, source: :tag
+
+  def self.search(query)
+    if query
+      Question
+        .includes(:tags)
+        .where('lower(tags.topic) LIKE :query', query: "%#{query.downcase}%")
+        .references(:tags) |
+      Question
+        .where('lower(questions.title) LIKE :query', query: "%#{query.downcase}%")
+    else
+      Question.all
+    end
+  end
 end
