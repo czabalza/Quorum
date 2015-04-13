@@ -9,16 +9,15 @@ Quorum is a clone of Quora built on Rails and Backbone. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-- [ ] Create accounts
-- [ ] Create sessions (log in)
-- [ ] Post questions
-- [ ] Post answers to questions
-- [ ] View questions and answers
-- [ ] Tag questions
+- [x] Create accounts
+- [x] Create sessions (log in)
+- [x] Post questions
+- [x] Post answers to questions
+- [x] View questions and answers
+- [x] Tag questions
 - [ ] Search for questions by title
 - [ ] Search for questions by tag
 - [ ] Up or down vote answers
-- [ ] Ask other users to answer questions
 
 ## Design Docs
 * [View Wireframes][views]
@@ -62,7 +61,7 @@ subview. These views will use `questions` and `answers` collections, but they wi
 [Details][phase-five]
 
 ### Bonus Features (TBD)
-- [ ] "Upvote" and "Downvote" buttons and counters for answers
+- [ ] Counters for answers
 - [ ] User comments on answers
 - [ ] Pagination/infinite scroll
 - [ ] Answer types (image posts, quote posts, etc)

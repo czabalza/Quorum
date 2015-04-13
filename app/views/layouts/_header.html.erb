@@ -28,7 +28,7 @@
             <li><a href="#questions">Answer questions</a></li>
             <li><a href="#questions/new">Add question</a></li>
             <li class="divider"></li>
-            <li><a href="#">Sign out</a></li>
+            <li><%= link_to "Sign out", session_url, method: :delete %></li>
           </ul>
         </li>
         <li><a href="#questions/new" class="btn btn-primary navbar-btn">Add Question</a></li>

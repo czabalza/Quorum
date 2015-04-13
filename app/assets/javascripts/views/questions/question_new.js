@@ -31,7 +31,7 @@ Quorum.Views.QuestionNew = Backbone.CompositeView.extend({
       error: function (question, resp) {
         this.$el.empty();
         this.$el.append(resp.responseJSON);
-        var content = this.template({question: question});
+        var content = this.template({question: question, tags: this.tags});
         this.$el.append(content);
       }.bind(this)
     })

@@ -5,8 +5,12 @@
 <br>
 
 <div class="answer-body">
-  <% if (answer) { %>
-    <h2><%= answer.escape('name') %></h2>
+  <% if (answer && page === "feed") { %>
+    <% if (answer.escape("anonymous") === "true") { %>
+      <h1 class="answer-show-name">Anonymous</h1>
+    <% } else { %>
+      <h1 class="answer-show-name"><%= answer.escape('authorName') %></h1>
+    <% } %>
     <%= answer.escape("body") %>
   <% } %>
 </div>

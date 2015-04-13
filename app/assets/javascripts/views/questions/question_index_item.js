@@ -3,12 +3,16 @@ Quorum.Views.QuestionIndexItem = Backbone.CompositeView.extend({
 
   className: "question-index-item",
 
-  initialize: function () {
+  initialize: function (options) {
+    this.page = options.page;
     this.taggings = new Quorum.Collections.Taggings();
+    this.answer = this.model.answers().first();
+    this.answer.fetch();
     this.taggings.fetch({data: {question_id: this.model.id}});
     // this.tags = this.taggings.tags();
     this.listenTo(this.model, "sync", this.render);
-    this.listenTo(this.taggings, "sync add", this.addTag);
+    this.listenTo(this.taggings, "add", this.addTag);
+    this.listenTo(this.answer, "sync", this.render);
   },
 
   events: {
@@ -16,8 +20,8 @@ Quorum.Views.QuestionIndexItem = Backbone.CompositeView.extend({
   },
 
   render: function () {
-    var answer = this.model.answers().first();
-    var content = this.template({question: this.model, answer: answer});
+    // var answer = this.model.answers().first();
+    var content = this.template({question: this.model, answer: this.answer, page: this.page});
     this.$el.html(content);
     this.taggings.each(this.addTag.bind(this));
 

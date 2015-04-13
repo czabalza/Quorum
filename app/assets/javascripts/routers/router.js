@@ -19,7 +19,7 @@ Quorum.Routers.Router = Backbone.Router.extend({
 
   questionsIndex: function () {
     this.questions.fetch();
-    var view = new Quorum.Views.QuestionsIndex({collection: this.questions});
+    var view = new Quorum.Views.QuestionsIndex({collection: this.questions, page: "index"});
     this._swapView(view);
   },
 
@@ -45,7 +45,7 @@ Quorum.Routers.Router = Backbone.Router.extend({
 
   feedShow: function () {
     this.feedQuestions.fetch();
-    var view = new Quorum.Views.QuestionsIndex({collection: this.feedQuestions});
+    var view = new Quorum.Views.QuestionsIndex({collection: this.feedQuestions, page: "feed"});
     this._swapView(view);
   },
 

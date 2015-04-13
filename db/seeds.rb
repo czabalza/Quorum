@@ -1082,9 +1082,9 @@ Officer2: One of my Officers claims that you do not have a driver's license.
 
   Woman: Bet you the lying bastard told you I was speeding too.")
 a91 = u8.answers.create(question_id: 37, anonymous: true, body: "On an airline flight, the pilot comes over the public address system to greet the passengers. He tells them the altitude they’ll be flying at, the expected arrival time and a bit about the weather, and asks them to sit back, relax, and have a good flight. Then, forgetting to turn off the microphone, he says to his co-pilot, \"What would relax me right now is a cup of coffee and a blowjob.\" All the passengers hear it. As a flight attendant immediately starts running toward the cockpit to tell the pilot about his slip-up, one of the passengers, an old lady, stops her and says \"Don\’t forget the coffee!\"")
-a92 = u9.answers.create(question_id: 37, anonymous: true, body: "\"I hope the porn channel in my room is disabled\" says the priest checking in to the motel.
-
-\"No, it\'s regular porn, you sick fuck.\"")
+# a92 = u9.answers.create(question_id: 37, anonymous: true, body: "\"I hope the porn channel in my room is disabled\" says the priest checking in to the motel.
+#
+# \"No, it\'s regular porn, you sick fuck.\"")
 a93 = u13.answers.create(question_id: 37, anonymous: false, body: "First woman in space.
 
 \"Houston, we have a problem.\"
