@@ -3,8 +3,10 @@ Quorum.Views.QuestionShow = Backbone.CompositeView.extend({
 
   initialize: function () {
     this.answers = this.model.answers();
+    this.tags = this.model.tags();
     this.listenTo(this.model, "sync", this.render);
     this.listenTo(this.answers, "add", this.addAnswer);
+    // this.listenTo(this.tags, "sync", this.addTag);
     this.answers.each(this.addAnswer.bind(this));
   },
 
@@ -16,6 +18,7 @@ Quorum.Views.QuestionShow = Backbone.CompositeView.extend({
     var content = this.template({question: this.model});
     this.$el.html(content);
     this.answers.each(this.addAnswer.bind(this));
+    this.model.tags().each(this.addTag.bind(this));
     return this;
   },
 
@@ -23,6 +26,11 @@ Quorum.Views.QuestionShow = Backbone.CompositeView.extend({
     answer.fetch();
     var view = new Quorum.Views.AnswerShow({model: answer});
     this.addSubview('#answers', view);
+  },
+
+  addTag: function (tag) {
+    var view = new Quorum.Views.TagShow({model: tag});
+    this.addSubview(".question-show-tags", view);
   },
 
   addNewAnswerForm: function (event) {

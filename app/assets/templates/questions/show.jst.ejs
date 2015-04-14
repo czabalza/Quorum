@@ -1,9 +1,5 @@
 <div class="question-show-tags">
-  <% question.tags().each(function (tag) { %>
-    <div class="tag-show">
-      <%= tag.escape("topic") %>
-    </div>
-  <% }) %>
+
 </div>
 <h1 class="question-show-title"><%= question.escape('title') %></h1>
 <% if (question.escape('description')) { %>

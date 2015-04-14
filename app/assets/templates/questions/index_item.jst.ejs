@@ -11,7 +11,7 @@
     <% } else { %>
       <h1 class="answer-show-name"><%= answer.escape('authorName') %></h1>
     <% } %>
-    <%= answer.escape("body") %>
+    <%= answer.escape("body").replace(/\n/g, "<br>") %>
   <% } %>
 </div>
 <div id='new-answer-on-q-index'>

@@ -1,5 +1,5 @@
 <div class="tag-show">
 <% if (tag) { %>
-  <%= tag.escape("topic") %>
+  <a href="<%= "#search/" + tag.escape("topic") %>" class="topic-links"><%= tag.escape("topic") %></a>
 <% } %>
 </div>
