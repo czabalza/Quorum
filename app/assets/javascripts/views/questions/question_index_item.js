@@ -9,12 +9,12 @@ Quorum.Views.QuestionIndexItem = Backbone.CompositeView.extend({
     if (this.page === "feed") {
       // debugger
       this.answer = this.model.answers().first();
-      // if (this.answer) {
+      if (this.answer) {
         // debugger
         // this.answer.fetch();
         // this.listenTo(this.answer, "sync", this.render);
-        // this.addAnswer(this.answer);
-      // };
+        this.addAnswer(this.answer);
+      };
     }
     this.taggings.fetch({data: {question_id: this.model.id}});
     // this.tags = this.taggings.tags();
@@ -31,9 +31,9 @@ Quorum.Views.QuestionIndexItem = Backbone.CompositeView.extend({
     var content = this.template({question: this.model});
     this.$el.html(content);
     this.taggings.each(this.addTag.bind(this));
-    if (this.page === "feed") {
-      this.addAnswer(this.answer);
-    };
+    // if (this.page === "feed") {
+    //   this.addAnswer(this.answer);
+    // };
     return this;
   },
 

@@ -5,7 +5,7 @@ Quorum.Models.Answer = Backbone.Model.extend({
     // debugger
     if (attributes.author) {
       // debugger
-      this.attributes.authorName = attributes.author.user.name;
+      this.attributes.authorName = attributes.author.name;
       // debugger
       delete this.attributes.author;
       // debugger

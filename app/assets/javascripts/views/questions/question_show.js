@@ -3,11 +3,13 @@ Quorum.Views.QuestionShow = Backbone.CompositeView.extend({
 
   initialize: function () {
     this.answers = this.model.answers();
+    // debugger
     this.tags = this.model.tags();
     this.listenTo(this.model, "sync", this.render);
-    this.listenTo(this.answers, "add", this.addAnswer);
+    // this.listenTo(this.answers, "add", this.addAnswer);
+    // this.listenTo(this.answers, "sync", this.render);
     // this.listenTo(this.tags, "sync", this.addTag);
-    this.answers.each(this.addAnswer.bind(this));
+    // this.answers.each(this.addAnswer.bind(this));
   },
 
   events: {
@@ -23,7 +25,7 @@ Quorum.Views.QuestionShow = Backbone.CompositeView.extend({
   },
 
   addAnswer: function (answer) {
-    answer.fetch();
+    // answer.fetch();
     var view = new Quorum.Views.AnswerShow({model: answer});
     this.addSubview('#answers', view);
   },

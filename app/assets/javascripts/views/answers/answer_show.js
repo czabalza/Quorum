@@ -23,6 +23,7 @@ Quorum.Views.AnswerShow = Backbone.CompositeView.extend({
   },
 
   addVotes: function () {
+    // debugger
     var view = new Quorum.Views.VotesShow({collection: this.votes, model: this.current_user_vote});
     // this.$el.find('div.answer-votes').html(view.render().$el);
     this.addSubview("div.answer-votes", view);

@@ -17,9 +17,7 @@ json.array! @questions do |question|
       json.anonymous answer.anonymous
       json.created_at answer.created_at
       json.updated_at answer.updated_at
-      json.author do
-        json.user answer.author
-      end
+      json.author answer.author
     end
   end
 end
