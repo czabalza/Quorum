@@ -2,6 +2,7 @@ Quorum.Views.QuestionShow = Backbone.CompositeView.extend({
   template: JST["questions/show"],
 
   initialize: function () {
+    this.page = "show";
     this.answers = this.model.answers();
     // debugger
     this.tags = this.model.tags();
@@ -26,7 +27,7 @@ Quorum.Views.QuestionShow = Backbone.CompositeView.extend({
 
   addAnswer: function (answer) {
     // answer.fetch();
-    var view = new Quorum.Views.AnswerShow({model: answer});
+    var view = new Quorum.Views.AnswerShow({model: answer, page: this.page});
     this.addSubview('#answers', view);
   },
 

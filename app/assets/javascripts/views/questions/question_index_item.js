@@ -43,7 +43,7 @@ Quorum.Views.QuestionIndexItem = Backbone.CompositeView.extend({
   },
 
   addAnswer: function (answer) {
-    var view = new Quorum.Views.AnswerShow({model: answer});
+    var view = new Quorum.Views.AnswerShow({model: answer, page: this.page});
     this.addSubview('.question-index-answer-show', view);
   },
 

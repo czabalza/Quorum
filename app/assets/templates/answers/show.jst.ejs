@@ -3,9 +3,17 @@
 <% } else { %>
   <h1 class="answer-show-name"><%= answer.escape('authorName') %></h1>
 <% } %>
+
+<% if (page === "show") { %>
+<div class="answer-show-body toggle">
+<% } else if (page === "feed") { %>
 <div class="answer-show-body">
+<% } %>
   <%= answer.escape("body").replace(/\n/g, "<br>") %>
 </div>
+<% if (page === "feed") { %>
+<p><a href="#" class="expand-answer-body">(more)</a>
+<% } %>
 <br>
 <div class="answer-votes"></div>
 

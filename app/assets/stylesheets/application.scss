@@ -212,6 +212,16 @@ a.btn.btn-primary.navbar-btn {
 
 .answer-show-body {
   font-size: 16px;
+  height: 91px;
+  overflow: hidden;
+}
+
+.answer-show-body.toggle {
+  height: 100%;
+}
+
+.expand-answer-body.toggle {
+  display: none;
 }
 
 h3.question-show-description {
