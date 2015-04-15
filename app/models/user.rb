@@ -25,6 +25,13 @@ class User < ActiveRecord::Base
     dependent: :destroy
   )
 
+  has_many(
+    :votes,
+    class_name: :Vote,
+    foreign_key: :voter_id,
+    primary_key: :id
+  )
+
   has_many :topics, through: :subscriptions, source: :tag
 
   before_validation :ensure_session_token

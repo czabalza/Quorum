@@ -133,6 +133,14 @@ description: "", tag_ids: [], tag_ids: [])
 
    Explosives are not toys.\n
    You don't play with them.")
+
+   a1.votes.create(voter_id: 1, value: 1)
+   a1.votes.create(voter_id: 2, value: 1)
+   a1.votes.create(voter_id: 3, value: 1)
+   a1.votes.create(voter_id: 4, value: 1)
+   a1.votes.create(voter_id: 5, value: -1)
+   a1.votes.create(voter_id: 6, value: -1)
+   a1.votes.create(voter_id: 25, value: -1)
 a2 = u16.answers.create(question_id: 1, anonymous: false, body: "Most grenades have a 4-8 second fuse (US standard is 4-5.5 second), but there\'s some variation in the delay of the powder train.  With some Russian grenades, users were given a box of various delay fuses, including 0, 5, and 13 second variations -- the 0 second fuses were for tripwire detonation traps.  Hilarity ensued when people mixed up the fuses.\n
 
 The generally accepted technique is to pull pin and throw immediately.  In some cases, this is not desirable because the enemy can observe the grenade being readied, and may be able to throw it back.   Due to the variability of the grenade fuses (sometimes less than 3 seconds!), \"cooking off\" grenades is not something you should really do.  The USMC publication MCWP 3-35 describes it as the \"least preferred technique\", although it is something documented as an option.  The purpose is to deny the enemy the ability to throw back or kick away the grenade before it detonates.  The same thing can be achieved by throwing the grenade at high speed or in an erratic pattern (like bouncing it off something).  The bouncing technique can be trained with live grenades; the cooking off (for 1-2 seconds) can only be used in actual combat, not in training.\n

@@ -28,5 +28,9 @@ Quorum.Collections.Questions = Backbone.Collection.extend({
       })
     }
     return question
+  },
+
+  comparator: function (question) {
+    return -(new Date(question.escape('updated_at')));
   }
 })

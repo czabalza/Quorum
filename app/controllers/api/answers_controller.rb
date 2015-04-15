@@ -3,7 +3,7 @@ module Api
     def create
       @answer = current_question.answers.new(answer_params)
       @answer.author_id = current_user.id
-      if @answer.save  
+      if @answer.save
         render json: @answer
       else
         render json: @answer.errors.full_messages, status: :unprocessable_entity
@@ -13,6 +13,7 @@ module Api
     def show
       @answer = current_question.answers.find(params[:id])
       @author = User.find(@answer.author_id)
+      @upvotes = @answer.votes.where("value = 1").references(:votes).length
       render :show
     end
 

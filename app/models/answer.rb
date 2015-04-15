@@ -9,4 +9,5 @@ class Answer < ActiveRecord::Base
     primary_key: :id
   )
   belongs_to :question
+  has_many :votes
 end

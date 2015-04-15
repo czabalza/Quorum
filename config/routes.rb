@@ -15,5 +15,10 @@ Rails.application.routes.draw do
     resources :subscriptions, only: [:create, :destroy]
     resources :tags, only: :index
     resources :taggings, only: :index
+    resources :votes, only: [:index, :create, :update, :destroy] do
+      collection do
+        get 'current_user_vote'
+      end
+    end
   end
 end
