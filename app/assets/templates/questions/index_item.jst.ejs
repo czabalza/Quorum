@@ -2,6 +2,9 @@
 
 </div>
 <a href=<%= "#questions/" + question.id %> class="question-show-link"><%= question.escape('title') %></a>
+<div>
+  <%= question.escape('description') %>
+</div>
 <br>
 <div class="question-index-answer-show"></div>
 

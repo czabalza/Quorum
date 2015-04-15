@@ -5,7 +5,7 @@ Quorum.Views.QuestionsIndex = Backbone.CompositeView.extend({
   initialize: function (options) {
     this.page = options.page;
     this.listenTo(this.collection, "sync", this.render);
-    this.listenTo(this.collection, "add", this.addQuestionItem);
+    // this.listenTo(this.collection, "add", this.addQuestionItem);
   },
 
   render: function () {
