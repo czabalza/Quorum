@@ -9,7 +9,7 @@
 <% } else if (page === "feed") { %>
 <div class="answer-show-body">
 <% } %>
-  <%= answer.escape("body").replace(/\n/g, "<br>") %>
+  <%= answer.get("body").replace(/\n/g, "<br>") %>
 </div>
 <% if (page === "feed") { %>
 <p><a href="#" class="expand-answer-body">(more)</a>

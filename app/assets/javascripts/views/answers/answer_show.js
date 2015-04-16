@@ -18,7 +18,7 @@ Quorum.Views.AnswerShow = Backbone.CompositeView.extend({
     this.current_user_vote.fetch({url: "api/votes/current_user_vote",
     data: {vote: {answer_id: this.model.id}}
     });
-    this.listenTo(this.model, "sync", this.addVotes);
+    // this.listenTo(this.model, "sync", this.addVotes);
   },
 
   render: function () {
