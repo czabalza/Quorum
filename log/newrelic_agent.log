@@ -97,3 +97,39 @@
 [04/07/15 13:37:20 -0700 Christinas-MacBook-Air.local (6946)] INFO : Installing Rails 4 Error instrumentation
 [04/07/15 13:37:20 -0700 Christinas-MacBook-Air.local (6946)] INFO : Finished instrumentation
 [04/07/15 13:38:40 -0700 Christinas-MacBook-Air.local (6903)] INFO : Starting Agent shutdown
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : Starting the New Relic agent in "development" environment.
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] WARN : No configuration file found. Working directory = /Users/Christina/Desktop/quorum
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] WARN : Looked in these locations (based on defaults): /Users/Christina/Desktop/quorum/config/newrelic.yml, /Users/Christina/Desktop/quorum/newrelic.yml, /Users/Christina/Desktop/quorum/config/newrelic.yml, /Users/Christina/Desktop/quorum/newrelic.yml, /Users/Christina/.newrelic/newrelic.yml, /Users/Christina/newrelic.yml
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : Environment: development
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : No known dispatcher detected.
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : Application: development
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : Installing ActiveJob instrumentation
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : Installing ActiveRecord 4 instrumentation
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : Installing Net instrumentation
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : Installing deferred Rack instrumentation
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : Installing Rack::Builder middleware instrumentation
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : Installing Rails 3+ middleware instrumentation
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : Installing Rails 4 Controller instrumentation
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : Installing Rails 4 view instrumentation
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : Installing Rails 4 Error instrumentation
+[04/16/15 15:29:23 -0700 Christinas-MacBook-Air.local (3568)] INFO : Finished instrumentation
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : Starting the New Relic agent in "development" environment.
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] WARN : No configuration file found. Working directory = /Users/Christina/Desktop/quorum
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] WARN : Looked in these locations (based on defaults): /Users/Christina/Desktop/quorum/config/newrelic.yml, /Users/Christina/Desktop/quorum/newrelic.yml, /Users/Christina/Desktop/quorum/config/newrelic.yml, /Users/Christina/Desktop/quorum/newrelic.yml, /Users/Christina/.newrelic/newrelic.yml, /Users/Christina/newrelic.yml
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : Environment: development
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : No known dispatcher detected.
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : Application: development
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : Installing ActiveJob instrumentation
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : Installing ActiveRecord 4 instrumentation
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : Installing Net instrumentation
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : Installing deferred Rack instrumentation
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : Installing Rack::Builder middleware instrumentation
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : Installing Rails 3+ middleware instrumentation
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : Installing Rails 4 Controller instrumentation
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : Installing Rails 4 view instrumentation
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : Installing Rails 4 Error instrumentation
+[04/16/15 15:29:29 -0700 Christinas-MacBook-Air.local (3598)] INFO : Finished instrumentation

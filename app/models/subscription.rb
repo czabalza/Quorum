@@ -1,6 +1,6 @@
 class Subscription < ActiveRecord::Base
   validates :follower_id, :tag_id, presence: true
-  validates :tag_id, uniqueness: {scope: :tag_id}
+  validates :tag_id, uniqueness: {scope: :follower_id}
 
   belongs_to(
     :follower,

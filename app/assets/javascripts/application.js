@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
+//= require typed
 //= require bootstrap
 //= require quorum
 //= require quill

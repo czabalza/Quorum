@@ -33,7 +33,31 @@
          value=""
          placeholder="Password" required>
   <br>
-  <input class="btn btn-lg btn-primary btn-block"
+  <input class="btn btn-lg btn-primary btn-block log-in-btn"
          type="submit"
          value="<%= btn_text %>">
 </form>
+   <% if btn_text == 'Log in' %>
+   <p class="or"> -OR- </p>
+     <button onclick="demo()" class="btn btn-primary btn-lg btn-block">Log in as Guest</button>
+   <% end %>
+
+<script>
+var demo = function () {
+  $(function () {
+    $("#inputEmail").typed({
+      strings: ["guest"],
+      typeSpeed: 50,
+      callback: function () {
+        $("#inputPassword").typed({
+          strings: ["password"],
+          typeSpeed: 50,
+          callback: function () {
+            $('.log-in-btn').click()
+          }
+        });
+      }
+    });
+  });
+}
+</script>
