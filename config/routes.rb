@@ -13,7 +13,12 @@ Rails.application.routes.draw do
     end
     resources :answers, only: [:create, :show, :destroy, :update]
     resources :subscriptions, only: [:create, :destroy]
-    resources :tags, only: :index
+    resources :tags, only: :index do
+      collection do
+        get 'my_tags'
+        get 'other_tags'
+      end
+    end
     resources :taggings, only: :index
     resources :votes, only: [:index, :create, :update, :destroy] do
       collection do

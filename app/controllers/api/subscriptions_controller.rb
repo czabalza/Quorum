@@ -1,5 +1,7 @@
 class Api::SubscriptionsController < ApplicationController
   def create
+    p params
+    p subscription_params
     subscription_params[:tag_ids].each do |tag_id|
       current_user.subscriptions.create(tag_id: tag_id)
     end
@@ -7,7 +9,9 @@ class Api::SubscriptionsController < ApplicationController
   end
 
   def destroy
-    @subscription = current_user.subscriptions.find(params[:id])
+    # p params
+    @subscription = current_user.subscriptions.find_by_tag_id(params[:id])
+    # p @subscription
     @subscription.destroy
     render json: {}
   end

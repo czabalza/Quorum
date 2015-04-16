@@ -7,7 +7,7 @@ Quorum.Collections.Questions = Backbone.Collection.extend({
       this.url = options.url;
     }
   },
-  // 
+  //
   // parse: function (response) {
   //   debugger
   // },

@@ -5,6 +5,12 @@ Quorum.Routers.Router = Backbone.Router.extend({
     $('#search-div').html(searchView.render().$el);
     this.questions = new Quorum.Collections.Questions();
     this.tags = new Quorum.Collections.Tags();
+    this.myTags = new Quorum.Collections.Tags([], {
+      url: "api/tags/my_tags"
+    });
+    this.otherTags = new Quorum.Collections.Tags([], {
+      url: "api/tags/other_tags"
+    })
     this.feedQuestions = new Quorum.Collections.Questions([], {
       url: "api/questions/feed"
     });
@@ -25,7 +31,14 @@ Quorum.Routers.Router = Backbone.Router.extend({
 
   questionsIndex: function () {
     this.questions.fetch();
-    var view = new Quorum.Views.QuestionsIndex({collection: this.questions, page: "index"});
+    this.myTags.fetch();
+    this.otherTags.fetch();
+    var view = new Quorum.Views.QuestionsIndex({
+      collection: this.questions,
+      page: "index",
+      myTags: this.myTags,
+      otherTags: this.otherTags
+    });
     this._swapView(view);
   },
 
@@ -50,7 +63,13 @@ Quorum.Routers.Router = Backbone.Router.extend({
 
   feedShow: function () {
     this.feedQuestions.fetch();
-    var view = new Quorum.Views.QuestionsIndex({collection: this.feedQuestions, page: "feed"});
+    this.myTags.fetch();
+    this.otherTags.fetch();
+    var view = new Quorum.Views.QuestionsIndex({collection: this.feedQuestions,
+       page: "feed",
+       myTags: this.myTags,
+       otherTags: this.otherTags
+    });
     this._swapView(view);
   },
 
@@ -59,7 +78,13 @@ Quorum.Routers.Router = Backbone.Router.extend({
     this.searchQuestions.fetch({
       data: {query: query}
     });
-    var view = new Quorum.Views.QuestionsIndex({collection: this.searchQuestions, page: "search"});
+    this.myTags.fetch();
+    this.otherTags.fetch();
+    var view = new Quorum.Views.QuestionsIndex({collection: this.searchQuestions,
+      page: "search",
+      myTags: this.myTags,
+      otherTags: this.otherTags
+    });
     this._swapView(view);
   },
 

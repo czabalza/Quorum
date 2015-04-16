@@ -90,6 +90,36 @@ a.btn.btn-primary.navbar-btn {
   margin: auto;
 }
 
+#left-panel {
+  border: 1px solid black;
+  height: 100%;
+  float: left;
+  width: 20%;
+  margin-left: 1%;
+}
+
+.my-tags-div {
+  float: left;
+}
+
+.other-tags-div {
+  float: left;
+}
+
+.my-tags-header {
+  font-size: 12px;
+  text-decoration: underline;
+  color: gray;
+  font-weight: 500px;
+}
+
+.other-tags-header {
+  font-size: 12px;
+  text-decoration: underline;
+  color: gray;
+  font-weight: 500px;
+}
+
 .questions-header {
   font-size: 18px;
 }

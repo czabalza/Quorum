@@ -1,5 +1,12 @@
 <div class="tag-show">
 <% if (tag) { %>
   <a href="<%= "#search/" + tag.escape("topic") %>" class="topic-links"><%= tag.escape("topic") %></a>
+  <% if (panel === "left") { %>
+    <% if (owner === "true") { %>
+      <a href="#" class="destroy-sub-btn">x</a>
+    <% } else { %>
+      <a href="#" class="add-sub-btn">+</a>
+    <% } %>
+  <% } %>
 <% } %>
 </div>
