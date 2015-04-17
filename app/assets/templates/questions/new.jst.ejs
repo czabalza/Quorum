@@ -9,10 +9,11 @@
   <br>
   <p>Tag question:</p>
   <% tags.each(function (tag) { %>
-    <label>
-      <input class="tags" type="checkbox" name="question[tag_ids][]" value="<%= tag.id %>">
+    <label class="q-new-tag-label">
+      <input class="tags hidden" type="checkbox" name="question[tag_ids][]" value="<%= tag.id %>">
       <%= tag.escape('topic') %>
     </label>
   <% }) %>
+<br>
   <button class="create-question-btn btn btn-primary">Add Question</button>
 </form>

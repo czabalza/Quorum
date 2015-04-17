@@ -28,7 +28,7 @@ Quorum.Views.QuestionIndexItem = Backbone.CompositeView.extend({
 
   render: function () {
     // var answer = this.model.answers().first();
-    var content = this.template({question: this.model});
+    var content = this.template({question: this.model, page: this.page});
     this.$el.html(content);
     this.taggings.each(this.addTag.bind(this));
     // if (this.page === "feed") {

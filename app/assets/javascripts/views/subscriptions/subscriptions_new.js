@@ -8,7 +8,8 @@ Quorum.Views.SubscriptionsNew = Backbone.CompositeView.extend({
   },
 
   events: {
-    "click .submit-subs-btn": "createSubs"
+    "click .submit-subs-btn": "createSubs",
+    "click .subs-checkbox.hidden": "highlightTag"
   },
 
   render: function () {
@@ -17,13 +18,23 @@ Quorum.Views.SubscriptionsNew = Backbone.CompositeView.extend({
     return this;
   },
 
+  highlightTag: function (event) {
+    var $target = $(event.currentTarget.parentElement);
+
+    if ($target.hasClass("selected-q-tag")) {
+      $target.removeClass("selected-q-tag");
+    } else {
+      $target.addClass("selected-q-tag");
+    }
+  },
+
   createSubs: function (event) {
     event.preventDefault();
     var $form = $(event.currentTarget.parentElement);
     var data = $form.serializeJSON();
     var subs = new Quorum.Models.Subscription();
     subs.set(data);
-
+debugger
     subs.save([], {
       success: function () {
         Backbone.history.navigate("#feed", {trigger: true});

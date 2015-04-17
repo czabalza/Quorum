@@ -30,6 +30,7 @@ Quorum.Routers.Router = Backbone.Router.extend({
   },
 
   questionsIndex: function () {
+    window.scrollTo(500, 0);
     this.questions.fetch();
     this.myTags.fetch();
     this.otherTags.fetch();
@@ -43,6 +44,7 @@ Quorum.Routers.Router = Backbone.Router.extend({
   },
 
   questionNew: function () {
+    window.scrollTo(500, 0);
     this.tags.fetch();
     var question = new Quorum.Models.Question();
     var view = new Quorum.Views.QuestionNew({model: question, collection: this.questions, tags: this.tags});
@@ -50,18 +52,21 @@ Quorum.Routers.Router = Backbone.Router.extend({
   },
 
   questionShow: function (id) {
+    window.scrollTo(500, 0);
     var question = this.questions.getOrFetch(id);
     var view = new Quorum.Views.QuestionShow({model: question});
     this._swapView(view);
   },
 
   subscriptionsNew: function () {
+    window.scrollTo(500, 0);
     this.tags.fetch();
     var view = new Quorum.Views.SubscriptionsNew({collection: this.tags});
     this._swapView(view);
   },
 
   feedShow: function () {
+    window.scrollTo(500, 0);
     this.feedQuestions.fetch();
     this.myTags.fetch();
     this.otherTags.fetch();
@@ -74,6 +79,7 @@ Quorum.Routers.Router = Backbone.Router.extend({
   },
 
   searchShow: function (query) {
+    window.scrollTo(500, 0);
     // debugger
     this.searchQuestions.fetch({
       data: {query: query}

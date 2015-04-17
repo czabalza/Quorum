@@ -1,7 +1,7 @@
 class Api::SubscriptionsController < ApplicationController
   def create
-    p params
-    p subscription_params
+    # p params
+    # p subscription_params
     subscription_params[:tag_ids].each do |tag_id|
       current_user.subscriptions.create(tag_id: tag_id)
     end

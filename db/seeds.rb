@@ -22,7 +22,7 @@ u21 = User.create(name: "Robert Gallaher", email: "robert@live.com", password: "
 u22 = User.create(name: "Calvin Kuntze", email: "calvin@ucdavis.edu", password: "password")
 u23 = User.create(name: "Nikola Tesla", email: "nik@gmail.com", password: "password")
 u24 = User.create(name: "Benedict Cumberbatch", email: "benny@gmail.com", password: "password")
-u25 = User.create(name: "guest", email: "guest", password: "password")
+u25 = User.create(name: "Guest", email: "guest@example.com", password: "password")
 # u26 = User.create(name: "Quora User", email: "user@quora.com", password: "password")
 # u27 = User.create(name: "Quora User", email: "user@quora.com", password: "password")
 

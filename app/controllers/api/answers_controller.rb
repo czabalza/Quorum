@@ -4,7 +4,9 @@ module Api
       @answer = current_question.answers.new(answer_params)
       @answer.author_id = current_user.id
       if @answer.save
-        render json: @answer
+        @author = User.find(@answer.author_id)
+        @upvotes = 0
+        render :show
       else
         render json: @answer.errors.full_messages, status: :unprocessable_entity
       end

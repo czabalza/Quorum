@@ -3,6 +3,7 @@ Quorum.Views.AnswerNew = Backbone.CompositeView.extend({
 
   initialize: function (options) {
     this.button = options.button;
+    this.anon = "false";
   },
 
   initEditor: function () {
@@ -23,7 +24,8 @@ Quorum.Views.AnswerNew = Backbone.CompositeView.extend({
   },
 
   events: {
-    "click .create-answer-btn": "createAnswer"
+    "click .create-answer-btn": "createAnswer",
+    "click .answer-anon-link": "handleAnon"
   },
 
   render: function () {
@@ -33,33 +35,47 @@ Quorum.Views.AnswerNew = Backbone.CompositeView.extend({
     return this;
   },
 
-  createAnswer: function (event) {
+  handleAnon: function (event) {
     event.preventDefault();
-    this.model.set({
-      anonymous: "false",
-      body: this.editor.getHTML()
-    });
-
+    var $target = $(event.currentTarget);
     // debugger
 
-    this.model.save([], {
-      success: function (answer) {
-        this.$el.empty();
-        if (this.collection) {
-          this.collection.add(answer, {merge: true});
-          this.$el.html(this.button);
-        } else {
-          answer.fetch();
-          var view = new Quorum.Views.AnswerShow({model: answer})
-          this.$el.html(view.render().$el);
-        }
-      }.bind(this),
-      error: function (answer, response) {
-        this.$el.empty();
-        this.$el.append(response.responseJSON);
-        var view = new Quorum.Views.AnswerNew({model: answer});
-        this.$el.append(view.render().$el);
-      }.bind(this)
-    })
+    if ($target.html() === "Make Anonymous") {
+      this.anon = "true";
+      $target.html("Remove Anonymity");
+    } else if ($target.html() === "Remove Anonymity") {
+      this.anon = "false";
+      $target.html("Make Anonymous");
+    }
+  },
+
+  createAnswer: function (event) {
+    event.preventDefault();
+    // debugger
+
+    if (this.editor.getText().trim() === "") {
+      this.$el.find(".answer-new-errors").html("Answer can't be blank");
+    } else {
+      this.model.set({
+        anonymous: this.anon,
+        body: this.editor.getHTML()
+      });
+
+      // debugger
+
+      this.model.save([], {
+        success: function (answer) {
+          this.$el.empty();
+          if (this.collection) {
+            this.collection.add(answer, {merge: true});
+            this.$el.html(this.button);
+          } else {
+            answer.fetch();
+            var view = new Quorum.Views.AnswerShow({model: answer})
+            this.$el.html(view.render().$el);
+          }
+        }.bind(this)
+      })
+    }
   }
 })

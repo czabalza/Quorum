@@ -39,14 +39,15 @@
 </form>
    <% if btn_text == 'Log in' %>
    <p class="or"> -OR- </p>
-     <button onclick="demo()" class="btn btn-primary btn-lg btn-block">Log in as Guest</button>
+     <button onclick="demo()"
+             class="btn btn-primary btn-lg btn-block guest-btn">Log in as Guest</button>
    <% end %>
 
 <script>
 var demo = function () {
   $(function () {
     $("#inputEmail").typed({
-      strings: ["guest"],
+      strings: ["guest@example.com"],
       typeSpeed: 50,
       callback: function () {
         $("#inputPassword").typed({

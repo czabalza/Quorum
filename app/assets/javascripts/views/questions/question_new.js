@@ -9,13 +9,25 @@ Quorum.Views.QuestionNew = Backbone.CompositeView.extend({
   },
 
   events: {
-    "click .create-question-btn": "createQuestion"
+    "click .create-question-btn": "createQuestion",
+    "click .tags.hidden": "highlightTag"
   },
 
   render: function () {
     var content = this.template({question: this.model, tags: this.tags});
     this.$el.html(content);
     return this;
+  },
+
+  highlightTag: function (event) {
+    // debugger
+    var $target = $(event.currentTarget.parentElement);
+
+    if ($target.hasClass("selected-q-tag")) {
+      $target.removeClass("selected-q-tag");
+    } else {
+      $target.addClass("selected-q-tag");
+    }
   },
 
   createQuestion: function (event) {
