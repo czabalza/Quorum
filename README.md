@@ -15,9 +15,9 @@ Quorum is a clone of Quora built on Rails and Backbone. Users can:
 - [x] Post answers to questions
 - [x] View questions and answers
 - [x] Tag questions
-- [ ] Search for questions by title
-- [ ] Search for questions by tag
-- [ ] Up or down vote answers
+- [x] Search for questions by title
+- [x] Search for questions by tag
+- [x] Up or down vote answers
 
 ## Design Docs
 * [View Wireframes][views]
