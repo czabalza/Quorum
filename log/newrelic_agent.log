@@ -172,3 +172,118 @@
 [04/17/15 13:40:40 -0700 Christinas-MacBook-Air.local (2889)] INFO : Installing Rails 4 view instrumentation
 [04/17/15 13:40:40 -0700 Christinas-MacBook-Air.local (2889)] INFO : Installing Rails 4 Error instrumentation
 [04/17/15 13:40:40 -0700 Christinas-MacBook-Air.local (2889)] INFO : Finished instrumentation
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : Starting the New Relic agent in "development" environment.
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : Reading configuration from config/newrelic.yml (/Users/Christina/Desktop/quorum)
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : New Relic Agent Developer Mode enabled.
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] ERROR : No application name configured.
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] ERROR : The Agent cannot start without at least one. Please check your 
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] ERROR : value set for app_name in the development 
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] ERROR : environment.
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : Installing ActiveJob instrumentation
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : Installing ActiveRecord 4 instrumentation
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : Installing Net instrumentation
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : Installing deferred Rack instrumentation
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : Installing Rack::Builder middleware instrumentation
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : Installing Rails 3+ middleware instrumentation
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : Installing Rails 4 Controller instrumentation
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : Installing Rails 4 view instrumentation
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : Installing Rails 4 Error instrumentation
+[04/20/15 16:52:14 -0700 Christinas-MacBook-Air.local (1539)] INFO : Finished instrumentation
+[04/20/15 16:52:15 -0700 Christinas-MacBook-Air.local (1539)] INFO : Doing deferred dependency-detection before Rack startup
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : Starting the New Relic agent in "development" environment.
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : Reading configuration from config/newrelic.yml (/Users/Christina/Desktop/quorum)
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : New Relic Agent Developer Mode enabled.
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] ERROR : No application name configured.
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] ERROR : The Agent cannot start without at least one. Please check your 
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] ERROR : value set for app_name in the development 
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] ERROR : environment.
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : Installing ActiveJob instrumentation
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : Installing ActiveRecord 4 instrumentation
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : Installing Net instrumentation
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : Installing deferred Rack instrumentation
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : Installing Rack::Builder middleware instrumentation
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : Installing Rails 3+ middleware instrumentation
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : Installing Rails 4 Controller instrumentation
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : Installing Rails 4 view instrumentation
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : Installing Rails 4 Error instrumentation
+[04/20/15 16:56:37 -0700 Christinas-MacBook-Air.local (1707)] INFO : Finished instrumentation
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : Starting the New Relic agent in "development" environment.
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : Reading configuration from config/newrelic.yml (/Users/Christina/Desktop/quorum)
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : New Relic Agent Developer Mode enabled.
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] ERROR : No application name configured.
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] ERROR : The Agent cannot start without at least one. Please check your 
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] ERROR : value set for app_name in the development 
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] ERROR : environment.
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : Installing ActiveJob instrumentation
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : Installing ActiveRecord 4 instrumentation
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : Installing Net instrumentation
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : Installing deferred Rack instrumentation
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : Installing Rack::Builder middleware instrumentation
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : Installing Rails 3+ middleware instrumentation
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : Installing Rails 4 Controller instrumentation
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : Installing Rails 4 view instrumentation
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : Installing Rails 4 Error instrumentation
+[04/20/15 16:57:05 -0700 Christinas-MacBook-Air.local (1714)] INFO : Finished instrumentation
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : Starting the New Relic agent in "development" environment.
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : Reading configuration from config/newrelic.yml (/Users/Christina/Desktop/quorum)
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : New Relic Agent Developer Mode enabled.
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] ERROR : No application name configured.
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] ERROR : The Agent cannot start without at least one. Please check your 
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] ERROR : value set for app_name in the development 
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] ERROR : environment.
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : Installing ActiveJob instrumentation
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : Installing ActiveRecord 4 instrumentation
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : Installing Net instrumentation
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : Installing deferred Rack instrumentation
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : Installing Rack::Builder middleware instrumentation
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : Installing Rails 3+ middleware instrumentation
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : Installing Rails 4 Controller instrumentation
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : Installing Rails 4 view instrumentation
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : Installing Rails 4 Error instrumentation
+[04/20/15 20:29:37 -0700 Christinas-MacBook-Air.local (3395)] INFO : Finished instrumentation
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] INFO : Starting the New Relic agent in "development" environment.
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] INFO : Reading configuration from config/newrelic.yml (/Users/Christina/Desktop/quorum)
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] INFO : New Relic Agent Developer Mode enabled.
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] ERROR : No application name configured.
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] ERROR : The Agent cannot start without at least one. Please check your 
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] ERROR : value set for app_name in the development 
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] ERROR : environment.
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] INFO : Installing ActiveJob instrumentation
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] INFO : Installing ActiveRecord 4 instrumentation
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] INFO : Installing Net instrumentation
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] INFO : Installing deferred Rack instrumentation
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] INFO : Installing Rack::Builder middleware instrumentation
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] INFO : Installing Rails 3+ middleware instrumentation
+[04/20/15 20:30:24 -0700 Christinas-MacBook-Air.local (3434)] INFO : Installing Rails 4 Controller instrumentation
+[04/20/15 20:30:25 -0700 Christinas-MacBook-Air.local (3434)] INFO : Installing Rails 4 view instrumentation
+[04/20/15 20:30:25 -0700 Christinas-MacBook-Air.local (3434)] INFO : Installing Rails 4 Error instrumentation
+[04/20/15 20:30:25 -0700 Christinas-MacBook-Air.local (3434)] INFO : Finished instrumentation
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : Starting the New Relic agent in "development" environment.
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : Reading configuration from config/newrelic.yml (/Users/Christina/Desktop/quorum)
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : New Relic Agent Developer Mode enabled.
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] ERROR : No application name configured.
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] ERROR : The Agent cannot start without at least one. Please check your 
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] ERROR : value set for app_name in the development 
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] ERROR : environment.
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : Installing ActiveJob instrumentation
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : Installing ActiveRecord 4 instrumentation
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : Installing Net instrumentation
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : Installing deferred Rack instrumentation
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : Installing Rack::Builder middleware instrumentation
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : Installing Rails 3+ middleware instrumentation
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : Installing Rails 4 Controller instrumentation
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : Installing Rails 4 view instrumentation
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : Installing Rails 4 Error instrumentation
+[04/20/15 20:30:58 -0700 Christinas-MacBook-Air.local (3473)] INFO : Finished instrumentation

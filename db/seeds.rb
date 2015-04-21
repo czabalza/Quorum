@@ -13,7 +13,7 @@ u12 = User.create(name: "Hermione Granger", email: "hgranger@ministry.gov", pass
 u13 = User.create(name: "Emma Watson", email: "emmawatson90@gmail.com", password: "password")
 u14 = User.create(name: "Tyrion Lannister", email: "ishitgold@gmail.com", password: "password")
 u15 = User.create(name: "George RR Martin", email: "allmenmustdie@live.com", password: "password")
-u16 = User.create(name: "Andrew Hope", email: "andrew@hope.com", password: "password")
+u16 = User.create(name: "Andrew Jackson", email: "andrew@example.com", password: "password")
 u17 = User.create(name: "Adam D'Angelo", email: "adam@quora.com", password: "password")
 u18 = User.create(name: "Kush Patel", email: "kush@appacademy.io", password: "password")
 u19 = User.create(name: "Quora User", email: "user@quora.com", password: "password")
@@ -23,8 +23,19 @@ u22 = User.create(name: "Calvin Kuntze", email: "calvin@ucdavis.edu", password: 
 u23 = User.create(name: "Nikola Tesla", email: "nik@gmail.com", password: "password")
 u24 = User.create(name: "Benedict Cumberbatch", email: "benny@gmail.com", password: "password")
 u25 = User.create(name: "Guest", email: "guest@example.com", password: "password")
-# u26 = User.create(name: "Quora User", email: "user@quora.com", password: "password")
-# u27 = User.create(name: "Quora User", email: "user@quora.com", password: "password")
+u26 = User.create(name: "Manpreet Bath", email: "user1@quora.com", password: "password")
+u27 = User.create(name: "Laura Richstone", email: "user2@quora.com", password: "password")
+u28 = User.create(name: "Katherine Wright", email: "user3@quora.com", password: "password")
+u29 = User.create(name: "Susan Gilik", email: "user4@quora.com", password: "password")
+u30 = User.create(name: "Jyoti Arora", email: "user5@quora.com", password: "password")
+u31 = User.create(name: "Angela Guidici", email: "user6@quora.com", password: "password")
+u32 = User.create(name: "Kyle DeAnza", email: "user7@quora.com", password: "password")
+u33 = User.create(name: "Dave Ocampo", email: "user8@quora.com", password: "password")
+u34 = User.create(name: "Javan Bowsher", email: "user9@quora.com", password: "password")
+u35 = User.create(name: "Martell Winn", email: "user10@quora.com", password: "password")
+u36 = User.create(name: "Amanda Aubrey", email: "user11@quora.com", password: "password")
+u37 = User.create(name: "Angela Popoff", email: "user12@quora.com", password: "password")
+u38 = User.create(name: "Vanessa Valencia", email: "user13@quora.com", password: "password")
 
 tag1 = Tag.create(topic: "Human Behavior")
 tag2 = Tag.create(topic: "Society")
@@ -106,10 +117,10 @@ s32 = u25.subscriptions.create(tag_id: 32)
 s33 = u25.subscriptions.create(tag_id: 33)
 s34 = u25.subscriptions.create(tag_id: 34)
 s35 = u25.subscriptions.create(tag_id: 35)
-s36 = u25.subscriptions.create(tag_id: 36)
-s37 = u25.subscriptions.create(tag_id: 37)
-s38 = u25.subscriptions.create(tag_id: 38)
-s39 = u25.subscriptions.create(tag_id: 39)
+# s36 = u25.subscriptions.create(tag_id: 36)
+# s37 = u25.subscriptions.create(tag_id: 37)
+# s38 = u25.subscriptions.create(tag_id: 38)
+# s39 = u25.subscriptions.create(tag_id: 39)
 
 q1 = u4.questions.create(title: "How long do you count before throwing a grenade?",
 description: "", tag_ids: [], tag_ids: [])
@@ -134,13 +145,13 @@ description: "", tag_ids: [], tag_ids: [])
    Explosives are not toys.\n
    You don't play with them.")
 
-   a1.votes.create(voter_id: 1, value: 1)
-   a1.votes.create(voter_id: 2, value: 1)
-   a1.votes.create(voter_id: 3, value: 1)
-   a1.votes.create(voter_id: 4, value: 1)
-   a1.votes.create(voter_id: 5, value: -1)
-   a1.votes.create(voter_id: 6, value: -1)
-   a1.votes.create(voter_id: 25, value: -1)
+  #  a1.votes.create(voter_id: 1, value: 1)
+  #  a1.votes.create(voter_id: 2, value: 1)
+  #  a1.votes.create(voter_id: 3, value: 1)
+  #  a1.votes.create(voter_id: 4, value: 1)
+  #  a1.votes.create(voter_id: 5, value: -1)
+  #  a1.votes.create(voter_id: 6, value: -1)
+  #  a1.votes.create(voter_id: 25, value: -1)
 a2 = u16.answers.create(question_id: 1, anonymous: false, body: "Most grenades have a 4-8 second fuse (US standard is 4-5.5 second), but there\'s some variation in the delay of the powder train.  With some Russian grenades, users were given a box of various delay fuses, including 0, 5, and 13 second variations -- the 0 second fuses were for tripwire detonation traps.  Hilarity ensued when people mixed up the fuses.\n
 
 The generally accepted technique is to pull pin and throw immediately.  In some cases, this is not desirable because the enemy can observe the grenade being readied, and may be able to throw it back.   Due to the variability of the grenade fuses (sometimes less than 3 seconds!), \"cooking off\" grenades is not something you should really do.  The USMC publication MCWP 3-35 describes it as the \"least preferred technique\", although it is something documented as an option.  The purpose is to deny the enemy the ability to throw back or kick away the grenade before it detonates.  The same thing can be achieved by throwing the grenade at high speed or in an erratic pattern (like bouncing it off something).  The bouncing technique can be trained with live grenades; the cooking off (for 1-2 seconds) can only be used in actual combat, not in training.\n
@@ -413,7 +424,7 @@ q14 = u17.questions.create(title: "Why do some companies want fresh graduates so
 a26 = u6.answers.create(question_id: 14, anonymous: false, body: "Because you can pay them less and they will often put up with more bullshit regarding hours, on-call, weekends, crazy code complete dates, and so forth because (a) they don't know any better and (b) they don't have families or health issues, etc.\n
 
 Basically there are a lot of fresh graduates who are so excited by the idea of working for a name software company that they will put up with anything.")
-q15 = u9.questions.create(title: "What are some of the most memorable Game of Thrones quotes?", description: "", tag_ids: [])
+q15 = u9.questions.create(title: "What are some of the most memorable Game of Thrones quotes?", description: "", tag_ids: [26])
 a27 = u15.answers.create(question_id: 15, anonymous: false, body: "Bran- \"Can a man still be brave when he's afraid?\"\n
 Eddard - \"That\'s the only time a man can be brave.\"")
 a28 = u18.answers.create(question_id: 15, anonymous: false, body: "Varys - “Power resides only where men believe it resides. [...] A shadow on the  wall, yet shadows can kill. And ofttimes a very small man can cast a  very large shadow.”")
@@ -1026,7 +1037,7 @@ The German High Command accepted Garbo\'s reports so completely that they kept t
 In late June, Garbo was instructed by the Germans to report on the falling of V1 flying bombs. Finding no way of giving false information without arousing suspicion, and being unwilling to give correct information, Harris arranged for him to be \'arrested\'. He returned to duty a few days later, now having a \"need\" to avoid London, and forwarded an \'official\' letter of apology from the Home Secretary for his unlawful detention.
 \n
 The Germans paid Garbo (or Arabel, as they called him) US$340,000 to support his network of agents, which at one point totaled 27 fabricated characters.")
-q37 = u15.questions.create(title: "What is the funniest joke you\'ve ever heard?", description: "This is supposed to be limited to the classic definition of a joke. Not an anecdote or something funny you saw, etc.", tag_ids: [])
+q37 = u15.questions.create(title: "What is the funniest joke you\'ve ever heard?", description: "This is supposed to be limited to the classic definition of a joke. Not an anecdote or something funny you saw, etc.", tag_ids: [4])
 a88 = u14.answers.create(question_id: 37, anonymous: false, body: "Why lawyers should never ask a witness a question if they aren't prepared for the answer.
 \n
 In a trial, a small town prosecuting attorney called his first witness to
@@ -1125,7 +1136,156 @@ a96 = u23.answers.create(question_id: 37, anonymous: false, body: "Two atoms wer
 \"Are you sure?\" asked the other?
 \n
 \"I\'m positive.\"")
-# q38 = u19.questions.create(title: "", description: "", tag_ids: [])
-# a97 = u7.answers.create(question_id: 1, anonymous: false, body: "")
-# a98 = u7.answers.create(question_id: 1, anonymous: false, body: "")
-# q39 = u19.questions.create(title: "", description: "", tag_ids: [])
+q38 = u19.questions.create(title: "What kind of animals cannot be eaten legally inside the US?", description: "", tag_ids: [13, 15])
+a97 = u26.answers.create(question_id: 38, anonymous: false, body: "Other than humans, there aren't really any laws forbidding consumption. There are laws that prohibit slaughter, sale, or commerce in various items, such as the ban on importation of sheep's lungs, which keeps authentic Haggis out of the US.
+\n
+In private, one can pretty much eat what one can kill and prepare. Doing so might lead to social opprobrium, but not legal consequence. Unless, of course, you're eating your neighbor's pets or livestock without permission.")
+a98 = u27.answers.create(question_id: 38, anonymous: false, body: "Homo sapiens, of course.
+\n
+You need a special license to prepare fugu fish in the USA and, in the European Union, you can't serve it at all.
+\n
+Horse meat is not officially banned in the USA, but 1) The USA will not pay for inspection of horse slaughterhouses and 2) Such inspection is required for food to be sold so.... in effect it's illegal.  I suppose if you raised and killed your own horses, you could cook the meat and eat it.")
+q39 = u19.questions.create(title: "What is the shrewdest maneuver you have ever seen in business?", description: "", tag_ids: [9])
+a99 = u28.answers.create(question_id: 39, anonymous: false, body: "Herbert Dow founded Dow Chemical in Midland, Michigan when he invented a way to produce bromine cheaply. He sold the chemical for industrial purposes all over the US for 36 cents per pound at the turn of the 20th century. He couldn't go overseas, however, because the international market was controlled by a giant German chemical cartel that sold it at a fixed price of 49 cents per pound. It was understood that the Germans would stay out of the US market so long as Dow and the other American suppliers stayed within its borders.
+\n
+Eventually Dow's business was in trouble and he had to expand. He took his bromine to England and easily beat the cartel's fixed price of 49 cents per pound. Things were okay for a while until a German visitor came to Michigan and threatened Dow that he had to cease and desist. Dow didn't like being told what to do and told the cartel to get lost.
+\n
+Shortly thereafter German bromine started appearing for sale in the US for 15 cents per pound, way below Dow's price. The cartel flooded the US market, offering the chemical way below their own costs, intending to drive Dow out of business. But Dow outsmarted them. He stopped selling in the US market entirely and instead arranged for someone to secretly start buying up all the German bromine he could get his hands on. Dow repackaged it as his own product, shipped it to Europe, and made it widely available (even in Germany) at 27 cents per pound. The Germans were wondering 1) why wasn't Dow out of business and 2) why was there suddenly such demand for bromine in the US??
+
+The cartel lowered its price to 12 cents and then 10 cents. Dow just kept buying more and more, gaining huge market share in Europe. Finally the Germans caught on and had to lower their prices at home. Dow had broken the German chemical monopoly and expanded his business greatly. And customers got a wider range of places to buy bromine at lower prices.
+
+Dow went on to do the same trick to the German dye and magnesium monopolies. This is now the textbook way to deal with predatory price cutting.")
+q40 = u19.questions.create(title: "What are some of the best movie lines?", description: "", tag_ids: [10, 28])
+a100 = u29.answers.create(question_id: 40, anonymous: false, body: "Matt Damon on \"Why I Shouldn\'t join NSA\" in \"Good Will Hunting\".
+
+Why shouldn't I work for the N.S.A.? That's a tough one, but I'll take a shot. Say I\'m working at N.S.A. Somebody puts a code on my desk, something nobody else can break. Maybe I take a shot at it and maybe I break it. And I\'m real happy with myself, \'cause I did my job well. But maybe that code was the location of some rebel army in North Africa or the Middle East. Once they have that location, they bomb the village where the rebels were hiding and fifteen hundred people I never met, never had no problem with, get killed. Now the politicians are sayin\', \"Oh, send in the Marines to secure the area\" \'cause they don\'t give a shit. It won\'t be their kid over there, gettin\' shot. Just like it wasn\'t them when their number got called, \'cause they were pullin\' a tour in the National Guard. It\'ll be some kid from Southie takin\' shrapnel in the ass. And he comes back to find that the plant he used to work at got exported to the country he just got back from. And the guy who put the shrapnel in his ass got his old job, 'cause he'll work for fifteen cents a day and no bathroom breaks. Meanwhile, he realizes the only reason he was over there in the first place was so we could install a government that would sell us oil at a good price. And, of course, the oil companies used the skirmish over there to scare up domestic oil prices. A cute little ancillary benefit for them, but it ain\'t helping my buddy at two-fifty a gallon. And they\'re takin\' their sweet time bringin\' the oil back, of course, and maybe even took the liberty of hiring an alcoholic skipper who likes to drink martinis and fuckin\' play slalom with the icebergs, and it ain\'t too long \'til he hits one, spills the oil and kills all the sea life in the North Atlantic. So now my buddy's out of work and he can't afford to drive, so he's got to walk to the fuckin' job interviews, which sucks 'cause the shrapnel in his ass is givin' him chronic hemorrhoids. And meanwhile he's starvin', 'cause every time he tries to get a bite to eat, the only blue plate special they're servin' is North Atlantic scrod with Quaker State. So what did I think? I'm holdin' out for somethin' better. I figure fuck it, while I'm at it why not just shoot my buddy, take his job, give it to his sworn enemy, hike up gas prices, bomb a village, club a baby seal, hit the hash pipe and join the National Guard? I could be elected president.")
+a101 = u30.answers.create(question_id: 40, anonymous: false, body: "Schindler\'s List:
+\n
+\"This car. Goeth would have bought this car. Why did I keep the car? Ten people right there. Ten people. Ten more people. [removing Nazi pin from lapel] This pin. Two people. This is gold. Two more people. He would have given me two for it, at least one. One more person. A person, Stern. For this. [sobbing]
+\n
+I could have gotten one more person... and I didn't! And I... I didn't!\"
+
+-- Oskar Schindler")
+q41 = u19.questions.create(title: "What is it like to quit your job, get a backpack, and travel the world?", description: "", tag_ids: [11])
+a102 = u32.answers.create(question_id: 41, anonymous: false, body: "• Perhaps the single greatest feeling in my life came on the the first day of my first (of three) \"quit your job and backpack the world for  months\" trips.
+\n
+My friend and I had arrived on one-way tickets to London the night before. It was a beautiful day and we were sitting in St. James Park trying to decide what to do. And not just what to do that day but what to do in the weeks and months to come.
+\n
+It was  exhilarating. With no plans, we were literally just throwing out ideas: let's go to Marrakech, they say Prague is beautiful, can we get above the Arctic Circle?, could we take the Trans-Siberian railroad?
+\n
+We ended up doing all those things, and I saw and experienced things that changed (and I think improved) me forever. But to be honest, none of those topped that incredible feeling of freedom we had that morning of infinite potential.
+\n
+I don't believe there is any other way to get that feeling than to full-on commit to a step-into-the-void, open-ended, I'll-know-where-I'm-going-when-I-get-there adventure.
+\n
+• One of the worst feelings I've ever had has happened to me on all three of my multi-month trips. And each time I felt it, I knew it was time to go home. It is the flip side of the freedom coin.
+\n
+The first time I was in Shanghai—seven months into my trip—walking to the train station. Suddenly I became acutely aware that every single person who was hustling along that sidewalk was going somewhere or doing something that mattered. Except for me.
+\n
+They were going to work. To meet friends. To see the doctor. To play soccer. Whatever. I felt rootless, decadent and parasitic spending my days, weeks, months wandering through museums and temples.
+\n
+I could not wait to get back to work, to relationships, to family, to permanence.
+\n
+I don't believe there's any other way to appreciate the importance of purpose and community other than to consciously cut those ties and float free of them for a while.")
+q42 = u19.questions.create(title: "What is the truth about the nutrition of avocados?", description: "", tag_ids: [12, 25])
+a103 = u31.answers.create(question_id: 42, anonymous: false, body: "Many recent studies on the avocado have shown it is a superfood of nutrition. Monosaturated fatty acids are being linked with a trimmer figure in many studies. The biggest being from Nutrition Journal that showed that avocado eaters weighed less than those that did not include them in their diet across the board. They've also been linked to a lower BMI or body mass index and a smaller waist circumference. Half an avocado provides about 4 grams of fiber which helps to slow down the digestion of carbohydrates, keeping you feeling full longer. As well, the fat content of avocadoes is made up of more than 50 percent oleic acid, which research shows plays a role in controlling appetite. ")
+q43 = u19.questions.create(title: "If given $1 billion, what would be the best way to improve education in the U.S.?", description: "", tag_ids: [14])
+a104 = u32.answers.create(question_id: 43, anonymous: false, body: "I've been looking at educational outcomes in other countries for awhile since I had no idea how to answer this question when it was first posted.  Here's my crazy answer:
+\n
+I would not spend the money on schools.  I think this is misguided thinking.  Rich districts are very good at spending a lot of money on schools (the latest trend is on technology), but I don't think that's the determining factor - it is an effect, not a cause.  A study of low-performing students in affluent districts (if you know the study, you know which one I'm talking about; I'm not going to link to it for obvious reasons) indicated that the primary driving factor in student performance is parental involvement and attitudes towards education.  This is also borne out in the relative success of schools in Asian countries, where less money is spent per student but test scores and other measures of success are higher than that of most American schools.  The root cause is not insufficient funding for schools, but rather the attitudes of the surrounding community towards education and the role of teachers.
+\n
+Therefore, I would spend the billion dollars on a massive ongoing program of cultural indoctrination to (1) convince parents that they are responsible for their children's education and (2) to glorify the role of teachers and education within American society.  Over time, this will result in all of the other effects of such attitudes occurring, such as parents voting naturally for better education funding, higher standards, more support for teachers, etc.
+\n
+You could definitely do this without unilaterally changing government policy, i.e. a private organization with a billion dollars could simply spend it on a decades-long propaganda campaign (sort of the same way wealthy people/corporations have campaigned to discredit climate science, sell cigarettes, demonize drug usage, etc) to convince parents that they are the prime movers in education.")
+q44 = u19.questions.create(title: "What are the most controversial assumptions of economics?", description: "", tag_ids: [16])
+a105 = u33.answers.create(question_id: 44, anonymous: false, body: "Economists assume Self-Interest. In theory, this is very general and can include all kinds of motives including Altruism. In practice, however, economists as people tend towards a narrow interpretation of self-interest and thus they try to explain all behavior in terms of that narrow interpretation. e.g. Charitable giving is \"really\" about getting a good reputation, religion is really about generating social cooperation and Public Goods, Bravery is really a way to get girls, and so forth.
+\n
+As a result of this narrow conception of self-interest (which as I said is more about economists as people rather than as a discipline) economists have a difficult time with ideas like Culture and Identity because they feel they need to interpret these in terms of wealth maximization or more basic desires. It's this desire to interpret everything in narrowly self-interested terms which I think can impede conversation with colleagues in other disciplines.")
+q45 = u19.questions.create(title: "What should every aspiring writer know about writing?", description: "", tag_ids: [19])
+a106 = u34.answers.create(question_id: 45, anonymous: false, body: "Some advanced tips and tricks that can be useful are:
+\n
+1. Using punctuation to your benefit.  I love the “dash”--it can separate an idea or thought without chopping it up into two distinct sentences.  It acts as more of a pause, but has a theatrical effect.  My favorite way to convey a story is to have it play out the way you would envision a movie taking place.  This brings me to point number 2.
+\n
+2. I also think showing vs telling is key to good writing.  No one wants to read word for word a description of something as if they are reading a diary--it’s more exciting if a description comes through the eyes of a character doing something or through an action scene.  Again think of creating a story like the way you see a movie.
+\n
+3. But what everyone really should know about writing is learn to develop your voice.  Your voice is like your brand, and it should be as recognizable as the McDonald's golden arches, or the BMW checkered flag.  Your voice is something derived from years of writing.  It’s not something that comes instantly.  When people read my books my hope is that in a blind taste test, they recognize the style of writing is me even without knowing I am the author.")
+q46 = u19.questions.create(title: "What is the living philosophy of your life?", description: "", tag_ids: [20])
+a107 = u35.answers.create(question_id: 46, anonymous: false, body: "\"Do good and expect nothing.\"
+\n
+It is bullshit that good things happen to those who do good. Life doesn't work that way. If you are nice to someone, never expect the same in return.
+Love all, and be wary of all.")
+a108 = u36.answers.create(question_id: 46, anonymous: false, body: "Be and let be.
+\n
+I don't care what your religious views are, or your political inclinations, or your sexual preference. I don't give two hoots about whether you listen to jazz, pop, rock, or death metal. Are you an extrovert? Fine. Are you an introvert? Fine. Do you roam around naked in your house? None of my business. I don't bother myself with people's proclivities, their thoughts, their personal/social/professional lives, what they do in their spare time etc.
+\n
+If you keep off my personal space, you can do whatever you want and I would be least bothered. If you are polite to me, I will be too.")
+q47 = u19.questions.create(title: "Who was the worst political candidate in US history?", description: "", tag_ids: [22])
+a109 = u37.answers.create(question_id: 47, anonymous: false, body: "If we are defining the \"worst\" political candidate in moral terms, not just talking about political ineptitude, then the worst candidate would have to be Byron \"Lowtax\" Looper, the former tax assessor of Putnam County, Tennessee.  Looper, who had legally changed his middle name from Anthony to \"Lowtax\", was under indictment by the Tennessee Bureau of Investigation for alleged irregularities in property tax assessments, when he decided to run in the August 1998 primary for both U.S. Congress and the State Senate at the same time.  He came in third for the GOP nomination to represent the 6th Congressional District of Tennessee, but he won the State Senate nomination by default because he was the only Republican on the ballot.
+\n
+The nomination gave Looper the right to run against the incumbent state senator, conservative Democrat Tommy Burks.  Instead of using standard campaigning techniques like phone banking and TV ads to go after his opponent, Looper decided to give himself an edge by murdering Tommy Burks with less than month to go before the election.  This put the local Democrats in a bit of a bind, because state law said you can't have a dead candidate on the ballot, but Tennessee state election law also said that a political party can't put a new candidate on the ballot less than 30 days before the election. We can't know for sure, but Looper's motive for murdering Tommy Burks may have been to take advantage of this loophole in the law and get himself elected while running unopposed.
+\n
+Fortunately, local Democrats and Republicans joined together in a write-in campaign for Charlotte Burks, the widow of the murdered candidate, who beat \"Lowtax\" Looper by a margin of almost 20 to 1.  Charlotte Burks still serves in the Tennessee legislature to this day, while Byron \"Lowtax\" Looper died in prison in 2013.")
+q48 = u19.questions.create(title: "What's something that doctors know, but others don't?", description: "", tag_ids: [24])
+a110 = u38.answers.create(question_id: 48, anonymous: false, body: "Most illnesses will get better on their own. Most medicines are harmful when used for no reason or for the wrong reasons. If a doctor looks really confident when talking to a patient, the chances are that the patient is being bullshitted.")
+q49 = u19.questions.create(title: "What were your greatest music production epiphanies?", description: "", tag_ids: [27])
+a111 = u32.answers.create(question_id: 49, anonymous: false, body: "Learn to love mistakes. Performances are not perfect, that’s what makes us human. When we were recording vocals on Nirvana’s Nevermind, Kurt got lost in the arrangement on Come As You Are and sang “And I don’t have a gun” before the downbeat of the last chorus. Kurt wanted to erase his mistake, but I loved it and said “Let’s live with it for now.” By the next day we all loved it.  Hard to imagine that vocal not being there now; it’s an essential moment in the song.")
+q50 = u19.questions.create(title: "Why is there such a stunningly short supply of designers in Silicon Valley right now?", description: "", tag_ids: [29, 32])
+a112 = u33.answers.create(question_id: 50, anonymous: false, body: "This is not a supply problem. It's a demand problem. There are more talented designers in the world right now than there have ever been; more than enough to supply all of the startup ideas that are actually good ideas.
+\n
+The problem is that there are also more stupid ideas in the world right now than there have ever been, and those stupid ideas are demanding designers. If your idea is great, try pitching the best designers you can find on the value of the idea instead of seeing how much design you can get for how little salary/equity. If you're just looking to rent some design talent for a few months, than yeah, get in line behind all the bad ideas, and pay the market rate. But if you value design enough to make it one of your founding principles, then go get yourself a founding designer. If they aren't interested in your equity, that means they don't believe in your company enough at that equity level. At that point, you can either raise your offer, find another designer who believes more strongly in your idea, or take a long hard look at your idea and fix what isn't attractive about it.
+\n
+The supply of talent is out there. The supply of good ideas is not.")
+q51 = u19.questions.create(title: "How can I spend my $35 to get the best return on investment?", description: "", tag_ids: [30])
+a113 = u34.answers.create(question_id: 51, anonymous: false, body: "I read an article awhile back about a Stanford MBA class. The students were split up into teams. Each team was given some nominal amount of money, $5-10, and told to make as much money as possible in one week. At the end of the week each team would give a 10 minute presentation to the class about their approach.
+\n
+Some teams went out and gambled, buying lottery tickets or playing slot machines. After all, $5 was such a small amount that many students couldn't fathom how you could effectively turn it into anything more.
+\n
+The students that did the best however realized that the $5 was meaningless. The point of the assignment was to identify what skills and resources you have available if you had to start from nothing.
+\n
+One of the better teams sold restaurant reservations. They'd make reservations at the most popular restaurants in the area and would sell them to people waiting in line. They found that people were also willing to just give away their worse reservation after purchasing a better one, which they could later sell when it became more valuable.
+\n
+You shouldn't be asking yourself what is the best way to invest $35. It's such a small amount of money that it's almost meaningless. Instead ask yourself what skills and ideas do you have that people would be willing to pay for.
+\n
+The team that won sold the 10 minute presentation slot to a small company. After all, what's more valuable than 10 minutes in front of Stanford's best and brightest MBA students.")
+q52 = u19.questions.create(title: "What are the best books on friendship?", description: "", tag_ids: [31])
+a114 = u35.answers.create(question_id: 52, anonymous: false, body: "The Kite Runner by Khaled Hosseini.
+\n
+\"The Kite Runner\" tells a heartbreaking story of the unlikely friendship between Amir, the son of a wealthy Afghan businessman, and Hassan, the son of his father's servant. This unusually eloquent story is also about the fragile relationship fathers and sons, humans and their gods, men and their countries. Loyalty and blood are the ties that bind their stories into one of the most lyrical, moving and unexpected books of this decade.
+\n
+\"For you, a thousand times over.\"")
+q53 = u19.questions.create(title: "What is the most amazing fact about the universe?", description: "", tag_ids: [34])
+a115 = u36.answers.create(question_id: 53, anonymous: false, body: "If you distribute the time from the Big Bang to the present in a single year then-
+\n
+January 1st -The Big Bang occurred.
+January 10th -The first Star was born.
+January 13th - First small galaxy.
+March 15th - The Milky way formed but not the Sun.
+August 31st - The Sun was born (4.5 billion years ago)
+The Earth was born from a disk of gas and dust orbiting the new born Sun. Repeated collisions produced a glowing ball.The  Earth was quite unstable in the beginning. But
+\n
+Sept 21st - Life began (3.5 billion years ago)
+\n
+November 9th - Life was Breathing, Moving, Eating. We owe a lot to those early microbes. They invented SEX or Sexual reproduction.
+\n
+December 17th - Life came from water to land.
+December 28th - The first flower blossomed.
+\n
+6:24 am December 30th - An asteroid hit earth and wiped out Dinosaurs that could endanger the survival of Homo sapiens on earth (60 million years ago)
+For the first time in the history of the universe the conditions were just good enough for Humans.
+\n
+11:59:46 pm December 31st - All of the recorded history occupies these last 14 seconds. We learned how to cultivate crops,taming animals, Astronomy, Mathematics,Paintings.About 13 seconds ago we invented writing.
+Moses was born 7 seconds ago.
+Buddha - 6 seconds ago.
+Jesus - 5 seconds ago.
+Muhammad - 3 seconds ago.
+\n
+A second ago we discovered that Earth is not the centre of the universe
+And just when that second was about to finish we reached the Moon.
+Voyager 1 crossed our solar system.We discovered that our universe started with Big Bang (January 1st).
+\n
+Every person you have ever heard of, met, loved, hated and  kissed lives in those 14 seconds.")
+q54 = u19.questions.create(title: "What are some of the best sports quotes of all time?", description: "", tag_ids: [35])
+a115 = u37.answers.create(question_id: 54, anonymous: false, body: "Sometimes you're just happy playing. Some people, some media,  unfortunately, don't understand that it's okay just to play tennis and  enjoy it. They always think you have to win everything, it always needs  to be a success story, and if it's not, obviously, what is the point?  Maybe you have to go back and think, Why have I started playing tennis?  Because I just like it. It's actually sort of a dream hobby that became  somewhat of a job. Some people just don't get that, ever.
+\n
+- Federer, Shanghai 2012")
+# q55 = u19.questions.create(title: "", description: "", tag_ids: [])
+# a115 = u7.answers.create(question_id: 1, anonymous: false, body: "")

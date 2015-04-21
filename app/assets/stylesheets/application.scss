@@ -48,7 +48,7 @@
 }
 
 .sign-up-in-page {
-  max-width: 55%;
+  max-width: 50%;
   padding: 20px;
   margin: auto;
   border: 2px solid lightgray;
@@ -69,7 +69,8 @@
 }
 
 body {
-  padding-top: 70px;
+  padding-top: 50px;
+  margin-top: 20px;
   // font-family: Helvetica;
 }
 
@@ -320,7 +321,7 @@ a.expand-answer-body:hover, a.down-btn:hover {
 }
 
 h3.question-show-description {
-  font-size: 18px
+  font-size: 16px;
 }
 
 .topic-links {
