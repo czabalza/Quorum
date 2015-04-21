@@ -1,0 +1,14 @@
+
+<%  var upvoteText = "Upvote" %>
+<% var downvoteText = "Downvote" %>
+<% var upClass = "upvote" %>
+<% var downClass = "downvote" %>
+<% if (vote.escape("value") === "-1" || vote.escape("value") === -1 ) { %>
+<%  downvoteText = "Downvoted (undo)" %>
+<%  downClass = "downvoted" %>
+<% } else if (vote.escape("value") === "1" || vote.escape("value") === 1){ %>
+<%  upvoteText = "Upvoted" %>
+<%  upClass = "upvoted" %>
+<% } %>
+<button class="up-btn <%= upClass %>"><%= upvoteText %> | <%= number %></button>
+<a href="#" class="down-btn <%= downClass %>"><%= downvoteText %></a>

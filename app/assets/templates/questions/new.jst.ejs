@@ -1,0 +1,19 @@
+<h1 class="add-q-header">ADD QUESTION</h1>
+
+<form class="new-q-form">
+  <label for="question_title" class="sr-only">Question:</label>
+  <input id="question_title" type="text" name="question[title]" placeholder="What's your question?" value="<%= question.escape('title') %>" required autofocus=true>
+  <br>
+  <label for="question_description" class="sr-only">Description:</label>
+  <textarea id="question_description" name="question[description]" placeholder="Add a description (optional)"><%= question.escape('description') %></textarea>
+  <br>
+  <p>Tag question:</p>
+  <% tags.each(function (tag) { %>
+    <label class="q-new-tag-label">
+      <input class="tags hidden" type="checkbox" name="question[tag_ids][]" value="<%= tag.id %>">
+      <%= tag.escape('topic') %>
+    </label>
+  <% }) %>
+<br>
+  <button class="create-question-btn btn btn-primary">Add Question</button>
+</form>

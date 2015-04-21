@@ -1,0 +1,64 @@
+<% flash[:errors] && flash[:errors].each do |error| %>
+<%= error %>
+<% end %>
+
+<form class="form-signin" action="<%= action %>" method="post">
+  <input type="hidden"
+         name="authenticity_token"
+         value="<%= form_authenticity_token%>">
+
+  <% if btn_text == "Sign up!" %>
+    <label for="inputName" class="sr-only">Name:</label>
+    <input class="form control"
+           type="text"
+           id="user_name"
+           name="user[name]"
+           value="<%= user.name %>"
+           placeholder="Name" required autofocus>
+    <br>
+  <% end %>
+  <label for="inputEmail" class="sr-only">Email:</label>
+  <input class="form control"
+         type="text"
+         id="inputEmail"
+         name="user[email]"
+         value="<%= user.email %>"
+         placeholder="Email" required autofocus>
+  <br>
+  <label for="inputPassword" class="sr-only">Password:  </label>
+  <input class="form control"
+         type="password"
+         id="inputPassword"
+         name="user[password]"
+         value=""
+         placeholder="Password" required>
+  <br>
+  <input class="btn btn-lg btn-primary btn-block log-in-btn"
+         type="submit"
+         value="<%= btn_text %>">
+</form>
+   <% if btn_text == 'Log in' %>
+   <p class="or"> -OR- </p>
+     <button onclick="demo()"
+             class="btn btn-primary btn-lg btn-block guest-btn">Log in as Guest</button>
+   <% end %>
+
+<script>
+var demo = function () {
+  $(function () {
+    $("#inputEmail").typed({
+      strings: ["guest@example.com"],
+      typeSpeed: 50,
+      callback: function () {
+        $("#inputPassword").typed({
+          strings: ["password"],
+          typeSpeed: 50,
+          callback: function () {
+            $('.log-in-btn').click()
+          }
+        });
+      }
+    });
+  });
+}
+</script>

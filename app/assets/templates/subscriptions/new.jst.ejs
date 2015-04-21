@@ -1,0 +1,12 @@
+<h1 class="new-subs-header">Select topics you're interested in!</h1>
+
+<form>
+  <% tags.each(function (tag) { %>
+    <label class="new-subs-topic">
+      <input class="subs-checkbox hidden" type="checkbox" name="subscription[tag_ids][]" value="<%= tag.id %>">
+      <%= tag.escape('topic') %>
+    </label>
+  <% }) %>
+<br>
+  <button class="submit-subs-btn btn btn-primary">Submit</button>
+</form>
