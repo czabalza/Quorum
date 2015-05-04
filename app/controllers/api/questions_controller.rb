@@ -45,6 +45,8 @@ module Api
           taggings ON taggings.question_id = questions.id
         WHERE
           taggings.id IS NULL)
+        ORDER BY
+          id DESC
         LIMIT
           15
         SQL
