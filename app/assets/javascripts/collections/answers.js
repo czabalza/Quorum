@@ -9,6 +9,7 @@ Quorum.Collections.Answers = Backbone.Collection.extend({
   comparator: function (answer) {
     // debugger
     // return Number(answer.escape("upvotes"));
-    return -(new Date(answer.escape('updated_at')));
+    // return -(new Date(answer.escape('updated_at')));
+    return -answer.id;
   }
 })

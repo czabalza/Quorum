@@ -48,11 +48,17 @@
 }
 
 .sign-up-in-page {
-  max-width: 50%;
+  max-width: 550px;
   padding: 20px;
   margin: auto;
   border: 2px solid lightgray;
   border-radius: 7px;
+  background-color: white;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+  left: 0;
 }
 
 .form-signin input{
@@ -71,7 +77,14 @@
 body {
   padding-top: 50px;
   margin-top: 20px;
+  background-size: cover;
+  min-height: 100%;
   // font-family: Helvetica;
+}
+
+html {
+  background-color: white;
+  height: 100%;
 }
 
 .nav-container {

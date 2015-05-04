@@ -22,7 +22,7 @@ module Api
 
     def feed
       @questions = Question.includes(:answers).find_by_sql([<<-SQL, id: current_user.id])
-        SELECT
+        (SELECT
           questions.*
         FROM
           questions
@@ -35,16 +35,18 @@ module Api
         JOIN
           users ON users.id = subscriptions.follower_id
         WHERE
-          users.id = :id
+          users.id = :id)
         UNION
-        SELECT
+        (SELECT
           questions.*
         From
           questions
         LEFT OUTER JOIN
           taggings ON taggings.question_id = questions.id
         WHERE
-          taggings.id IS NULL
+          taggings.id IS NULL)
+        LIMIT
+          15
         SQL
 
       render :feed
